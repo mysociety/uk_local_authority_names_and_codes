@@ -1,81 +1,83 @@
 """
-Builds easy two column lookups from all the alternative names
+Script to create the overall info files from
+the various source files
 
 """
+
 import pandas as pd
+import json
 from pathlib import Path
 
 
-def build_messy_lookup(source, dest, ref_col):
+def create_overall_file():
+
+    df = pd.read_json(Path("source", "local-authority-info.json"))
+
+    for p in Path("source", "lookups").glob("*.csv"):
+        ndf = pd.read_csv(p)
+        df = df.merge(ndf)
+
+    df = df.fillna("")
+
+    new_cols = [x for x in df.columns if x not in [
+        "local-authority-type", "local-authority-type-name"]]
+    new_cols = new_cols[:9] + ["local-authority-type",
+                               "local-authority-type-name"] + new_cols[9:]
+    df = df[new_cols]
+
+    df = df.sort_values("local-authority-code")
+
+    di = df.to_dict("records")
+
+    with open(Path("data", "uk_local_authorities.json"), "w") as f:
+        json.dump(di, f, indent=4)
+
+    df["alt-names"] = df["alt-names"].apply(",".join)
+    df["former-gss-codes"] = df["former-gss-codes"].apply(",".join)
+
+    df.to_csv(Path("data", "uk_local_authorities.csv"), index=False)
+
+
+
+def create_name_lookup():
+
+    df = pd.read_json(Path("source", "local-authority-info.json"))
+    df["la name"] = df["official-name"].apply(lambda x: [x]) + df["alt-names"]
+
+    ndf = df.set_index(
+        "local-authority-code")["la name"].explode().to_frame().reset_index()
+    ndf = ndf[ndf.columns[::-1]]
+    ndf.to_csv(Path("data", "lookup_name_to_registry.csv"), index=False)
+
+
+def create_gss_lookup():
+
+    df = pd.read_json(Path("source", "local-authority-info.json"))
+    df["gss-code"] = df["gss-code"].apply(lambda x: [x]) + \
+        df["former-gss-codes"]
+
+    ndf = df.set_index(
+        "local-authority-code")["gss-code"].explode().to_frame().reset_index()
+    ndf = ndf[ndf.columns[::-1]]
+    ndf.to_csv(Path("data", "lookup_gss_to_registry.csv"), index=False)
+
+
+def lsoa_to_registry():
     """
-    given source and destination, will pull together all alt names to give a nice easy lookup
+    update the lsoa lookup with any changes to la structure
     """
-    la = pd.read_excel(source)
-    od = pd.read_csv(Path("source_files", "local_authority_data_names.csv"))
+    df = pd.read_json(Path("source", "local-authority-info.json"))
+    di = df[lambda x: ~(x["replaced-by"] == "")
+            ].set_index("local-authority-code")["replaced-by"].to_dict()
 
-    lookup_data = []
-
-    possible = ["official-name", "alt-name-1", "alt-name-2", "alt-name-3"]
-    possible = [p for p in possible if p in la.columns]
-    for _, r in la.iterrows():
-        for p in possible:
-            if pd.isna(r[p]) is False:
-                lookup_data.append([r[p], r[ref_col]])
-
-    current_names = [x[0] for x in lookup_data]
-
-    for _, r in od.iterrows():
-        if r["name"] not in current_names:
-            code = r["local-authority"].split(":")[1]
-            lookup_data.append([r["name"], code])
-
-    lookup = pd.DataFrame(lookup_data, columns=["la name", ref_col])
-    lookup = lookup.sort_values("la name")
-    lookup.to_csv(dest, index=False)
-
-
-def build_messy_lookup_lad(source, dest):
-    """
-    given source and destination, will pull together all alt names to give a nice easy lookup
-    """
-    la = pd.read_excel(source)
-
-    lookup_data = []
-    possible = ["gss-code", "archaic-gss-code"]
-    possible = [p for p in possible if p in la.columns]
-    for _, r in la.iterrows():
-        for p in possible:
-            if r[p]:
-                values = [x for x in str(r[p]).split(",") if x != "nan"]
-                for v in values:
-                    lookup_data.append([v, r["local-authority-code"]])
-
-    lookup = pd.DataFrame(lookup_data, columns=[
-                          "gss-code", "local-authority-code"])
-    lookup = lookup.sort_values("gss-code")
-    lookup.to_csv(dest, index=False)
-
-
-def add_sources_to_csv(source, dest):
-
-    extra_info = [Path("source_files", "la_area_pop.csv"),
-                  Path("source_files", "la_xy.csv")]
-
-    df = pd.read_excel(source).set_index("local-authority-code")
-    for extra in extra_info:
-        ndf = pd.read_csv(extra).set_index("local-authority-code")
-        df = df.join(ndf)
-
-    df = df.reset_index().sort_values("local-authority-code")
-
-    df.to_csv(dest, index=False)
+    ldf = pd.read_csv(Path("source", "lsoa_la_2021.csv"))
+    ldf["local-authority-code"] = ldf["local-authority-code"].apply(
+        lambda x: di.get(x, x))
+    ldf.to_csv(Path("data", "lookup_lsoa_to_registry.csv"), index=False)
 
 
 if __name__ == "__main__":
-    build_messy_lookup("uk_local_authorities.xlsx",
-                       "lookup_name_to_registry.csv",
-                       "local-authority-code")
-    build_messy_lookup_lad("uk_local_authorities.xlsx",
-                           "lookup_gss_to_registry.csv",)
-    add_sources_to_csv("uk_local_authorities.xlsx",
-                       "uk_local_authorities.csv")
+    create_overall_file()
+    create_name_lookup()
+    create_gss_lookup()
+    lsoa_to_registry()

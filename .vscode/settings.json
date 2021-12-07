@@ -1,0 +1,30 @@
+{
+    "python.linting.pycodestyleEnabled": true,
+    "python.defaultInterpreterPath": "/usr/local/bin/python",
+    "python.terminal.activateEnvironment": false,
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/*.pyc": {"when": "$(basename).py"}, 
+        "**/__pycache__": true
+    },
+    "files.associations": {
+        "**/*.html": "html",
+        "**/templates/**/*.html": "django-html",
+        "**/templates/**/*": "django-txt",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+    },
+    "python.linting.pylintArgs": [
+        "--load-plugins=pylint_django",
+        "--disable=C0103",
+        "--disable=E1101",
+        "--disable=W5101",
+        "--disable=E1123",
+        "--disable=E712"   
+],
+"jupyter.jupyterServerType": "local",
+}
