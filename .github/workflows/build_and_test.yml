@@ -2,8 +2,6 @@ name: authority-tester-and-builder
 
 on:
   push:
-    branches:
-      - main
 
 jobs:
   build:
