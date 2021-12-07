@@ -11,7 +11,7 @@ To update this information, update the files in the `source` folder:
 
 Updating these files and pushing to github will trigger a rebuild and test of the output files.
 
-The output files avaliable are:
+The output files avaliable are in the `data` directory:
 
 * `uk_local_authorities.csv` - big lookup table. 
 * `lookup_name_to_registry.csv` combines all alternate names into one column to let you quickly match any data and get back a canonical code (which can be checked against the other table to convert to your preferred format). Also combined with this [name lookup](https://github.com/openregister/local-authority-data/edit/master/maps/name.tsv) from openregister for fuller coverage.
