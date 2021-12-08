@@ -1,0 +1,12 @@
+local-authority-type-name,powers,lower_or_unitary
+Non-metropolitan district,lower tier,true
+Welsh unitary authority,unitary,true
+County,upper tier,false
+Unitary authority,unitary,true
+Metropolitan district,unitary,true
+Combined authority,combined,false
+Scottish unitary authority,unitary,true
+NI district,ni district,true
+London borough,unitary,true
+Strategic Regional Authority,combined,false
+City corporation,unitary,true
