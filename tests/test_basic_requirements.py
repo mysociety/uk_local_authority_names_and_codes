@@ -26,6 +26,7 @@ def test_no_duplicate_official_name_code():
 
 def test_no_duplicate_gss_code():
     df = get_df()
+    df = df[~df["gss-code"].isna()]
     assert df["gss-code"].duplicated().any() == False
 
 
@@ -36,6 +37,7 @@ def test_must_have_offical_name():
 
 def test_must_have_region():
     df = get_df()
+    df = df[df["current-authority"]]
     assert df["region"].isna().any() == False
 
 
@@ -46,4 +48,4 @@ def test_must_have_nation():
 
 def test_must_have_type():
     df = get_df()
-    assert df["region"].isna().any() == False
+    assert df["local-authority-type"].isna().any() == False

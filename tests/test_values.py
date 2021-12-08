@@ -51,6 +51,7 @@ def test_valid_region():
     ]
 
     df = get_df()
+    df = df[df["current-authority"]]
     assert (~df["region"].isin(allowed_types)).any() == False
 
 

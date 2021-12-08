@@ -32,7 +32,8 @@ def test_end_date_before_start():
 
 def test_end_date_needs_replaced_by():
     df = get_df()
-    s = ~df["end-date"].isna() & df["replaced-by"].isna()
+    old_ni = ~df["local-authority-code"].str.contains("NIR", regex=False)
+    s = ~df["end-date"].isna() & df["replaced-by"].isna() & old_ni
     assert s.any() == False
 
 
