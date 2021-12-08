@@ -50,3 +50,54 @@ It is annoying and confusing that `local-authority-code` and `BS-6879` columns m
 Additional maps can be found [here](https://github.com/openregister/local-authority-data/tree/master/maps).
 
 *The gss code used for the Greater London Authority is the gss code is for London region - when working from code point open use E18000007 and the NHS_HA_code column.
+
+# Dataset analysis
+
+## Counts by authority
+
+| Authority type | Current authorities | Former authorities |
+| :--- | :--- | :--- |
+| City corporation | 1 | 0 |
+| Combined authority | 10 | 0 |
+| County | 24 | 3 |
+| London borough | 32 | 0 |
+| Metropolitan district | 36 | 0 |
+| NI district | 11 | 25 |
+| Non-metropolitan district | 181 | 23 |
+| Scottish unitary authority | 32 | 0 |
+| Strategic Regional Authority | 1 | 0 |
+| Unitary authority | 59 | 2 |
+| Welsh unitary authority | 22 | 0 |
+
+## Unitary/lower tier and total counts
+
+| Lower or unitary? | Count |
+| :--- | :--- |
+| No | 35 |
+| Yes | 374 |
+| All | 409 |
+
+## Incomplete lookups
+
+This are optional columns, and not entirely populated.
+
+| column | complete | % |
+| :--- | :--- | :--- |
+| BS-6879 | 407 | 99.5% |
+| x | 406 | 99.3% |
+| y | 406 | 99.3% |
+| long | 406 | 99.3% |
+| lat | 406 | 99.3% |
+| old-register-and-code | 404 | 98.8% |
+| wdtk-id | 404 | 98.8% |
+| open-council-data-id | 393 | 96.1% |
+| gov-uk-slug | 390 | 95.4% |
+| os | 380 | 92.9% |
+| snac | 380 | 92.9% |
+| mapit-area-code | 330 | 80.7% |
+| ecode | 326 | 79.7% |
+| old-ons-la-code | 326 | 79.7% |
+| ofcom | 178 | 43.5% |
+| os-file | 170 | 41.6% |
+| even-older-register-and-code | 22 | 5.4% |
+

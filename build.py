@@ -4,9 +4,16 @@ the various source files
 
 """
 
-import pandas as pd
 import json
 from pathlib import Path
+
+import nbformat
+import pandas as pd
+from bs4 import BeautifulSoup
+from nbconvert import MarkdownExporter
+from traitlets.config import Config
+from htmltabletomd import convert_table
+from nbconvert.preprocessors import ExecutePreprocessor
 
 
 def create_overall_file():
@@ -38,7 +45,6 @@ def create_overall_file():
     df["former-gss-codes"] = df["former-gss-codes"].apply(",".join)
 
     df.to_csv(Path("data", "uk_local_authorities.csv"), index=False)
-
 
 
 def create_name_lookup():
@@ -78,8 +84,62 @@ def lsoa_to_registry():
     ldf.to_csv(Path("data", "lookup_lsoa_to_registry.csv"), index=False)
 
 
+def remove_tables(body: str) -> str:
+    """
+    notebook is still outputing html tables
+    conver to markdown
+
+    """
+    body = body.replace(
+        '<tr style="text-align: right;">\n      <th></th>', "<tr>")
+    soup = BeautifulSoup(body, 'html.parser')
+    for div in soup.find_all("table"):
+        table = convert_table(str(div))
+        div.replaceWith(table)
+    for div in soup.find_all("style"):
+        div.replaceWith("")
+
+    body = str(soup)
+    body = body.replace("&lt;br/&gt;", "<br/>")
+    body = body.replace("![png]", "![]")
+    body = body.replace('<style type="text/css">', "")
+    body = body.replace('</style>', "")
+    body = body.replace('<div>', "")
+    body = body.replace('</div>', "")
+    while "\n\n\n" in body:
+        body = body.replace("\n\n\n", "\n\n")
+
+    return body
+
+
+def render_readme():
+    nb = nbformat.read("coverage.ipynb", as_version=4)
+
+    c = Config()
+    # needs to reexecuite
+    c.MarkdownExporter.exclude_input = True
+    c.MarkdownExporter.exclude_input_prompt = True
+
+    c.MarkdownExporter.preprocessors = [ExecutePreprocessor]
+
+    exporter = MarkdownExporter(config=c)
+
+    body, resources = exporter.from_notebook_node(nb, {})
+    body = remove_tables(body)
+
+    with open("README.md", "r") as f:
+        readme = f.read()
+
+    readme = readme.split("# Dataset analysis")[0]
+    readme += body
+
+    with open("README.md", "w") as f:
+        f.write(readme)
+
+
 if __name__ == "__main__":
     create_overall_file()
     create_name_lookup()
     create_gss_lookup()
     lsoa_to_registry()
+    render_readme()
