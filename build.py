@@ -22,7 +22,7 @@ def create_overall_file():
 
     df["current-authority"] = df["end-date"] == ""
 
-    for p in Path("source", "lookups").glob("*.csv"):
+    for p in sorted(Path("source", "lookups").glob("*.csv")):
         ndf = pd.read_csv(p)
         df = df.merge(ndf, how="left")
 
