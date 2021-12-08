@@ -84,12 +84,12 @@ This are optional columns, and not entirely populated.
 | column | complete | % |
 | :--- | :--- | :--- |
 | BS-6879 | 407 | 99.5% |
+| wdtk-id | 407 | 99.5% |
 | x | 406 | 99.3% |
 | y | 406 | 99.3% |
 | long | 406 | 99.3% |
 | lat | 406 | 99.3% |
 | old-register-and-code | 404 | 98.8% |
-| wdtk-id | 404 | 98.8% |
 | open-council-data-id | 393 | 96.1% |
 | gov-uk-slug | 390 | 95.4% |
 | os | 380 | 92.9% |

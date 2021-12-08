@@ -3812,7 +3812,7 @@
     {
         "local-authority-code": "CPCA",
         "official-name": "Cambridgeshire and Peterborough Combined Authority",
-        "nice-name": "Cambridgeshire and Peterborough CA",
+        "nice-name": "Cambridgeshire and Peterborough",
         "gss-code": "E47000008",
         "start-date": "2014-04-01",
         "end-date": "",
@@ -6774,7 +6774,7 @@
     {
         "local-authority-code": "GMCA",
         "official-name": "Greater Manchester Combined Authority",
-        "nice-name": "Greater Manchester CA",
+        "nice-name": "Greater Manchester",
         "gss-code": "E47000001",
         "start-date": "2014-04-01",
         "end-date": "",
@@ -9030,7 +9030,7 @@
     {
         "local-authority-code": "LCR",
         "official-name": "Liverpool City Region",
-        "nice-name": "Liverpool City CA",
+        "nice-name": "Liverpool City Region",
         "gss-code": "E47000004",
         "start-date": "2014-04-01",
         "end-date": "",
@@ -10699,7 +10699,7 @@
     {
         "local-authority-code": "NECA",
         "official-name": "North East Combined Authority",
-        "nice-name": "North East CA",
+        "nice-name": "North East",
         "gss-code": "E47000010",
         "start-date": "2014-04-15",
         "end-date": "",
@@ -10738,7 +10738,7 @@
         "os-file": "",
         "os": "",
         "snac": "",
-        "wdtk-id": ""
+        "wdtk-id": 52428.0
     },
     {
         "local-authority-code": "NED",
@@ -12493,7 +12493,7 @@
     {
         "local-authority-code": "NTCA",
         "official-name": "North of Tyne Combined Authority",
-        "nice-name": "Newcastle Upon Tyne, North Tyneside and Northumberland Combined Authority",
+        "nice-name": "North of Tyne",
         "gss-code": "E47000011",
         "start-date": "2018-11-02",
         "end-date": "",
@@ -12505,6 +12505,7 @@
         "county-la": "",
         "combined-authority": "",
         "alt-names": [
+            "newcastle upon tyne, north tyneside and northumberland combined authority",
             "Newcastle Upon Tyne, North Tyneside and Northumberland Combined Authority"
         ],
         "former-gss-codes": [],
@@ -12530,7 +12531,7 @@
         "os-file": "",
         "os": "",
         "snac": "",
-        "wdtk-id": ""
+        "wdtk-id": 91532.0
     },
     {
         "local-authority-code": "NTH",
@@ -14874,7 +14875,7 @@
     {
         "local-authority-code": "SCR",
         "official-name": "Sheffield City Region",
-        "nice-name": "Sheffield City CA",
+        "nice-name": "Sheffield City Region",
         "gss-code": "E47000002",
         "start-date": "2014-04-01",
         "end-date": "",
@@ -17936,7 +17937,7 @@
     {
         "local-authority-code": "TVCA",
         "official-name": "Tees Valley Combined Authority",
-        "nice-name": "Tees Valley CA",
+        "nice-name": "Tees Valley",
         "gss-code": "E47000006",
         "start-date": "2014-04-01",
         "end-date": "",
@@ -18585,7 +18586,7 @@
     {
         "local-authority-code": "WECA",
         "official-name": "West of England Combined Authority",
-        "nice-name": "West of England CA",
+        "nice-name": "West of England",
         "gss-code": "E47000009",
         "start-date": "2014-04-01",
         "end-date": "",
@@ -19203,7 +19204,7 @@
     {
         "local-authority-code": "WMCA",
         "official-name": "West Midlands Combined Authority",
-        "nice-name": "West Midlands CA",
+        "nice-name": "West Midlands",
         "gss-code": "E47000007",
         "start-date": "2016-06-17",
         "end-date": "",
@@ -19993,7 +19994,7 @@
     {
         "local-authority-code": "WYCA",
         "official-name": "West Yorkshire Combined Authority",
-        "nice-name": "West Yorkshire CA",
+        "nice-name": "West Yorkshire",
         "gss-code": "E47000003",
         "start-date": "2014-04-01",
         "end-date": "",
@@ -20030,7 +20031,7 @@
         "os-file": "",
         "os": "",
         "snac": "",
-        "wdtk-id": ""
+        "wdtk-id": 52339.0
     },
     {
         "local-authority-code": "WYE",
