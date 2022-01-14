@@ -2309,8 +2309,8 @@
     },
     {
         "local-authority-code": "SCR",
-        "official-name": "Sheffield City Region",
-        "nice-name": "Sheffield City Region",
+        "official-name": "South Yorkshire Mayoral Combined Authority",
+        "nice-name": "South Yorkshire Mayoral Combined Authority",
         "gss-code": "E47000002",
         "start-date": "2014-04-01",
         "end-date": "",
@@ -2321,6 +2321,8 @@
         "county-la": "",
         "combined-authority": "",
         "alt-names": [
+            "Sheffield City Region Combined Authority",
+            "Sheffield City Region",
             "Sheffield City CA",
             "sheffield city region combined authority"
         ],
