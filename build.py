@@ -28,10 +28,16 @@ def create_overall_file():
 
     df = df.fillna("")
 
-    new_cols = [x for x in df.columns if x not in [
-        "local-authority-type", "local-authority-type-name"]]
-    new_cols = new_cols[:9] + ["local-authority-type",
-                               "local-authority-type-name"] + new_cols[9:]
+    new_cols = [
+        x
+        for x in df.columns
+        if x not in ["local-authority-type", "local-authority-type-name"]
+    ]
+    new_cols = (
+        new_cols[:9]
+        + ["local-authority-type", "local-authority-type-name"]
+        + new_cols[9:]
+    )
     df = df[new_cols]
 
     df = df.sort_values("local-authority-code")
@@ -52,8 +58,12 @@ def create_name_lookup():
     df = pd.read_json(Path("source", "local-authority-info.json"))
     df["la name"] = df["official-name"].apply(lambda x: [x]) + df["alt-names"]
 
-    ndf = df.set_index(
-        "local-authority-code")["la name"].explode().to_frame().reset_index()
+    ndf = (
+        df.set_index("local-authority-code")["la name"]
+        .explode()
+        .to_frame()
+        .reset_index()
+    )
     ndf = ndf[ndf.columns[::-1]]
     ndf.to_csv(Path("data", "lookup_name_to_registry.csv"), index=False)
 
@@ -61,11 +71,14 @@ def create_name_lookup():
 def create_gss_lookup():
 
     df = pd.read_json(Path("source", "local-authority-info.json"))
-    df["gss-code"] = df["gss-code"].apply(lambda x: [x]) + \
-        df["former-gss-codes"]
+    df["gss-code"] = df["gss-code"].apply(lambda x: [x]) + df["former-gss-codes"]
 
-    ndf = df.set_index(
-        "local-authority-code")["gss-code"].explode().to_frame().reset_index()
+    ndf = (
+        df.set_index("local-authority-code")["gss-code"]
+        .explode()
+        .to_frame()
+        .reset_index()
+    )
     ndf = ndf[ndf.columns[::-1]]
     ndf.to_csv(Path("data", "lookup_gss_to_registry.csv"), index=False)
 
@@ -75,12 +88,16 @@ def lsoa_to_registry():
     update the lsoa lookup with any changes to la structure
     """
     df = pd.read_json(Path("source", "local-authority-info.json"))
-    di = df[lambda x: ~(x["replaced-by"] == "")
-            ].set_index("local-authority-code")["replaced-by"].to_dict()
+    di = (
+        df[lambda x: ~(x["replaced-by"] == "")]
+        .set_index("local-authority-code")["replaced-by"]
+        .to_dict()
+    )
 
     ldf = pd.read_csv(Path("source", "lsoa_la_2021.csv"))
     ldf["local-authority-code"] = ldf["local-authority-code"].apply(
-        lambda x: di.get(x, x))
+        lambda x: di.get(x, x)
+    )
     ldf.to_csv(Path("data", "lookup_lsoa_to_registry.csv"), index=False)
 
 
@@ -90,9 +107,8 @@ def remove_tables(body: str) -> str:
     conver to markdown
 
     """
-    body = body.replace(
-        '<tr style="text-align: right;">\n      <th></th>', "<tr>")
-    soup = BeautifulSoup(body, 'html.parser')
+    body = body.replace('<tr style="text-align: right;">\n      <th></th>', "<tr>")
+    soup = BeautifulSoup(body, "html.parser")
     for div in soup.find_all("table"):
         table = convert_table(str(div))
         div.replaceWith(table)
@@ -103,9 +119,9 @@ def remove_tables(body: str) -> str:
     body = body.replace("&lt;br/&gt;", "<br/>")
     body = body.replace("![png]", "![]")
     body = body.replace('<style type="text/css">', "")
-    body = body.replace('</style>', "")
-    body = body.replace('<div>', "")
-    body = body.replace('</div>', "")
+    body = body.replace("</style>", "")
+    body = body.replace("<div>", "")
+    body = body.replace("</div>", "")
     while "\n\n\n" in body:
         body = body.replace("\n\n\n", "\n\n")
 
