@@ -5,15 +5,16 @@ the various source files
 """
 
 import json
+import sqlite3
 from pathlib import Path
 
 import nbformat
 import pandas as pd
 from bs4 import BeautifulSoup
-from nbconvert import MarkdownExporter
-from traitlets.config import Config
 from htmltabletomd import convert_table
+from nbconvert import MarkdownExporter
 from nbconvert.preprocessors import ExecutePreprocessor
+from traitlets.config import Config
 
 
 def create_overall_file():
@@ -153,9 +154,37 @@ def render_readme():
         f.write(readme)
 
 
+def make_sqlite():
+    """
+    combine output files into sqlite table
+    """
+
+    sqlite_file = Path("data", "uk_local_authorities.sqlite")
+
+    if sqlite_file.exists():
+        sqlite_file.unlink()
+    con = sqlite3.connect(sqlite_file)
+
+    files = {
+        "uk_local_authorities.csv": "authorities",
+        "lookup_name_to_registry.csv": "alt_names",
+        "lookup_gss_to_registry.csv": "gss",
+        # "lookup_lsoa_to_registry.csv": "lsoa"
+    }
+
+    for filename, tablename in files.items():
+        df = pd.read_csv(Path("data", filename)).rename(
+            columns=lambda x: x.replace("-", "_")
+        )
+        df.to_sql(tablename, con, index=False)
+
+    con.close()
+
+
 if __name__ == "__main__":
     create_overall_file()
     create_name_lookup()
     create_gss_lookup()
     lsoa_to_registry()
+    make_sqlite()
     render_readme()
