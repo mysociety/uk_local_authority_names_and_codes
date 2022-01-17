@@ -56,10 +56,10 @@ def create_overall_file():
 def create_name_lookup():
 
     df = pd.read_json(Path("source", "local-authority-info.json"))
-    df["la name"] = df["official-name"].apply(lambda x: [x]) + df["alt-names"]
+    df["la-name"] = df["official-name"].apply(lambda x: [x]) + df["alt-names"]
 
     ndf = (
-        df.set_index("local-authority-code")["la name"]
+        df.set_index("local-authority-code")["la-name"]
         .explode()
         .to_frame()
         .reset_index()
