@@ -1,4 +1,4 @@
-name: Run project tests
+name: Test and build data
 
 concurrency: 
   group: ${{ github.workflow }}-${{ github.ref }}
