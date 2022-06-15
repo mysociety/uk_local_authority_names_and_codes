@@ -19,6 +19,9 @@ jobs:
 
       - name: checkout repo content
         uses: actions/checkout@v2
+        with:
+          submodules: 'recursive'
+          
 
       - name: Build project
         uses: ./.github/actions/in-dev-container
