@@ -1,0 +1,27 @@
+name: Run project tests
+
+concurrency: 
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+  
+on:
+  push:
+
+jobs:
+
+  test:
+    uses: ./.github/workflows/test.yml
+
+  build:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: checkout repo content
+        uses: actions/checkout@v2
+
+      - name: Build project
+        uses: ./.github/actions/in-dev-container
+        with:
+          run: |
+            project build

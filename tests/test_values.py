@@ -47,7 +47,6 @@ def test_valid_region():
         "West Midlands",
         "Yorkshire and The Humber",
         "North East",
-
     ]
 
     df = get_df()
@@ -66,9 +65,10 @@ def test_valid_codes():
 def test_counties():
     # test all refs to counties are to authorities assigned as countries
     df = get_df()
-    valid_mask = df["local-authority-type-name"].isin(
-        ["County"]) & df["end-date"].isna()
-    valid_authorities = (df[valid_mask]["local-authority-code"])
+    valid_mask = (
+        df["local-authority-type-name"].isin(["County"]) & df["end-date"].isna()
+    )
+    valid_authorities = df[valid_mask]["local-authority-code"]
     result = df["county-la"].isin(valid_authorities) | df["county-la"].isna()
     assert ~result.any() == False
 
@@ -77,9 +77,7 @@ def test_combined_refs():
     # test all refs to combined authorities are to authorities assigned as combs or strategic
     df = get_df()
     types = ["Combined authority", "Strategic Regional Authority"]
-    valid_mask = df["local-authority-type-name"].isin(
-        types) & df["end-date"].isna()
-    valid_authorities = (df[valid_mask]["local-authority-code"])
-    result = df["combined-authority"].isin(
-        valid_authorities) | df["county-la"].isna()
+    valid_mask = df["local-authority-type-name"].isin(types) & df["end-date"].isna()
+    valid_authorities = df[valid_mask]["local-authority-code"]
+    result = df["combined-authority"].isin(valid_authorities) | df["county-la"].isna()
     assert ~result.any() == False
