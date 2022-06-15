@@ -1,7 +1,7 @@
 [tool.poetry]
-name = "template_data_repo"
+name = "uk_local_authority_names_and_codes"
 version = "0.1.0"
-description = "Standardised template for mysociety data repositories"
+description = "uk_local_authority_names_and_codes"
 authors = []
 
 [tool.poetry.dependencies]
@@ -12,7 +12,7 @@ data_common = { path = "src/data_common/", develop = true }
 pytest = "^7.1.1"
 
 [tool.poetry.scripts]
-notebook = 'template_data_repo.cli:main'
+notebook = 'uk_local_authority_names_and_codes.cli:main'
 dataset = "data_common.dataset.__main__:run"
 
 [tool.pyright]
@@ -28,6 +28,6 @@ default_page_title = "Settings file defined title"
 [tool.dataset]
 dataset_dir = "data/data_packages"
 publish_dir = "docs/"
-publish_url = "https://mysociety.github.io/template_data_repo/datasets/"
+publish_url = "https://mysociety.github.io/uk_local_authority_names_and_codes/datasets/"
 credit_text = "If you find this data useful, please let us know to help us make the case for future funding."
 credit_url = "https://survey.alchemer.com/s3/6876792/Data-usage"

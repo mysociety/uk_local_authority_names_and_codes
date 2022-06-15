@@ -1,8 +1,8 @@
 theme: jekyll-theme-slate
-title: template_data_repo
-description: Standardised template for mysociety data repositories
+title: uk_local_authority_names_and_codes
+description: uk_local_authority_names_and_codes
 
-baseurl: "/template_data_repo"
+baseurl: "/uk_local_authority_names_and_codes"
 url: "https://mysociety.github.io"
 
 collections:

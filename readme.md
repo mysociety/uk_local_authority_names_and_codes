@@ -1,7 +1,12 @@
-# Template notebook
 
-This is a template notebook used for mySociety data science projects.
+# Uk Local Authority Names And Codes
 
-You only update this repo, and don't clone directly from it. See instructions in [this repo](https://github.com/mysociety/notebook-auto-template) on how to use it as a template for new projects.
+[![badge](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/mysociety/uk_local_authority_names_and_codes/HEAD)
 
-Instructions on using the features of this notebook are avaliable in [notebooks-readme.md](notebooks-readme.md).
+uk_local_authority_names_and_codes
+
+This repository is available online at https://github.com/mysociety/uk_local_authority_names_and_codes
+
+If Github Pages are enabled, the URL is: https://mysociety.github.io/uk_local_authority_names_and_codes/
+
+Instructions on using the features of this notebook are available in [notebooks-readme.md](notebooks-readme.md).

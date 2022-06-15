@@ -1,5 +1,5 @@
 ---
-title: "Download template_data_repo"
+title: "Download uk_local_authority_names_and_codes"
 layout: datasets/front
 ---
 

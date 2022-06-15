@@ -1,4 +1,4 @@
-import template_data_repo
+import uk_local_authority_names_and_codes
 
 import pytest
 

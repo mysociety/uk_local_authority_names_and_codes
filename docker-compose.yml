@@ -1,8 +1,8 @@
 services:
   app:
-    image: mysociety/template_data_repo:${TAG:-latest}
+    image: mysociety/uk_local_authority_names_and_codes:${TAG:-latest}
     build:
       context: .
       dockerfile: Dockerfile.dev
     volumes:
-      - ./:/workspaces/template_data_repo/
+      - ./:/workspaces/uk_local_authority_names_and_codes/
