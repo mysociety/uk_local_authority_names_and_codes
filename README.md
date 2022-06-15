@@ -55,7 +55,7 @@ Additional maps can be found [here](https://github.com/openregister/local-author
 
 ## Counts by authority
 
-    /tmp/ipykernel_18148/4005933252.py:24: FutureWarning: this method is deprecated in favour of `Styler.hide(axis='index')`
+    /tmp/ipykernel_12/4005933252.py:24: FutureWarning: this method is deprecated in favour of `Styler.hide(axis='index')`
       .hide_index()
 
 | Authority type | Current authorities | Former authorities |
@@ -74,7 +74,7 @@ Additional maps can be found [here](https://github.com/openregister/local-author
 
 ## Unitary/lower tier and total counts
 
-    /tmp/ipykernel_18148/2467855341.py:19: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
+    /tmp/ipykernel_12/2467855341.py:19: FutureWarning: The frame.append method is deprecated and will be removed from pandas in a future version. Use pandas.concat instead.
       df = df.append(
 
 | Lower or unitary? | Count |
@@ -87,7 +87,7 @@ Additional maps can be found [here](https://github.com/openregister/local-author
 
 This are optional columns, and not entirely populated.
 
-    /tmp/ipykernel_18148/2139504535.py:16: FutureWarning: this method is deprecated in favour of `Styler.hide(axis='index')`
+    /tmp/ipykernel_12/2139504535.py:16: FutureWarning: this method is deprecated in favour of `Styler.hide(axis='index')`
       pt.style.format({"%": "{:.1%}".format}).hide_index()
 
 | column | complete | % |
