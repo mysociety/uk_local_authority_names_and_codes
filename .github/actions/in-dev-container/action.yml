@@ -19,7 +19,8 @@ runs:
     - name: Build image from docker-compose
       uses: ./.github/actions/cached-build
       with:
-        branch: "container-rationalization"
+        branch: "main"
+        dockerfile: Dockerfile.dev
         push_to_registry: false
     
     - name: construct docker command
