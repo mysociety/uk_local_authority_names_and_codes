@@ -14,12 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: checkout repo content
+      - name: Checkout repo content
         uses: actions/checkout@v2
         with:
           submodules: 'recursive'
           
-      - name: RUn tests and try and build project
+      - name: Run tests and try and build project
         uses: ./.github/actions/in-dev-container
         with:
           run: |
