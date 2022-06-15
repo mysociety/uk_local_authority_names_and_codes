@@ -23,5 +23,4 @@ jobs:
         uses: ./.github/actions/in-dev-container
         with:
           run: |
-            script/bootstrap
             script/test
