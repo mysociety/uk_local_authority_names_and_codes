@@ -22,10 +22,13 @@ jobs:
         with:
           submodules: 'recursive'
           
-
       - name: Build project
         uses: ./.github/actions/in-dev-container
         with:
           run: |
-            cd /workspaces/uk_local_authority_names_and_codes
             project build
+            
+      - name: Push new data
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Update local authority data based on source changes"
