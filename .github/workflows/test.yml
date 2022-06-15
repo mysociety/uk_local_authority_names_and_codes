@@ -23,5 +23,4 @@ jobs:
         uses: ./.github/actions/in-dev-container
         with:
           run: |
-            cd /workspaces/uk_local_authority_names_and_codes
             script/test

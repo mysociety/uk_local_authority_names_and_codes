@@ -5,15 +5,12 @@ concurrency:
   cancel-in-progress: true
   
 on:
-  push:
+  push: 
+    branches: ["main"]
 
 jobs:
 
-  test:
-    uses: ./.github/workflows/test.yml
-
   build:
-    needs: test
     runs-on: ubuntu-latest
     steps:
 
@@ -22,10 +19,11 @@ jobs:
         with:
           submodules: 'recursive'
           
-      - name: Build project
+      - name: RUn tests and try and build project
         uses: ./.github/actions/in-dev-container
         with:
           run: |
+            script/test
             project build
             
       - name: Push new data
