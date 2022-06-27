@@ -39,6 +39,7 @@ custom:
   change_log:
     0.1.0: Initial commit of new data
     0.1.1: Added dataset order to config
+    1.0.0: Increment to fixed version
 resources:
 - title: UK Local Authorities (past/current/future)
   description: Table of information about local authorities, and mapping between different
@@ -344,6 +345,6 @@ resources:
   _sheet_order: 1
   hash: ce54b596b7e55a8c6c228ab94fa7e213
   download_id: uk-la-future-uk-local-authorities-future
-full_version: 0.1.1
+full_version: 1.0.0
 permalink: /datasets/uk_la_future/latest
 ---
