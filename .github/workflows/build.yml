@@ -25,8 +25,7 @@ jobs:
           run: |
             script/test
             dataset build --all
-            dataset version auto --auto-ban major --all
-            dataset publish --all
+            dataset version auto --auto-ban major --all --publish
             
       - name: Push new data
         uses: stefanzweifel/git-auto-commit-action@v4
