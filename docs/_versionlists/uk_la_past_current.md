@@ -9,9 +9,9 @@ versions:
   0.1.2:
   - 0.1.2
   0.1.3:
-  - latest
-  - 0.1.3
   - '0'
+  - 0.1.3
   - '0.1'
+  - latest
 permalink: /datasets/uk_la_past_current/versions
 ---
