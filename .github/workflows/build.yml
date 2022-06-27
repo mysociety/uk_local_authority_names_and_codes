@@ -7,8 +7,6 @@ concurrency:
 on:
   push: 
     branches: ["main"]
-  pull_request:
-
 
 jobs:
 
@@ -27,7 +25,7 @@ jobs:
           run: |
             script/test
             dataset build --all
-            dataset version auto --auto-ban major
+            dataset version auto --auto-ban major --all
             dataset publish --all
             
       - name: Push new data
