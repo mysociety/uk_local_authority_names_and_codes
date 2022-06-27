@@ -3,6 +3,8 @@ title: "Download uk_local_authority_names_and_codes"
 layout: datasets/front
 ---
 
-# This is some actual content
+# UK local authorities lookup table
 
-Here is some text underneath that.
+Datasets to better join up and compare local authority information between different datasets.
+
+See the [GitHub repository](https://github.com/mysociety/uk_local_authority_names_and_codes/) for more information.

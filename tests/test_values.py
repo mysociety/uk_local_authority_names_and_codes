@@ -6,13 +6,40 @@ from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
+from typing import Callable
+
+top_level = Path(__file__).parent.parent
+current_package = top_level / "data" / "packages" / "uk_la_past_current"
+future_package = top_level / "data" / "packages" / "uk_la_future"
 
 
-def get_df() -> pd.DataFrame:
-    return pd.read_csv(Path("data", "uk_local_authorities.csv"))
+def get_df(future=False) -> pd.DataFrame:
+    if future:
+        return pd.read_csv(
+            Path(future_package, "uk_local_authorities_future.csv"),
+        )
+    else:
+        return pd.read_csv(
+            Path(current_package, "uk_local_authorities_current.csv"),
+        )
 
 
-def test_valid_authority_type():
+def use_both_dfs(function: Callable):
+    """
+    Decorator to use both current and future dfs
+    """
+
+    def wrapper(*args, **kwargs):
+        df = get_df()
+        function(df, *args, **kwargs)
+        df = get_df(future=True)
+        function(df, *args, **kwargs)
+
+    return wrapper
+
+
+@use_both_dfs
+def test_valid_authority_type(df):
 
     allowed_types = [
         "NI district",
@@ -28,11 +55,11 @@ def test_valid_authority_type():
         "City corporation",
     ]
 
-    df = get_df()
     assert (~df["local-authority-type-name"].isin(allowed_types)).any() == False
 
 
-def test_valid_region():
+@use_both_dfs
+def test_valid_region(df):
 
     allowed_types = [
         "Northern Ireland",
@@ -48,23 +75,21 @@ def test_valid_region():
         "Yorkshire and The Humber",
         "North East",
     ]
-
-    df = get_df()
     df = df[df["current-authority"]]
     assert (~df["region"].isin(allowed_types)).any() == False
 
 
-def test_valid_codes():
+@use_both_dfs
+def test_valid_codes(df):
     def valid_code(s):
         return s == s.upper()[:4]
 
-    df = get_df()
     assert ~(df["local-authority-code"].apply(valid_code)).any() == False
 
 
-def test_counties():
+@use_both_dfs
+def test_counties(df):
     # test all refs to counties are to authorities assigned as countries
-    df = get_df()
     valid_mask = (
         df["local-authority-type-name"].isin(["County"]) & df["end-date"].isna()
     )
@@ -73,11 +98,21 @@ def test_counties():
     assert ~result.any() == False
 
 
-def test_combined_refs():
+@use_both_dfs
+def test_combined_refs(df):
     # test all refs to combined authorities are to authorities assigned as combs or strategic
-    df = get_df()
     types = ["Combined authority", "Strategic Regional Authority"]
     valid_mask = df["local-authority-type-name"].isin(types) & df["end-date"].isna()
     valid_authorities = df[valid_mask]["local-authority-code"]
     result = df["combined-authority"].isin(valid_authorities) | df["county-la"].isna()
     assert ~result.any() == False
+
+
+@use_both_dfs
+def test_valid_replaced_by(df):
+    """
+    Test that all replaced by values are in valid_authorities
+    """
+    valid_authorities = df["local-authority-code"]
+    df["replaced-by"] = df["replaced-by"].dropna()
+    assert ~(df["replaced-by"].isin(valid_authorities)).any() == False

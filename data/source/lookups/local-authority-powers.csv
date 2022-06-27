@@ -1,4 +1,4 @@
-local-authority-type-name,powers,lower_or_unitary
+local-authority-type-name,powers,lower-or-unitary
 Non-metropolitan district,lower tier,true
 Welsh unitary authority,unitary,true
 County,upper tier,false

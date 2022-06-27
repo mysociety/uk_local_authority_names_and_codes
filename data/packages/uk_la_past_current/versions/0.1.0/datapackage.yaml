@@ -1,0 +1,40 @@
+name: uk_la_past_current
+title: UK Local Authorities (past and current)
+description: "A basic description of this dataset\n"
+version: 0.1.0
+licenses:
+- name: CC-BY-4.0
+  path: https://creativecommons.org/licenses/by/4.0/
+  title: Creative Commons Attribution 4.0 International License
+contributors:
+- title: mySociety
+  path: https://mysociety.org
+  role: author
+custom:
+  build: uk_local_authority_names_and_codes.build:create_all_files
+  tests:
+  - test_basic_requirements
+  - test_time
+  - test_values
+  - test_current
+  download_options:
+    gate: default
+    survey: default
+    header_text: default
+  composite:
+    xlsx:
+      include: all
+      exclude:
+      - lookup_lsoa_to_registry
+      render: true
+    sqlite:
+      include: all
+      exclude: none
+      render: true
+    json:
+      include: all
+      exclude:
+      - lookup_lsoa_to_registry
+      render: true
+  change_log:
+    0.1.0: Initial commit of new data

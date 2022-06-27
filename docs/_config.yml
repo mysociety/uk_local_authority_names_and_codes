@@ -1,20 +1,25 @@
 theme: jekyll-theme-slate
-title: uk_local_authority_names_and_codes
-description: uk_local_authority_names_and_codes
+title: UK Local Authorities
+description: Dataset of basic information and ID lookup for UK local authorities.
 
 baseurl: "/uk_local_authority_names_and_codes"
 url: "https://mysociety.github.io"
 
 collections:
+  versionlists:
+    output: true
   datasets:
     output: true
-    permalink: /datasets/:name/
   downloads:
     output: true
-    permalink: /downloads/:name/
 
 
 defaults:
+  - scope:
+      path: ""
+      type: versionlists
+    values:
+      layout: datasets/versions
   - scope:
       path: ""
       type: datasets

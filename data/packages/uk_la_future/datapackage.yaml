@@ -1,0 +1,40 @@
+name: uk_la_future
+title: UK Local Authorities (including future)
+description: "A dataset that include current and previous local authorities, as well\
+  \ as some planned but not in force yet\n"
+version: 0.1.1
+licenses:
+- name: CC-BY-4.0
+  path: https://creativecommons.org/licenses/by/4.0/
+  title: Creative Commons Attribution 4.0 International License
+contributors:
+- title: mySociety
+  path: https://mysociety.org
+  role: author
+custom:
+  build: uk_local_authority_names_and_codes.build:create_future_only
+  dataset_order: 2
+  tests:
+  - test_basic_requirements
+  - test_time
+  - test_values
+  download_options:
+    gate: default
+    survey: default
+    header_text: default
+  composite:
+    xlsx:
+      include: all
+      exclude: none
+      render: true
+    sqlite:
+      include: all
+      exclude: none
+      render: true
+    json:
+      include: all
+      exclude: none
+      render: true
+  change_log:
+    0.1.0: Initial commit of new data
+    0.1.1: Added dataset order to config

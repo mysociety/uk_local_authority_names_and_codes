@@ -7,6 +7,8 @@ concurrency:
 on:
   push: 
     branches: ["main"]
+  pull_request:
+
 
 jobs:
 
@@ -24,7 +26,9 @@ jobs:
         with:
           run: |
             script/test
-            project build
+            dataset build --all
+            dataset version auto --auto-ban major
+            dataset publish --all
             
       - name: Push new data
         uses: stefanzweifel/git-auto-commit-action@v4
