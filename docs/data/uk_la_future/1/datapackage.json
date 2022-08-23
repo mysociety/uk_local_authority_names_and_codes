@@ -2,10 +2,10 @@
     "name": "uk_la_future",
     "title": "UK Local Authorities (including future)",
     "description": "A dataset that includes current and previous local authorities, as well as some planned but not in force yet\n",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "keywords": [
         "UK Local data",
-        "UK"
+        "United Kingdom"
     ],
     "licenses": [
         {
@@ -56,7 +56,8 @@
             "0.1.1": "Added dataset order to config",
             "1.0.0": "Increment to fixed version",
             "1.0.1": "description changed from 'A dataset that include current and previous local authorities, as well as some planned but not in force yet\n' to 'A dataset that includes current and previous local authorities, as well as some planned but not in force yet\n'",
-            "1.0.2": "keywords changed from 'None' to '['UK Local data', 'UK']'"
+            "1.0.2": "keywords changed from 'None' to '['UK Local data', 'UK']'",
+            "1.0.3": "keywords changed from '['UK Local data', 'UK']' to '['UK Local data', 'United Kingdom']'"
         }
     },
     "resources": [
