@@ -2,7 +2,11 @@
     "name": "uk_la_past_current",
     "title": "UK Local Authorities (past and current)",
     "description": "A dataset that includes current and some past local authorities",
-    "version": "1.0.1",
+    "version": "1.0.2",
+    "keywords": [
+        "UK Local data",
+        "UK"
+    ],
     "licenses": [
         {
             "name": "CC-BY-4.0",

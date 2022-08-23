@@ -3,6 +3,9 @@ name: uk_la_past_current
 title: UK Local Authorities (past and current)
 description: A dataset that includes current and some past local authorities
 version: latest
+keywords:
+- UK Local data
+- UK
 licenses:
 - name: CC-BY-4.0
   path: https://creativecommons.org/licenses/by/4.0/
@@ -50,6 +53,7 @@ custom:
     1.0.0: Increment to fixed version
     1.0.1: description changed from 'A dataset that include current and some past
       local authorities' to 'A dataset that includes current and some past local authorities'
+    1.0.2: keywords changed from 'None' to '['UK Local data', 'UK']'
 resources:
 - title: UK Local Authorities (past/current)
   description: Table of information about local authorities, and mapping between different
@@ -439,6 +443,6 @@ resources:
       example: ABC
   hash: 10c6ca51145360a9587cfe7c71a9950f
   download_id: uk-la-past-current-lookup-name-to-registry
-full_version: 1.0.1
+full_version: 1.0.2
 permalink: /datasets/uk_la_past_current/latest
 ---

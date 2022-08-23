@@ -2,7 +2,11 @@
     "name": "uk_la_future",
     "title": "UK Local Authorities (including future)",
     "description": "A dataset that includes current and previous local authorities, as well as some planned but not in force yet\n",
-    "version": "1.0.1",
+    "version": "1.0.2",
+    "keywords": [
+        "UK Local data",
+        "UK"
+    ],
     "licenses": [
         {
             "name": "CC-BY-4.0",

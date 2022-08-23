@@ -4,6 +4,9 @@ title: UK Local Authorities (including future)
 description: "A dataset that includes current and previous local authorities, as well\
   \ as some planned but not in force yet\n"
 version: latest
+keywords:
+- UK Local data
+- UK
 licenses:
 - name: CC-BY-4.0
   path: https://creativecommons.org/licenses/by/4.0/
@@ -44,6 +47,7 @@ custom:
       \ local authorities, as well as some planned but not in force yet\n' to 'A dataset\
       \ that includes current and previous local authorities, as well as some planned\
       \ but not in force yet\n'"
+    1.0.2: keywords changed from 'None' to '['UK Local data', 'UK']'
 resources:
 - title: UK Local Authorities (past/current/future)
   description: Table of information about local authorities, and mapping between different
@@ -349,6 +353,6 @@ resources:
   _sheet_order: 1
   hash: ce54b596b7e55a8c6c228ab94fa7e213
   download_id: uk-la-future-uk-local-authorities-future
-full_version: 1.0.1
+full_version: 1.0.2
 permalink: /datasets/uk_la_future/latest
 ---
