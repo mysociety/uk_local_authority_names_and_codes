@@ -4,8 +4,8 @@ description: "A dataset that includes current and previous local authorities, as
   \ as some planned but not in force yet\n"
 version: 1.0.2
 keywords:
-- UK Local data
-- UK
+ - UK Local data
+ - United Kingdom
 licenses:
 - name: CC-BY-4.0
   path: https://creativecommons.org/licenses/by/4.0/
