@@ -3,6 +3,9 @@ title: UK Local Authorities (including future)
 description: "A dataset that includes current and previous local authorities, as well\
   \ as some planned but not in force yet\n"
 version: 1.0.1
+keywords:
+ - UK Local data
+ - UK
 licenses:
 - name: CC-BY-4.0
   path: https://creativecommons.org/licenses/by/4.0/
