@@ -15,7 +15,7 @@ jobs:
     steps:
 
       - name: Checkout repo content
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           submodules: 'recursive'
           
@@ -38,8 +38,9 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source: ./
-          destination: ./_site
+          source: docs
+          destination: docs/_site
+          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
 
