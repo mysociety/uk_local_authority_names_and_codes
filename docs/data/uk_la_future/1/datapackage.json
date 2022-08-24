@@ -2,7 +2,7 @@
     "name": "uk_la_future",
     "title": "UK Local Authorities (including future)",
     "description": "A dataset that includes current and previous local authorities, as well as some planned but not in force yet\n",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "keywords": [
         "UK Local data",
         "United Kingdom"
@@ -57,7 +57,8 @@
             "1.0.0": "Increment to fixed version",
             "1.0.1": "description changed from 'A dataset that include current and previous local authorities, as well as some planned but not in force yet\n' to 'A dataset that includes current and previous local authorities, as well as some planned but not in force yet\n'",
             "1.0.2": "keywords changed from 'None' to '['UK Local data', 'UK']'",
-            "1.0.3": "keywords changed from '['UK Local data', 'UK']' to '['UK Local data', 'United Kingdom']'"
+            "1.0.3": "keywords changed from '['UK Local data', 'UK']' to '['UK Local data', 'United Kingdom']'",
+            "1.0.4": "Minor change in data for resource(s): uk_local_authorities_future"
         }
     },
     "resources": [
@@ -214,7 +215,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "WOR"
+                        "example": "WSX"
                     },
                     {
                         "name": "combined-authority",
@@ -468,7 +469,7 @@
                 ]
             },
             "_sheet_order": 1,
-            "hash": "ce54b596b7e55a8c6c228ab94fa7e213"
+            "hash": "044ee7027624d31dee3a4edf4a7684f7"
         }
     ]
 }

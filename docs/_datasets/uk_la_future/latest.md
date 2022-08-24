@@ -50,6 +50,7 @@ custom:
     1.0.2: keywords changed from 'None' to '['UK Local data', 'UK']'
     1.0.3: keywords changed from '['UK Local data', 'UK']' to '['UK Local data', 'United
       Kingdom']'
+    1.0.4: 'Minor change in data for resource(s): uk_local_authorities_future'
 resources:
 - title: UK Local Authorities (past/current/future)
   description: Table of information about local authorities, and mapping between different
@@ -171,7 +172,7 @@ resources:
         of this council. Can be none.
       constraints:
         unique: false
-      example: WOR
+      example: WSX
     - name: combined-authority
       type: string
       description: If the council overlaps with a combined authority, the local-authority-code
@@ -353,8 +354,8 @@ resources:
         unique: false
       example: 54906.0
   _sheet_order: 1
-  hash: ce54b596b7e55a8c6c228ab94fa7e213
+  hash: 044ee7027624d31dee3a4edf4a7684f7
   download_id: uk-la-future-uk-local-authorities-future
-full_version: 1.0.3
+full_version: 1.0.4
 permalink: /datasets/uk_la_future/latest
 ---
