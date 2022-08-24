@@ -499,7 +499,7 @@
         "nation": "England",
         "region": "East Midlands",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "NFK",
+        "county-la": "LIN",
         "combined-authority": "",
         "alt-names": [
             "West Lindsey",
@@ -689,7 +689,7 @@
         "nation": "England",
         "region": "South East",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "WAR",
+        "county-la": "SRY",
         "combined-authority": "",
         "alt-names": [
             "Waverley"
@@ -1121,7 +1121,7 @@
         "nation": "England",
         "region": "South East",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "LAN",
+        "county-la": "KEN",
         "combined-authority": "",
         "alt-names": [
             "Thanet"
@@ -1159,7 +1159,7 @@
         "nation": "England",
         "region": "South East",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "HRT",
+        "county-la": "HAM",
         "combined-authority": "",
         "alt-names": [
             "Test Valley"
@@ -1178,7 +1178,7 @@
         "nation": "England",
         "region": "East of England",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "GLS",
+        "county-la": "ESS",
         "combined-authority": "",
         "alt-names": [
             "Tendring"
@@ -1277,7 +1277,7 @@
         "nation": "England",
         "region": "South East",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "WAR",
+        "county-la": "SRY",
         "combined-authority": "",
         "alt-names": [
             "Tandridge"
@@ -1359,7 +1359,7 @@
         "nation": "England",
         "region": "South East",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "LAN",
+        "county-la": "KEN",
         "combined-authority": "",
         "alt-names": [
             "Swale"
@@ -1626,7 +1626,7 @@
         "nation": "England",
         "region": "East of England",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "KEN",
+        "county-la": "HRT",
         "combined-authority": "",
         "alt-names": [
             "Stevenage",
@@ -1650,7 +1650,7 @@
         "nation": "England",
         "region": "West Midlands",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "SFK",
+        "county-la": "STS",
         "combined-authority": "",
         "alt-names": [
             "Staffordshire Moorlands"
@@ -1757,7 +1757,7 @@
         "nation": "England",
         "region": "East of England",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "KEN",
+        "county-la": "HRT",
         "combined-authority": "",
         "alt-names": [
             "St Albans"
@@ -2483,7 +2483,7 @@
         "nation": "England",
         "region": "Yorkshire and The Humber",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "NTT",
+        "county-la": "NYK",
         "combined-authority": "",
         "alt-names": [
             "Scarborough",
@@ -2590,7 +2590,7 @@
         "nation": "England",
         "region": "South East",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "HRT",
+        "county-la": "HAM",
         "combined-authority": "",
         "alt-names": [
             "Rushmoor"
@@ -2797,7 +2797,7 @@
         "nation": "England",
         "region": "North West",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "LEC",
+        "county-la": "LAN",
         "combined-authority": "",
         "alt-names": [
             "Rossendale"
@@ -2879,7 +2879,7 @@
         "nation": "England",
         "region": "North West",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "LEC",
+        "county-la": "LAN",
         "combined-authority": "",
         "alt-names": [
             "Ribble Valley"
@@ -2943,7 +2943,7 @@
         "nation": "England",
         "region": "South East",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "WAR",
+        "county-la": "SRY",
         "combined-authority": "",
         "alt-names": [
             "Reigate and Banstead",
@@ -3180,7 +3180,7 @@
         "nation": "England",
         "region": "North West",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "LEC",
+        "county-la": "LAN",
         "combined-authority": "",
         "alt-names": [
             "Pendle"
@@ -3539,7 +3539,7 @@
         "nation": "England",
         "region": "East Midlands",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "LIN",
+        "county-la": "LEC",
         "combined-authority": "",
         "alt-names": [
             "North West Leicestershire",
@@ -3748,7 +3748,7 @@
         "nation": "England",
         "region": "East of England",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "KEN",
+        "county-la": "HRT",
         "combined-authority": "",
         "alt-names": [
             "North Hertfordshire"
@@ -4081,7 +4081,7 @@
         "nation": "England",
         "region": "South East",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "HRT",
+        "county-la": "HAM",
         "combined-authority": "",
         "alt-names": [
             "New Forest"
@@ -4165,7 +4165,7 @@
         "nation": "England",
         "region": "South East",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "WAR",
+        "county-la": "SRY",
         "combined-authority": "",
         "alt-names": [
             "Mole Valley"
@@ -4492,7 +4492,7 @@
         "nation": "England",
         "region": "East of England",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "GLS",
+        "county-la": "ESS",
         "combined-authority": "",
         "alt-names": [
             "Maldon"
@@ -5436,7 +5436,7 @@
         "nation": "England",
         "region": "North West",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "LEC",
+        "county-la": "LAN",
         "combined-authority": "",
         "alt-names": [
             "Lancaster",
@@ -5652,7 +5652,7 @@
         "nation": "England",
         "region": "North West",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "LEC",
+        "county-la": "LAN",
         "combined-authority": "",
         "alt-names": [
             "Hyndburn"
@@ -6348,7 +6348,7 @@
         "nation": "England",
         "region": "South East",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "LAN",
+        "county-la": "KEN",
         "combined-authority": "",
         "alt-names": [
             "Folkestone and Hythe",
@@ -6573,7 +6573,7 @@
         "nation": "England",
         "region": "South East",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "WAR",
+        "county-la": "SRY",
         "combined-authority": "",
         "alt-names": [
             "Epsom and Ewell",
@@ -6650,7 +6650,7 @@
         "nation": "England",
         "region": "South East",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "HRT",
+        "county-la": "HAM",
         "combined-authority": "",
         "alt-names": [
             "Eastleigh"
@@ -6729,7 +6729,7 @@
         "nation": "England",
         "region": "West Midlands",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "SFK",
+        "county-la": "STS",
         "combined-authority": "",
         "alt-names": [
             "East Staffordshire",
@@ -7142,7 +7142,7 @@
         "nation": "England",
         "region": "South East",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "LAN",
+        "county-la": "KEN",
         "combined-authority": "",
         "alt-names": [
             "Dover"
@@ -7436,7 +7436,7 @@
         "nation": "England",
         "region": "East of England",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "KEN",
+        "county-la": "HRT",
         "combined-authority": "",
         "alt-names": [
             "Dacorum"
@@ -7784,7 +7784,7 @@
         "nation": "England",
         "region": "East of England",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "GLS",
+        "county-la": "ESS",
         "combined-authority": "",
         "alt-names": [
             "Colchester"
@@ -8111,7 +8111,7 @@
         "nation": "England",
         "region": "East Midlands",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "DEV",
+        "county-la": "DBY",
         "combined-authority": "",
         "alt-names": [
             "Chesterfield"
@@ -8211,7 +8211,7 @@
         "nation": "England",
         "region": "East of England",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "GLS",
+        "county-la": "ESS",
         "combined-authority": "",
         "alt-names": [
             "Chelmsford",
@@ -8414,7 +8414,7 @@
         "nation": "England",
         "region": "South East",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "LAN",
+        "county-la": "KEN",
         "combined-authority": "",
         "alt-names": [
             "Canterbury"
@@ -8580,7 +8580,7 @@
         "nation": "England",
         "region": "North West",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "LEC",
+        "county-la": "LAN",
         "combined-authority": "",
         "alt-names": [
             "Burnley"
@@ -8835,7 +8835,7 @@
         "nation": "England",
         "region": "East of England",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "GLS",
+        "county-la": "ESS",
         "combined-authority": "",
         "alt-names": [
             "Braintree",
@@ -9009,7 +9009,7 @@
         "nation": "England",
         "region": "East Midlands",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "DEV",
+        "county-la": "DBY",
         "combined-authority": "",
         "alt-names": [
             "Bolsover"
@@ -9201,7 +9201,7 @@
         "nation": "England",
         "region": "East Midlands",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "OXF",
+        "county-la": "BAE",
         "combined-authority": "",
         "alt-names": [
             "Bassetlaw"
@@ -9220,7 +9220,7 @@
         "nation": "England",
         "region": "South East",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "HRT",
+        "county-la": "HAM",
         "combined-authority": "",
         "alt-names": [
             "Basingstoke and Deane",
@@ -9398,7 +9398,7 @@
         "nation": "England",
         "region": "South East",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "LAN",
+        "county-la": "KEN",
         "combined-authority": "",
         "alt-names": [
             "Ashford"
@@ -9654,7 +9654,7 @@
         "nation": "England",
         "region": "South East",
         "local-authority-type-name": "Non-metropolitan district",
-        "county-la": "WOR",
+        "county-la": "WSX",
         "combined-authority": "",
         "alt-names": [
             "Adur"
