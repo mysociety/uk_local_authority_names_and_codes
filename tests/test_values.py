@@ -90,22 +90,65 @@ def test_valid_codes(df):
 @use_both_dfs
 def test_counties(df):
     # test all refs to counties are to authorities assigned as countries
-    valid_mask = (
-        df["local-authority-type-name"].isin(["County"]) & df["end-date"].isna()
-    )
-    valid_authorities = df[valid_mask]["local-authority-code"]
-    result = df["county-la"].isin(valid_authorities) | df["county-la"].isna()
-    assert ~result.any() == False
+    id_type_lookup = df[
+        ["local-authority-code", "official-name", "local-authority-type-name"]
+    ]
+    id_type_lookup.columns = ["county-la", "county-name", "county-type"]
+
+    ndf = df.merge(id_type_lookup)
+    ndf["county-type"] = ndf["county-type"].fillna("")
+    ndf = ndf[~ndf["county-type"].isin(["County", ""])]
+    assert len(ndf) == 0
 
 
 @use_both_dfs
 def test_combined_refs(df):
     # test all refs to combined authorities are to authorities assigned as combs or strategic
-    types = ["Combined authority", "Strategic Regional Authority"]
-    valid_mask = df["local-authority-type-name"].isin(types) & df["end-date"].isna()
-    valid_authorities = df[valid_mask]["local-authority-code"]
-    result = df["combined-authority"].isin(valid_authorities) | df["county-la"].isna()
-    assert ~result.any() == False
+    id_type_lookup = df[
+        ["local-authority-code", "official-name", "local-authority-type-name"]
+    ]
+    id_type_lookup.columns = ["combined-authority", "county-name", "county-type"]
+
+    ndf = df.merge(id_type_lookup)
+    ndf["county-type"] = ndf["county-type"].fillna("")
+    ndf = ndf[
+        ~ndf["county-type"].isin(
+            ["Combined authority", "Strategic Regional Authority", ""]
+        )
+    ]
+    assert len(ndf) == 0
+
+
+@use_both_dfs
+def test_county_lookup_matches_reference(df):
+    gss_lookup = pd.read_csv(current_package / "lookup_gss_to_registry.csv")
+    lookup = gss_lookup.set_index("gss-code")["local-authority-code"].to_dict()
+    gss_lookup = pd.read_csv(current_package / "lookup_gss_to_registry.csv")
+    lookup = gss_lookup.set_index("gss-code")["local-authority-code"].to_dict()
+    tier_lookup = pd.read_csv(
+        Path(
+            "data",
+            "validation",
+            "Local_Authority_District_to_County_(April_2021)_Lookup_in_England.csv",
+        )
+    )[["LAD21CD", "CTY21CD"]]
+    tier_lookup.columns = ["lad", "county"]
+    tier_lookup["local-authority-code"] = tier_lookup.lad.map(lookup)
+    tier_lookup["validated-county-id"] = tier_lookup.county.map(lookup)
+    tier_lookup[~tier_lookup["validated-county-id"].isna()]
+    tier_lookup = tier_lookup[["local-authority-code", "validated-county-id"]]
+    d = df.merge(tier_lookup, on="local-authority-code")[
+        ["local-authority-code", "official-name", "county-la", "validated-county-id"]
+    ]
+    d = d[d["county-la"] != d["validated-county-id"]]
+    d = d[~d["validated-county-id"].isna()]
+    assert len(d) == 0
+
+
+@use_both_dfs
+def test_nmd_all_have_counties(df):
+    df = df[(df["local-authority-type"] == "NMD") & df["county-la"].isna()]
+    assert len(df) == 0
 
 
 @use_both_dfs
