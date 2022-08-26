@@ -2,7 +2,7 @@
     "name": "uk_la_past_current",
     "title": "UK Local Authorities (past and current)",
     "description": "A dataset that includes current and some past local authorities",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "keywords": [
         "UK Local data",
         "UK"
@@ -68,7 +68,8 @@
             "1.0.0": "Increment to fixed version",
             "1.0.1": "description changed from 'A dataset that include current and some past local authorities' to 'A dataset that includes current and some past local authorities'",
             "1.0.2": "keywords changed from 'None' to '['UK Local data', 'UK']'",
-            "1.0.3": "Minor change in data for resource(s): uk_local_authorities_current"
+            "1.0.3": "Minor change in data for resource(s): uk_local_authorities_current",
+            "1.0.4": "Minor change in data for resource(s): uk_local_authorities_current"
         }
     },
     "resources": [
@@ -479,7 +480,7 @@
                 ]
             },
             "_sheet_order": 1,
-            "hash": "b03beb4206ad65c28777896d8d19a083"
+            "hash": "ef5ed1db1385e28dc0047fd9f9016ae9"
         },
         {
             "title": "GSS to local authority code lookup",

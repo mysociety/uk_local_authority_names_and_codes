@@ -2,7 +2,7 @@
     "name": "uk_la_past_current",
     "title": "UK Local Authorities (past and current)",
     "description": "A dataset that includes current and some past local authorities",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "keywords": [
         "UK Local data",
         "UK"
@@ -427,7 +427,7 @@
                 ]
             },
             "_sheet_order": 1,
-            "hash": "b03beb4206ad65c28777896d8d19a083",
+            "hash": "ef5ed1db1385e28dc0047fd9f9016ae9",
             "data": [
                 {
                     "local-authority-code": "ABC",
@@ -1081,7 +1081,7 @@
                     "region": "East Midlands",
                     "local-authority-type": "NMD",
                     "local-authority-type-name": "Non-metropolitan district",
-                    "county-la": "BAE",
+                    "county-la": "NTT",
                     "combined-authority": "",
                     "alt-names": "Bassetlaw",
                     "former-gss-codes": "",
