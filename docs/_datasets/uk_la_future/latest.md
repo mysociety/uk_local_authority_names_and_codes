@@ -52,6 +52,7 @@ custom:
       Kingdom']'
     1.0.4: 'Minor change in data for resource(s): uk_local_authorities_future'
     1.0.5: 'Minor change in data for resource(s): uk_local_authorities_future'
+    1.0.6: 'Minor change in data for resource(s): uk_local_authorities_future'
 resources:
 - title: UK Local Authorities (past/current/future)
   description: Table of information about local authorities, and mapping between different
@@ -355,8 +356,8 @@ resources:
         unique: false
       example: 54906.0
   _sheet_order: 1
-  hash: 5dd74729909ca7133dd2589131b3d111
+  hash: edeb4cf1869d74685086f2767a898c08
   download_id: uk-la-future-uk-local-authorities-future
-full_version: 1.0.5
+full_version: 1.0.6
 permalink: /datasets/uk_la_future/latest
 ---
