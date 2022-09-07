@@ -33,9 +33,22 @@ jobs:
             dataset version auto --auto-ban major --all --publish
             
       - name: Push new data
+        id: auto-commit-action
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: "Update local authority data based on source changes"
+          commit_message: "Update repo data based on source changes"
+
+      - name: Send GitHub Action trigger data to Slack workflow
+        id: slack
+        if: steps.auto-commit-action.outputs.changes_detected == 'true'
+        uses: slackapi/slack-github-action@v1.19.0
+        with:
+          payload: |
+            {
+              "repo_url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.HAPPY_DATABOT_SLACK_WEBHOOK }}     
 
       - name: Setup Pages
         uses: actions/configure-pages@v1
@@ -45,11 +58,23 @@ jobs:
         with:
           source: docs
           destination: docs/_site
-          
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           path: docs/_site
+
+      - name: Send GitHub Action trigger data to Slack workflow (if failed)
+        if: ${{ failure() }}
+        id: slack-failed
+        uses: slackapi/slack-github-action@v1.19.0
+        with:
+          payload: |
+            {
+              "repo_url": "${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SAD_DATABOT_SLACK_WEBHOOK }}     
 
 
   deploy:
