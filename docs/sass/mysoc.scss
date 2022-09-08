@@ -15,25 +15,29 @@ $theme_dir: '../theme';
 @import "global";
 @import "bootstrap-compat";
 @import "header";
-@import "mysoc-jkan";
+@import "mysoc-download";
 
 .main-content {
     background: #fff;
     padding: 1.6em 5%;
     position: relative;
     margin-bottom: $base-spacing-unit;
+
     h2 {
         border-top: 0px;
         padding-top: 1px;
     }
+
     h3 {
         padding-top: 10px;
     }
-    .lead + h2 {
+
+    .lead+h2 {
         border-top: none;
         padding-top: 0;
     }
-    .reveal-on-click + h2 {
+
+    .reveal-on-click+h2 {
         border-top: none;
     }
 
