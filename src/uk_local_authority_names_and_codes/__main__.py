@@ -1,15 +1,13 @@
-from data_common.management.cli import cli, set_doc_collection
-from data_common.management.render_processing import DocumentCollection
-from pathlib import Path
 import rich_click as click
 from uk_local_authority_names_and_codes.build import (
     create_all_files,
     create_future_only,
 )
 
-if Path("render.yaml").exists():
-    doc_collection = DocumentCollection.from_yaml("render.yaml")
-    set_doc_collection(doc_collection)
+
+@click.group()
+def cli():
+    pass
 
 
 @cli.command()
