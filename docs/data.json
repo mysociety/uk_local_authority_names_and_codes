@@ -1,0 +1,39 @@
+---
+layout: null
+---
+
+{% assign downloads = site.downloads | sort: "package" | group_by:"package"  %}
+
+{
+{% for d in downloads %}
+    {% assign latest = d.items | where: "version", "latest" | first %}
+    "{{ d.name }}": {
+    "latest_version": "{{latest.full_version}}",
+    "versions":{
+    {% assign versions = d.items | group_by:"version"  %}
+    {% for v in versions %}
+        {% assign first_item = v.items | first %}
+        {% assign package = site.datasets | where:"name", d.name | where:"version", v | first %}
+        "{{ v.name }}": {
+            "full_version": "{{first_item.full_version}}",
+            "files":{
+            "datapackage.json": {
+                "url":"{{ site.url }}{{ site.baseurl }}/data/{{d.name}}/{{v.name}}/datapackage.json",
+                "survey_link": "{{ site.url }}{{ site.baseurl }}{{first_item.permalink}}#survey"
+                },
+        {% for i in v.items %}
+            "{{ i.filename }}": {
+                "url": "{{ site.url }}{{ site.baseurl }}{{ i.file }}",
+                "survey_link": "{{ site.url }}{{ site.baseurl }}{{first_item.permalink}}#survey"
+
+            }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+        }
+        }{% unless forloop.last %},{% endunless %}
+        
+    {% endfor %}
+    } {% unless forloop.last %},{% endunless %}
+{% endfor %}
+}
+}
+}
