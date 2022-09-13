@@ -2,8 +2,8 @@ FROM ghcr.io/mysociety/data_common:sha-d9f1058
 
 # Make an empty project directory so the 'self' setup doesn't fail and scripts can be setup
 # Override the .pth created at previous stages to point to where the working directory will land
-COPY pyproject.toml /setup/ 
-COPY src/data_common/pyproject.toml /setup/src/data_common/
+COPY pyproject.toml poetry.loc[k] /setup/ 
+COPY src/data_common/pyproject.toml src/data_common/poetry.loc[k] /setup/src/data_common/
 RUN mkdir /setup/src/uk_local_authority_names_and_codes && touch /setup/src/uk_local_authority_names_and_codes/__init__.py \
     && touch /setup/src/data_common/__init__.py \
     && export PATH="$HOME/.poetry/bin:$PATH" \
