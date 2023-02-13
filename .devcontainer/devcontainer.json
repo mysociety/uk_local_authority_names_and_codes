@@ -7,16 +7,18 @@
 		".devcontainer/initializeCommand"
 	],
 	"postCreateCommand": ".devcontainer/postCreateCommand",
-	"workspaceFolder": "/workspaces/template_data_repo",
-	"extensions": [
-		"ms-vscode.test-adapter-converter",
-		"bungcip.better-toml",
-		"ms-python.python",
-		"ms-python.vscode-pylance",
-		"ms-azuretools.vscode-docker",
-		"valentjn.vscode-ltex"
-	],
+	"workspaceFolder": "/workspaces/uk_local_authorities_names_and_codes",
 	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.test-adapter-converter",
+				"bungcip.better-toml",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-azuretools.vscode-docker",
+				"valentjn.vscode-ltex"
+			]
+		},
 		"codespaces": {
 			"repositories": {
 				"mysociety/data_common": {
