@@ -7,7 +7,7 @@
 		".devcontainer/initializeCommand"
 	],
 	"postCreateCommand": ".devcontainer/postCreateCommand",
-	"workspaceFolder": "/workspaces/uk_local_authorities_names_and_codes",
+	"workspaceFolder": "/workspaces/uk_local_authority_names_and_codes",
 	"customizations": {
 		"vscode": {
 			"extensions": [
