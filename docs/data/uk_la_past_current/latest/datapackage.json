@@ -2,7 +2,7 @@
     "name": "uk_la_past_current",
     "title": "UK Local Authorities (past and current)",
     "description": "A dataset that includes current and some past local authorities",
-    "version": "1.0.5",
+    "version": "1.1.0",
     "keywords": [
         "UK Local data",
         "UK"
@@ -70,7 +70,8 @@
             "1.0.2": "keywords changed from 'None' to '['UK Local data', 'UK']'",
             "1.0.3": "Minor change in data for resource(s): uk_local_authorities_current",
             "1.0.4": "Minor change in data for resource(s): uk_local_authorities_current",
-            "1.0.5": "Minor change in data for resource(s): uk_local_authorities_current"
+            "1.0.5": "Minor change in data for resource(s): uk_local_authorities_current",
+            "1.1.0": "Change in data for resource(s): lookup_gss_to_registry,lookup_lsoa_to_registry,lookup_name_to_registry"
         }
     },
     "resources": [

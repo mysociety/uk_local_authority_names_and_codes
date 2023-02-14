@@ -5,6 +5,6 @@ package: uk_la_past_current
 title: lookup_lsoa_to_registry
 filename: lookup_lsoa_to_registry.parquet
 version: latest
-full_version: 1.0.5
+full_version: 1.1.0
 file: /data/uk_la_past_current/latest/lookup_lsoa_to_registry.parquet
 ---
