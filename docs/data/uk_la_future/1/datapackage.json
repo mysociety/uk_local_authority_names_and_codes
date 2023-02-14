@@ -2,7 +2,7 @@
     "name": "uk_la_future",
     "title": "UK Local Authorities (including future)",
     "description": "A dataset that includes current and previous local authorities, as well as some planned but not in force yet\n",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "keywords": [
         "UK Local data",
         "United Kingdom"
@@ -60,7 +60,8 @@
             "1.0.3": "keywords changed from '['UK Local data', 'UK']' to '['UK Local data', 'United Kingdom']'",
             "1.0.4": "Minor change in data for resource(s): uk_local_authorities_future",
             "1.0.5": "Minor change in data for resource(s): uk_local_authorities_future",
-            "1.0.6": "Minor change in data for resource(s): uk_local_authorities_future"
+            "1.0.6": "Minor change in data for resource(s): uk_local_authorities_future",
+            "1.0.7": "uk_local_authorities_future: example changed from Armagh City, Banbridge and Craigavon Borough Council to Aberdeen City Council"
         }
     },
     "resources": [
