@@ -1,7 +1,7 @@
 title: LSOA to local authority code lookup
 description: Dataset that maps LSOA the ID for the council.
 custom:
-  row_count: 42619
+  row_count: 42620
 path: lookup_lsoa_to_registry.csv
 name: lookup_lsoa_to_registry
 profile: tabular-data-resource
@@ -23,5 +23,5 @@ schema:
     description: Fixed ID for council, not linked to boundary changes.
     constraints:
       unique: false
-    example: ANN
+    example: ABC
 hash: 78b701d09decc0fffd491e3534e80aea

@@ -6,3 +6,4 @@
 *.xlsx binary
 *.xls binary
 *.pdf binary
+*.parquet binary

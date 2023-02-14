@@ -1,7 +1,7 @@
 title: Name to local authority code lookup
 description: Dataset that maps variations on a name to the the ID for the council.
 custom:
-  row_count: 1750
+  row_count: 1751
 path: lookup_name_to_registry.csv
 name: lookup_name_to_registry
 profile: tabular-data-resource
@@ -16,7 +16,7 @@ schema:
     description: Variations in format and spelling of local authority names.
     constraints:
       unique: false
-    example: Armagh City, Banbridge and Craigavon Borough Council
+    example: Aberdeen City
   - name: local-authority-code
     type: string
     description: Fixed ID for council, not linked to boundary changes.

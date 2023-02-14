@@ -105,7 +105,7 @@
                         "constraints": {
                             "unique": true
                         },
-                        "example": "Armagh City, Banbridge and Craigavon Borough Council"
+                        "example": "Aberdeen City Council"
                     },
                     {
                         "name": "nice-name",
@@ -114,7 +114,7 @@
                         "constraints": {
                             "unique": true
                         },
-                        "example": "Armagh City, Banbridge and Craigavon"
+                        "example": "Aberdeen City"
                     },
                     {
                         "name": "gss-code",
@@ -123,7 +123,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "N09000002"
+                        "example": "E06000001"
                     },
                     {
                         "name": "start-date",
@@ -132,7 +132,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "2015-04-01"
+                        "example": "1974-04-01"
                     },
                     {
                         "name": "end-date",
@@ -141,7 +141,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "2020-03-31"
+                        "example": "2015-03-31"
                     },
                     {
                         "name": "replaced-by",
@@ -150,7 +150,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "BUC"
+                        "example": "BPC"
                     },
                     {
                         "name": "nation",
@@ -165,7 +165,7 @@
                                 "Wales"
                             ]
                         },
-                        "example": "Northern Ireland"
+                        "example": "England"
                     },
                     {
                         "name": "region",
@@ -174,7 +174,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "Northern Ireland"
+                        "example": "East Midlands"
                     },
                     {
                         "name": "local-authority-type",
@@ -196,7 +196,7 @@
                                 "CC"
                             ]
                         },
-                        "example": "NID"
+                        "example": "CC"
                     },
                     {
                         "name": "local-authority-type-name",
@@ -218,7 +218,7 @@
                                 "City corporation"
                             ]
                         },
-                        "example": "NI district"
+                        "example": "City corporation"
                     },
                     {
                         "name": "county-la",
@@ -227,7 +227,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "WSX"
+                        "example": "BKM"
                     },
                     {
                         "name": "combined-authority",
@@ -236,7 +236,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "WECA"
+                        "example": "CPCA"
                     },
                     {
                         "name": "alt-names",
@@ -245,7 +245,7 @@
                         "constraints": {
                             "unique": true
                         },
-                        "example": "Armagh City, Banbridge and Craigavon,armagh city, banbridge and craigavon,armagh, banbridge and craigavon"
+                        "example": "Aberdeen City,aberdeen c ity,aberdeen city,aberdeen city council,aberdeen cuty,aberdeen,city of aberdeen"
                     },
                     {
                         "name": "former-gss-codes",
@@ -254,7 +254,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "S12000009"
+                        "example": "E06000048"
                     },
                     {
                         "name": "notes",
@@ -276,7 +276,7 @@
                                 false
                             ]
                         },
-                        "example": "True"
+                        "example": "False"
                     },
                     {
                         "name": "BS-6879",
@@ -294,7 +294,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "E3831"
+                        "example": "E0101"
                     },
                     {
                         "name": "even-older-register-and-code",
@@ -312,7 +312,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "armagh-banbridge-craigavon"
+                        "example": "aberdeen"
                     },
                     {
                         "name": "area",
@@ -321,7 +321,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 1338.0
+                        "example": 3.0
                     },
                     {
                         "name": "pop-2020",
@@ -330,7 +330,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 217232.0
+                        "example": 2226.0
                     },
                     {
                         "name": "x",
@@ -339,7 +339,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 110637.8371026796
+                        "example": 43329.5655016295
                     },
                     {
                         "name": "y",
@@ -348,7 +348,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 506234.4148047699
+                        "example": 13020.5326643405
                     },
                     {
                         "name": "long",
@@ -357,7 +357,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 54.3691915939
+                        "example": 49.9369329141
                     },
                     {
                         "name": "lat",
@@ -366,7 +366,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": -6.4567240923
+                        "example": -7.5037843639
                     },
                     {
                         "name": "powers",
@@ -382,7 +382,7 @@
                                 "combined"
                             ]
                         },
-                        "example": "ni district"
+                        "example": "combined"
                     },
                     {
                         "name": "lower-or-unitary",
@@ -395,7 +395,7 @@
                                 false
                             ]
                         },
-                        "example": "True"
+                        "example": "False"
                     },
                     {
                         "name": "mapit-area-code",
@@ -404,7 +404,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "DIS"
+                        "example": "COI"
                     },
                     {
                         "name": "ofcom",
@@ -413,7 +413,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "95-OQN"
+                        "example": "00-BL"
                     },
                     {
                         "name": "old-ons-la-code",
@@ -422,7 +422,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "45UB"
+                        "example": "11UB"
                     },
                     {
                         "name": "old-register-and-code",
@@ -431,7 +431,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "local-authority-nir:ABC"
+                        "example": "local-authority-eng:ADU"
                     },
                     {
                         "name": "open-council-data-id",
@@ -440,7 +440,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 1002.0
+                        "example": 1.0
                     },
                     {
                         "name": "os-file",
@@ -458,7 +458,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 7000000000030110.0
+                        "example": 7000000000000000.0
                     },
                     {
                         "name": "snac",
@@ -467,7 +467,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "00QB"
+                        "example": "00AA"
                     },
                     {
                         "name": "wdtk-id",
@@ -476,7 +476,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 54906.0
+                        "example": 3.0
                     }
                 ]
             },
@@ -487,7 +487,7 @@
             "title": "GSS to local authority code lookup",
             "description": "Dataset that maps current and past gss codes (e.g. E07000239) for an area to the ID for the council.",
             "custom": {
-                "row_count": 475
+                "row_count": 476
             },
             "path": "lookup_gss_to_registry.csv",
             "name": "lookup_gss_to_registry",
@@ -505,7 +505,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "N09000002"
+                        "example": "E06000001"
                     },
                     {
                         "name": "local-authority-code",
@@ -524,7 +524,7 @@
             "title": "LSOA to local authority code lookup",
             "description": "Dataset that maps LSOA the ID for the council.",
             "custom": {
-                "row_count": 42619
+                "row_count": 42620
             },
             "path": "lookup_lsoa_to_registry.csv",
             "name": "lookup_lsoa_to_registry",
@@ -551,7 +551,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "ANN"
+                        "example": "ABC"
                     }
                 ]
             },
@@ -561,7 +561,7 @@
             "title": "Name to local authority code lookup",
             "description": "Dataset that maps variations on a name to the the ID for the council.",
             "custom": {
-                "row_count": 1750
+                "row_count": 1751
             },
             "path": "lookup_name_to_registry.csv",
             "name": "lookup_name_to_registry",
@@ -579,7 +579,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "Armagh City, Banbridge and Craigavon Borough Council"
+                        "example": "Aberdeen City"
                     },
                     {
                         "name": "local-authority-code",
