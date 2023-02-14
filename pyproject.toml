@@ -29,6 +29,6 @@ default_page_title = "Settings file defined title"
 [tool.dataset]
 dataset_dir = "data/packages"
 publish_dir = "docs/"
-publish_url = "https://mysociety.github.io/uk_local_authority_names_and_codes/datasets/"
+publish_url = "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/"
 credit_text = "If you find this data useful, please let us know to help us make the case for future funding."
 credit_url = "https://survey.alchemer.com/s3/6876792/Data-usage"
