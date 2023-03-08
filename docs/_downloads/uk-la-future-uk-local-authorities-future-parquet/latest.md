@@ -5,6 +5,6 @@ package: uk_la_future
 title: uk_local_authorities_future
 filename: uk_local_authorities_future.parquet
 version: latest
-full_version: 1.0.8
+full_version: 1.1.0
 file: /data/uk_la_future/latest/uk_local_authorities_future.parquet
 ---

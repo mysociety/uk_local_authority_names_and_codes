@@ -56,6 +56,7 @@ custom:
     1.0.7: 'uk_local_authorities_future: example changed from Armagh City, Banbridge
       and Craigavon Borough Council to Aberdeen City Council'
     1.0.8: Added rough figures for pop, area, location for new 2023 c
+    1.1.0: Added seperate future name lookup
   formats:
     csv: true
     parquet: true
@@ -363,6 +364,35 @@ resources:
       example: 3.0
   _sheet_order: 1
   hash: 18009a9e502cbe5ae0b9ac0f6389de6a
-full_version: 1.0.8
+- title: Lookup table for local authority names to local authority codes (includes
+    future councils)
+  description: This is a lookup table for local authority names to local authority
+    codes (includes future councils)
+  custom:
+    row_count: 1763
+  path: lookup_name_to_registry.csv
+  name: lookup_name_to_registry
+  profile: tabular-data-resource
+  scheme: file
+  format: csv
+  hashing: md5
+  encoding: utf-8
+  schema:
+    fields:
+    - name: la-name
+      type: string
+      description: Local authority name
+      constraints:
+        unique: false
+      example: Aberdeen City
+    - name: local-authority-code
+      type: string
+      description: Local authority code (three letters for standard councils, four
+        letters for combined authorities)
+      constraints:
+        unique: false
+      example: ABC
+  hash: c165e8b60baec96ecfac2e9e05e52362
+full_version: 1.1.0
 permalink: /datasets/uk_la_future/latest
 ---

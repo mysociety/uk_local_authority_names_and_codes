@@ -25,9 +25,12 @@ versions:
   1.0.7:
   - 1.0.7
   1.0.8:
-  - '1'
   - '1.0'
   - 1.0.8
+  1.1.0:
+  - '1'
+  - '1.1'
+  - 1.1.0
   - latest
 permalink: /datasets/uk_la_future/versions
 ---

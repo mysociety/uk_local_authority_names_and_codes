@@ -146,16 +146,25 @@ def create_legacy_compatible():
     to_json_and_csv(df, data_dir, "uk_local_authorities")
 
 
-def create_name_lookup():
+def create_name_lookup(future: bool = False):
     """
     Create a lookup from all variations of name to the single canonical three-letter-code
     """
 
-    df = pd.read_json(
-        Path(current_package, "uk_local_authorities_current.json"),
-        typ="frame",
-        orient="records",
-    )
+    if future:
+        out_dir = future_package
+        df = pd.read_json(
+            Path(future_package, "uk_local_authorities_future.json"),
+            typ="frame",
+            orient="records",
+        )
+    else:
+        out_dir = current_package
+        df = pd.read_json(
+            Path(current_package, "uk_local_authorities_current.json"),
+            typ="frame",
+            orient="records",
+        )
     df["la-name"] = df["official-name"].apply(lambda x: [x]) + df["alt-names"]
 
     ndf = (
@@ -165,8 +174,7 @@ def create_name_lookup():
         .reset_index()
     )
     ndf = ndf[ndf.columns[::-1]]
-    ndf.to_csv(Path(current_package, "lookup_name_to_registry.csv"), index=False)
-    ndf.to_csv(Path(data_dir, "lookup_name_to_registry.csv"), index=False)
+    ndf.to_csv(Path(out_dir, "lookup_name_to_registry.csv"), index=False)
 
 
 def create_gss_lookup():
@@ -281,6 +289,8 @@ def create_all_files():
     create_without_future()
     blue_print("Creating name lookup")
     create_name_lookup()
+    blue_print("Creating name lookup - future")
+    create_name_lookup(future=True)
     blue_print("Creating gss lookup")
     create_gss_lookup()
     blue_print("Creating legacy compatible files")
