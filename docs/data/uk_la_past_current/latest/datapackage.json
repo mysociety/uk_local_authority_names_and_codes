@@ -2,7 +2,7 @@
     "name": "uk_la_past_current",
     "title": "UK Local Authorities (past and current)",
     "description": "A dataset that includes current and some past local authorities",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "keywords": [
         "UK Local data",
         "UK"
@@ -71,7 +71,8 @@
             "1.0.3": "Minor change in data for resource(s): uk_local_authorities_current",
             "1.0.4": "Minor change in data for resource(s): uk_local_authorities_current",
             "1.0.5": "Minor change in data for resource(s): uk_local_authorities_current",
-            "1.1.0": "Change in data for resource(s): lookup_gss_to_registry,lookup_lsoa_to_registry,lookup_name_to_registry"
+            "1.1.0": "Change in data for resource(s): lookup_gss_to_registry,lookup_lsoa_to_registry,lookup_name_to_registry",
+            "1.2.0": "Added gss codes for 2023 councils"
         }
     },
     "resources": [
@@ -79,7 +80,7 @@
             "title": "UK Local Authorities (past/current)",
             "description": "Table of information about local authorities, and mapping between different ID schemes. Includes current and some past authorities.",
             "custom": {
-                "row_count": 462
+                "row_count": 466
             },
             "path": "uk_local_authorities_current.csv",
             "name": "uk_local_authorities_current",
@@ -113,7 +114,7 @@
                         "type": "string",
                         "description": "A shorter name for the council.",
                         "constraints": {
-                            "unique": true
+                            "unique": false
                         },
                         "example": "Aberdeen City"
                     },
@@ -482,13 +483,13 @@
                 ]
             },
             "_sheet_order": 1,
-            "hash": "6119b8c301ab4cc401e1af242decb261"
+            "hash": "fd0e8ea950989dcfbd36f1fb7a4991cc"
         },
         {
             "title": "GSS to local authority code lookup",
             "description": "Dataset that maps current and past gss codes (e.g. E07000239) for an area to the ID for the council.",
             "custom": {
-                "row_count": 476
+                "row_count": 480
             },
             "path": "lookup_gss_to_registry.csv",
             "name": "lookup_gss_to_registry",
@@ -519,7 +520,7 @@
                     }
                 ]
             },
-            "hash": "33b9c7ebf202123c457be60d107707c1"
+            "hash": "d9fcebb8d7a6fc20647f0e6b83217de7"
         },
         {
             "title": "LSOA to local authority code lookup",
@@ -556,13 +557,13 @@
                     }
                 ]
             },
-            "hash": "78b701d09decc0fffd491e3534e80aea"
+            "hash": "a63221c4082a24958b1e2d9a560031b3"
         },
         {
             "title": "Name to local authority code lookup",
             "description": "Dataset that maps variations on a name to the the ID for the council.",
             "custom": {
-                "row_count": 1751
+                "row_count": 1763
             },
             "path": "lookup_name_to_registry.csv",
             "name": "lookup_name_to_registry",
@@ -593,7 +594,7 @@
                     }
                 ]
             },
-            "hash": "10c6ca51145360a9587cfe7c71a9950f"
+            "hash": "c165e8b60baec96ecfac2e9e05e52362"
         }
     ]
 }
