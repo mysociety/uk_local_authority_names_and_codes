@@ -301,7 +301,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"ALL",
         "ecode":"E0931",
         "even-older-register-and-code":"",
@@ -882,7 +882,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"BAR",
         "ecode":"E0932",
         "even-older-register-and-code":"",
@@ -2684,7 +2684,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"CAR",
         "ecode":"E0933",
         "even-older-register-and-code":"",
@@ -2848,7 +2848,7 @@
         "local-authority-code":"CBD",
         "official-name":"Cumberland Council",
         "nice-name":"Cumberland",
-        "gss-code":"",
+        "gss-code":"E06000063",
         "start-date":"2023-04-01",
         "end-date":"",
         "replaced-by":"",
@@ -3640,7 +3640,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"CMA",
         "ecode":"E0920",
         "even-older-register-and-code":"",
@@ -3870,7 +3870,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"COP",
         "ecode":"E0934",
         "even-older-register-and-code":"",
@@ -4093,7 +4093,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"CRA",
         "ecode":"E2731",
         "even-older-register-and-code":"",
@@ -5483,7 +5483,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"EDN",
         "ecode":"E0935",
         "even-older-register-and-code":"",
@@ -7496,7 +7496,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"HAE",
         "ecode":"E2732",
         "even-older-register-and-code":"",
@@ -7540,7 +7540,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"HAG",
         "ecode":"E2753",
         "even-older-register-and-code":"",
@@ -10451,7 +10451,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"MEN",
         "ecode":"E3331",
         "even-older-register-and-code":"",
@@ -13559,7 +13559,7 @@
         "local-authority-code":"NYE",
         "official-name":"North Yorkshire Council",
         "nice-name":"North Yorkshire",
-        "gss-code":"",
+        "gss-code":"E06000065",
         "start-date":"2023-04-01",
         "end-date":"",
         "replaced-by":"",
@@ -13624,7 +13624,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"NYK",
         "ecode":"E2721",
         "even-older-register-and-code":"",
@@ -14831,7 +14831,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"RIH",
         "ecode":"E2734",
         "even-older-register-and-code":"",
@@ -15277,7 +15277,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"RYE",
         "ecode":"E2755",
         "even-older-register-and-code":"",
@@ -15597,7 +15597,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"SCE",
         "ecode":"E2736",
         "even-older-register-and-code":"",
@@ -15776,7 +15776,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"SEG",
         "ecode":"E3332",
         "even-older-register-and-code":"",
@@ -15820,7 +15820,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"SEL",
         "ecode":"E2757",
         "even-older-register-and-code":"",
@@ -16428,7 +16428,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"SLA",
         "ecode":"E0936",
         "even-older-register-and-code":"",
@@ -16595,7 +16595,7 @@
         "local-authority-code":"SMT",
         "official-name":"Somerset Council",
         "nice-name":"Somerset",
-        "gss-code":"",
+        "gss-code":"E06000066",
         "start-date":"2023-04-01",
         "end-date":"",
         "replaced-by":"",
@@ -16839,7 +16839,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"SOM",
         "ecode":"E3320",
         "even-older-register-and-code":"",
@@ -17111,7 +17111,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"SSO",
         "ecode":"E3334",
         "even-older-register-and-code":"",
@@ -18034,7 +18034,7 @@
 
         ],
         "notes":"",
-        "current-authority":true,
+        "current-authority":false,
         "BS-6879":"SWT",
         "ecode":"",
         "even-older-register-and-code":"",
@@ -19143,7 +19143,7 @@
         "local-authority-code":"WAF",
         "official-name":"Westmorland and Furness Council",
         "nice-name":"Westmorland and Furness",
-        "gss-code":"",
+        "gss-code":"E06000064",
         "start-date":"2023-04-01",
         "end-date":"",
         "replaced-by":"",

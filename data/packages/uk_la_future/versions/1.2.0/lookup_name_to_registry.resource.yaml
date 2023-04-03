@@ -1,5 +1,7 @@
-title: Name to local authority code lookup
-description: Dataset that maps variations on a name to the the ID for the council.
+title: Lookup table for local authority names to local authority codes (includes future
+  councils)
+description: This is a lookup table for local authority names to local authority codes
+  (includes future councils)
 custom:
   row_count: 1763
 path: lookup_name_to_registry.csv
@@ -13,13 +15,14 @@ schema:
   fields:
   - name: la-name
     type: string
-    description: Variations in format and spelling of local authority names.
+    description: Local authority name
     constraints:
       unique: false
     example: Aberdeen City
   - name: local-authority-code
     type: string
-    description: Fixed ID for council, not linked to boundary changes.
+    description: Local authority code (three letters for standard councils, four letters
+      for combined authorities)
     constraints:
       unique: false
     example: ABC

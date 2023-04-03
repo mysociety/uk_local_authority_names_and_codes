@@ -63,23 +63,23 @@ Additional maps can be found [here](https://github.com/openregister/local-author
 | :--- | :--- | :--- |
 | City corporation | 1 | 0 |
 | Combined authority | 10 | 0 |
-| County | 24 | 3 |
+| County | 21 | 6 |
 | London borough | 32 | 0 |
 | Metropolitan district | 36 | 0 |
 | NI district | 11 | 25 |
-| Non-metropolitan district | 181 | 23 |
+| Non-metropolitan district | 164 | 40 |
 | Scottish unitary authority | 32 | 0 |
 | Strategic Regional Authority | 1 | 0 |
-| Unitary authority | 59 | 2 |
+| Unitary authority | 63 | 2 |
 | Welsh unitary authority | 22 | 0 |
 
 ## Unitary/lower tier and total counts
 
 | Lower or unitary? | Count |
 | :--- | :--- |
-| No | 35 |
-| Yes | 374 |
-| All | 409 |
+| No | 32 |
+| Yes | 361 |
+| All | 393 |
 
 ## Incomplete lookups
 
@@ -87,21 +87,21 @@ This are optional columns, and not entirely populated.
 
 | column | complete | % |
 | :--- | :--- | :--- |
-| BS-6879 | 407 | 99.5% |
-| wdtk-id | 407 | 99.5% |
-| x | 406 | 99.3% |
-| y | 406 | 99.3% |
-| long | 406 | 99.3% |
-| lat | 406 | 99.3% |
-| old-register-and-code | 404 | 98.8% |
-| open-council-data-id | 393 | 96.1% |
-| gov-uk-slug | 390 | 95.4% |
-| os | 380 | 92.9% |
-| snac | 380 | 92.9% |
-| mapit-area-code | 330 | 80.7% |
-| ecode | 326 | 79.7% |
-| old-ons-la-code | 326 | 79.7% |
-| ofcom | 178 | 43.5% |
-| os-file | 170 | 41.6% |
-| even-older-register-and-code | 22 | 5.4% |
+| long | 390 | 99.2% |
+| lat | 390 | 99.2% |
+| x | 390 | 99.2% |
+| y | 390 | 99.2% |
+| BS-6879 | 387 | 98.5% |
+| wdtk-id | 387 | 98.5% |
+| old-register-and-code | 384 | 97.7% |
+| open-council-data-id | 373 | 94.9% |
+| gov-uk-slug | 371 | 94.4% |
+| os | 361 | 91.9% |
+| snac | 361 | 91.9% |
+| mapit-area-code | 310 | 78.9% |
+| ecode | 307 | 78.1% |
+| old-ons-la-code | 307 | 78.1% |
+| ofcom | 175 | 44.5% |
+| os-file | 167 | 42.5% |
+| even-older-register-and-code | 22 | 5.6% |
 
