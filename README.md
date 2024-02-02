@@ -62,7 +62,7 @@ Additional maps can be found [here](https://github.com/openregister/local-author
 | Authority type | Current authorities | Former authorities |
 | :--- | :--- | :--- |
 | City corporation | 1 | 0 |
-| Combined authority | 10 | 0 |
+| Combined authority | 11 | 0 |
 | County | 21 | 6 |
 | London borough | 32 | 0 |
 | Metropolitan district | 36 | 0 |
@@ -77,9 +77,9 @@ Additional maps can be found [here](https://github.com/openregister/local-author
 
 | Lower or unitary? | Count |
 | :--- | :--- |
-| No | 32 |
+| No | 33 |
 | Yes | 361 |
-| All | 393 |
+| All | 394 |
 
 ## Incomplete lookups
 
@@ -87,21 +87,23 @@ This are optional columns, and not entirely populated.
 
 | column | complete | % |
 | :--- | :--- | :--- |
-| long | 390 | 99.2% |
-| lat | 390 | 99.2% |
-| x | 390 | 99.2% |
-| y | 390 | 99.2% |
-| BS-6879 | 387 | 98.5% |
-| wdtk-id | 387 | 98.5% |
-| old-register-and-code | 384 | 97.7% |
-| open-council-data-id | 373 | 94.9% |
-| gov-uk-slug | 371 | 94.4% |
-| os | 361 | 91.9% |
-| snac | 361 | 91.9% |
-| mapit-area-code | 310 | 78.9% |
-| ecode | 307 | 78.1% |
-| old-ons-la-code | 307 | 78.1% |
-| ofcom | 175 | 44.5% |
-| os-file | 167 | 42.5% |
+| area | 393 | 99.7% |
+| pop-2020 | 393 | 99.7% |
+| long | 390 | 99.0% |
+| lat | 390 | 99.0% |
+| x | 390 | 99.0% |
+| y | 390 | 99.0% |
+| BS-6879 | 387 | 98.2% |
+| wdtk-id | 387 | 98.2% |
+| old-register-and-code | 384 | 97.5% |
+| open-council-data-id | 373 | 94.7% |
+| gov-uk-slug | 371 | 94.2% |
+| os | 361 | 91.6% |
+| snac | 361 | 91.6% |
+| mapit-area-code | 310 | 78.7% |
+| ecode | 307 | 77.9% |
+| old-ons-la-code | 307 | 77.9% |
+| ofcom | 175 | 44.4% |
+| os-file | 167 | 42.4% |
 | even-older-register-and-code | 22 | 5.6% |
 

@@ -13568,7 +13568,7 @@
         "local-authority-type":"UA",
         "local-authority-type-name":"Unitary authority",
         "county-la":"",
-        "combined-authority":"",
+        "combined-authority":"YNYC",
         "alt-names":[
             "North Yorkshire",
             "north yorkshire"
@@ -21241,6 +21241,50 @@
         "wdtk-id":447.0
     },
     {
+        "local-authority-code":"YNYC",
+        "official-name":"York and North Yorkshire Mayoral Combined Authority",
+        "nice-name":"York and North Yorkshire",
+        "gss-code":"E47000012",
+        "start-date":"2024-02-01",
+        "end-date":"",
+        "replaced-by":"",
+        "nation":"England",
+        "region":"Yorkshire and The Humber",
+        "local-authority-type":"COMB",
+        "local-authority-type-name":"Combined authority",
+        "county-la":"",
+        "combined-authority":"",
+        "alt-names":[
+            "York and North Yorkshire CA"
+        ],
+        "former-gss-codes":[
+
+        ],
+        "notes":"",
+        "current-authority":true,
+        "BS-6879":"",
+        "ecode":"",
+        "even-older-register-and-code":"",
+        "gov-uk-slug":"",
+        "area":"",
+        "pop-2020":"",
+        "x":"",
+        "y":"",
+        "long":"",
+        "lat":"",
+        "powers":"combined",
+        "lower-or-unitary":false,
+        "mapit-area-code":"",
+        "ofcom":"",
+        "old-ons-la-code":"",
+        "old-register-and-code":"",
+        "open-council-data-id":"",
+        "os-file":"",
+        "os":"",
+        "snac":"",
+        "wdtk-id":""
+    },
+    {
         "local-authority-code":"YOR",
         "official-name":"City of York Council",
         "nice-name":"York",
@@ -21253,7 +21297,7 @@
         "local-authority-type":"UA",
         "local-authority-type-name":"Unitary authority",
         "county-la":"",
-        "combined-authority":"",
+        "combined-authority":"YNYC",
         "alt-names":[
             "York",
             "York UA",
