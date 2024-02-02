@@ -60,9 +60,10 @@ custom:
     1.2.0: Added gss codes for 2023 councils
     1.3.0: 'Change in data for resource(s): uk_local_authorities_future'
     1.4.0: 'Change in data for resource(s): lookup_name_to_registry'
+    1.4.1: 'Minor change in data for resource(s): uk_local_authorities_future'
   datasette:
     about: Info & Downloads
-    about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_4_0
+    about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_4_1
   formats:
     csv: true
     parquet: true
@@ -74,7 +75,7 @@ resources:
     row_count: 467
     datasette:
       about: Info & Downloads
-      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_4_0#uk_local_authorities_future
+      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_4_1#uk_local_authorities_future
   path: uk_local_authorities_future.csv
   name: uk_local_authorities_future
   profile: tabular-data-resource
@@ -372,7 +373,7 @@ resources:
         unique: false
       example: 3.0
   _sheet_order: 1
-  hash: 56a3465d707196f8671569ff54eeb53a
+  hash: 6d14c7da7a3d9c97dea6f7cb1f2c2208
 - title: Lookup table for local authority names to local authority codes (includes
     future councils)
   description: This is a lookup table for local authority names to local authority
@@ -381,7 +382,7 @@ resources:
     row_count: 1765
     datasette:
       about: Info & Downloads
-      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_4_0#lookup_name_to_registry
+      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_4_1#lookup_name_to_registry
   path: lookup_name_to_registry.csv
   name: lookup_name_to_registry
   profile: tabular-data-resource
@@ -405,6 +406,6 @@ resources:
         unique: false
       example: ABC
   hash: af34e38d2de08b8e35612408802272e2
-full_version: 1.4.0
+full_version: 1.4.1
 permalink: /datasets/uk_la_future/latest
 ---

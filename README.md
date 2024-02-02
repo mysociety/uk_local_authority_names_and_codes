@@ -87,12 +87,10 @@ This are optional columns, and not entirely populated.
 
 | column | complete | % |
 | :--- | :--- | :--- |
-| area | 393 | 99.7% |
-| pop-2020 | 393 | 99.7% |
-| long | 390 | 99.0% |
-| lat | 390 | 99.0% |
-| x | 390 | 99.0% |
-| y | 390 | 99.0% |
+| long | 391 | 99.2% |
+| lat | 391 | 99.2% |
+| x | 391 | 99.2% |
+| y | 391 | 99.2% |
 | BS-6879 | 387 | 98.2% |
 | wdtk-id | 387 | 98.2% |
 | old-register-and-code | 384 | 97.5% |

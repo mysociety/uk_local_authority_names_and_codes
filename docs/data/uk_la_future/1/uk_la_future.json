@@ -2,7 +2,7 @@
     "name": "uk_la_future",
     "title": "UK Local Authorities (including future)",
     "description": "A dataset that includes current and previous local authorities, as well as some planned but not in force yet\n",
-    "version": "1.4.0",
+    "version": "1.4.1",
     "keywords": [
         "UK Local data",
         "United Kingdom"
@@ -427,7 +427,7 @@
                 ]
             },
             "_sheet_order": 1,
-            "hash": "56a3465d707196f8671569ff54eeb53a",
+            "hash": "6d14c7da7a3d9c97dea6f7cb1f2c2208",
             "data": [
                 {
                     "local-authority-code": "ABC",
@@ -19011,12 +19011,12 @@
                     "ecode": "",
                     "even-older-register-and-code": "",
                     "gov-uk-slug": "",
-                    "area": "",
-                    "pop-2020": "",
-                    "x": "",
-                    "y": "",
-                    "long": "",
-                    "lat": "",
+                    "area": 8309.0,
+                    "pop-2020": 831622.0,
+                    "x": 440702.8433753164,
+                    "y": 474726.2834333429,
+                    "long": 54.16561062368424,
+                    "lat": -1.3778378941997595,
                     "powers": "combined",
                     "lower-or-unitary": false,
                     "mapit-area-code": "",
