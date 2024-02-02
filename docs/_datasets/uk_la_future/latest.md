@@ -59,9 +59,10 @@ custom:
     1.1.0: Added seperate future name lookup
     1.2.0: Added gss codes for 2023 councils
     1.3.0: 'Change in data for resource(s): uk_local_authorities_future'
+    1.4.0: 'Change in data for resource(s): lookup_name_to_registry'
   datasette:
     about: Info & Downloads
-    about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_3_0
+    about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_4_0
   formats:
     csv: true
     parquet: true
@@ -73,7 +74,7 @@ resources:
     row_count: 467
     datasette:
       about: Info & Downloads
-      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_3_0#uk_local_authorities_future
+      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_4_0#uk_local_authorities_future
   path: uk_local_authorities_future.csv
   name: uk_local_authorities_future
   profile: tabular-data-resource
@@ -377,10 +378,10 @@ resources:
   description: This is a lookup table for local authority names to local authority
     codes (includes future councils)
   custom:
-    row_count: 1763
+    row_count: 1765
     datasette:
       about: Info & Downloads
-      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_3_0#lookup_name_to_registry
+      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_4_0#lookup_name_to_registry
   path: lookup_name_to_registry.csv
   name: lookup_name_to_registry
   profile: tabular-data-resource
@@ -403,7 +404,7 @@ resources:
       constraints:
         unique: false
       example: ABC
-  hash: c165e8b60baec96ecfac2e9e05e52362
-full_version: 1.3.0
+  hash: af34e38d2de08b8e35612408802272e2
+full_version: 1.4.0
 permalink: /datasets/uk_la_future/latest
 ---
