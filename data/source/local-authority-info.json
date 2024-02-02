@@ -3498,7 +3498,7 @@
         "region": "Yorkshire and The Humber",
         "local-authority-type-name": "Unitary authority",
         "county-la": "",
-        "combined-authority": "",
+        "combined-authority": "YNYC",
         "alt-names": [
             "North Yorkshire",
             "north yorkshire"
@@ -7826,7 +7826,7 @@
         "region": "Yorkshire and The Humber",
         "local-authority-type-name": "Unitary authority",
         "county-la": "",
-        "combined-authority": "",
+        "combined-authority": "YNYC",
         "alt-names": [
             "York",
             "York UA",
@@ -9704,6 +9704,25 @@
             "aberdeen cuty",
             "aberdeen",
             "city of aberdeen"
+        ],
+        "former-gss-codes": [],
+        "notes": ""
+    },
+    {
+        "local-authority-code": "YNYC",
+        "official-name": "York and North Yorkshire Mayoral Combined Authority",
+        "nice-name": "York and North Yorkshire",
+        "gss-code": "E47000012",
+        "start-date": "2024-02-01",
+        "end-date": "",
+        "replaced-by": "",
+        "nation": "England",
+        "region": "Yorkshire and The Humber",
+        "local-authority-type-name": "Combined authority",
+        "county-la": "",
+        "combined-authority": "",
+        "alt-names": [
+            "York and North Yorkshire CA"
         ],
         "former-gss-codes": [],
         "notes": ""
