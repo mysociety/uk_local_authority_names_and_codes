@@ -2,7 +2,7 @@
     "name": "uk_la_future",
     "title": "UK Local Authorities (including future)",
     "description": "A dataset that includes current and previous local authorities, as well as some planned but not in force yet\n",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "keywords": [
         "UK Local data",
         "United Kingdom"
@@ -64,7 +64,12 @@
             "1.0.7": "uk_local_authorities_future: example changed from Armagh City, Banbridge and Craigavon Borough Council to Aberdeen City Council",
             "1.0.8": "Added rough figures for pop, area, location for new 2023 c",
             "1.1.0": "Added seperate future name lookup",
-            "1.2.0": "Added gss codes for 2023 councils"
+            "1.2.0": "Added gss codes for 2023 councils",
+            "1.3.0": "Change in data for resource(s): uk_local_authorities_future"
+        },
+        "datasette": {
+            "about": "Info & Downloads",
+            "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_3_0"
         }
     },
     "resources": [
@@ -72,7 +77,11 @@
             "title": "UK Local Authorities (past/current/future)",
             "description": "Table of information about local authorities, and mapping between different ID schemes. Includes current, some past, and some future authorities.",
             "custom": {
-                "row_count": 466
+                "row_count": 467,
+                "datasette": {
+                    "about": "Info & Downloads",
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_3_0#uk_local_authorities_future"
+                }
             },
             "path": "uk_local_authorities_future.csv",
             "name": "uk_local_authorities_future",
@@ -153,9 +162,9 @@
                         "constraints": {
                             "unique": false,
                             "enum": [
+                                "England",
                                 "Northern Ireland",
                                 "Scotland",
-                                "England",
                                 "Wales"
                             ]
                         },
@@ -177,17 +186,17 @@
                         "constraints": {
                             "unique": false,
                             "enum": [
-                                "NID",
-                                "SCO",
-                                "NMD",
-                                "WPA",
-                                "UA",
+                                "CC",
+                                "COMB",
+                                "CTY",
                                 "LBO",
                                 "MD",
-                                "CTY",
-                                "COMB",
+                                "NID",
+                                "NMD",
+                                "SCO",
                                 "SRA",
-                                "CC"
+                                "UA",
+                                "WPA"
                             ]
                         },
                         "example": "CC"
@@ -199,17 +208,17 @@
                         "constraints": {
                             "unique": false,
                             "enum": [
-                                "NI district",
-                                "Scottish unitary authority",
-                                "Non-metropolitan district",
-                                "Welsh unitary authority",
-                                "Unitary authority",
+                                "City corporation",
+                                "Combined authority",
+                                "County",
                                 "London borough",
                                 "Metropolitan district",
-                                "County",
-                                "Combined authority",
+                                "NI district",
+                                "Non-metropolitan district",
+                                "Scottish unitary authority",
                                 "Strategic Regional Authority",
-                                "City corporation"
+                                "Unitary authority",
+                                "Welsh unitary authority"
                             ]
                         },
                         "example": "City corporation"
@@ -266,8 +275,8 @@
                         "constraints": {
                             "unique": false,
                             "enum": [
-                                true,
-                                false
+                                false,
+                                true
                             ]
                         },
                         "example": "False"
@@ -369,11 +378,11 @@
                         "constraints": {
                             "unique": false,
                             "enum": [
+                                "combined",
+                                "lower tier",
                                 "ni district",
                                 "unitary",
-                                "lower tier",
-                                "upper tier",
-                                "combined"
+                                "upper tier"
                             ]
                         },
                         "example": "combined"
@@ -385,8 +394,8 @@
                         "constraints": {
                             "unique": false,
                             "enum": [
-                                true,
-                                false
+                                false,
+                                true
                             ]
                         },
                         "example": "False"
@@ -475,13 +484,17 @@
                 ]
             },
             "_sheet_order": 1,
-            "hash": "61a4d132f7e92d119382618056f81a09"
+            "hash": "56a3465d707196f8671569ff54eeb53a"
         },
         {
             "title": "Lookup table for local authority names to local authority codes (includes future councils)",
             "description": "This is a lookup table for local authority names to local authority codes (includes future councils)",
             "custom": {
-                "row_count": 1763
+                "row_count": 1763,
+                "datasette": {
+                    "about": "Info & Downloads",
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_3_0#lookup_name_to_registry"
+                }
             },
             "path": "lookup_name_to_registry.csv",
             "name": "lookup_name_to_registry",
