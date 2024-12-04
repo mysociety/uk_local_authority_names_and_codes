@@ -334,8 +334,8 @@
     {
         "local-authority-code": "EMCA",
         "official-name": "East Midlands Combined County Authority",
-        "nice-name": "East Midlands CA",
-        "gss-code": "E47000013 ",
+        "nice-name": "East Midlands CCA",
+        "gss-code": "E47000013",
         "start-date": "2024-02-27",
         "end-date": "",
         "replaced-by": "",
@@ -344,7 +344,47 @@
         "local-authority-type-name": "Combined authority",
         "county-la": "",
         "combined-authority": "",
-        "alt-names": [],
+        "alt-names": [
+            "East Midlands CC"
+        ],
+        "former-gss-codes": [],
+        "notes": ""
+    },
+    {
+        "local-authority-code": "GLCA",
+        "official-name": "Greater Lincolnshire Combined County Authority",
+        "nice-name": "Greater Lincolnshire CCA",
+        "gss-code": "",
+        "start-date": "2025-05-01",
+        "end-date": "",
+        "replaced-by": "",
+        "nation": "England",
+        "region": "Yorkshire and The Humber",
+        "local-authority-type-name": "Combined authority",
+        "county-la": "",
+        "combined-authority": "",
+        "alt-names": [
+            "Greater Lincolnshire CA"
+        ],
+        "former-gss-codes": [],
+        "notes": ""
+    },
+    {
+        "local-authority-code": "HYCA",
+        "official-name": "Hull and East Yorkshire Mayoral Combined Authority",
+        "nice-name": "Yorkshire and The Humber MCA",
+        "gss-code": "",
+        "start-date": "2025-05-01",
+        "end-date": "",
+        "replaced-by": "",
+        "nation": "England",
+        "region": "Yorkshire and The Humber",
+        "local-authority-type-name": "Combined authority",
+        "county-la": "",
+        "combined-authority": "",
+        "alt-names": [
+            "Yorkshire and The Humber CA"
+        ],
         "former-gss-codes": [],
         "notes": ""
     },
@@ -3702,7 +3742,7 @@
         "region": "Yorkshire and The Humber",
         "local-authority-type-name": "Unitary authority",
         "county-la": "",
-        "combined-authority": "",
+        "combined-authority": "GLCA",
         "alt-names": [
             "North Lincolnshire",
             "North Lincolnshire UA",
@@ -3785,7 +3825,7 @@
         "region": "Yorkshire and The Humber",
         "local-authority-type-name": "Unitary authority",
         "county-la": "",
-        "combined-authority": "",
+        "combined-authority": "GLCA",
         "alt-names": [
             "North East Lincolnshire",
             "North East Lincolnshire UA",
@@ -5287,7 +5327,7 @@
         "region": "Yorkshire and The Humber",
         "local-authority-type-name": "County",
         "county-la": "",
-        "combined-authority": "",
+        "combined-authority": "GLCA",
         "alt-names": [
             "Lincolnshire",
             "lincolnshire",
@@ -5708,7 +5748,7 @@
         "region": "Yorkshire and The Humber",
         "local-authority-type-name": "Unitary authority",
         "county-la": "",
-        "combined-authority": "",
+        "combined-authority": "HYCA",
         "alt-names": [
             "Kingston upon Hull",
             "Kingston upon Hull, City of",
@@ -6769,7 +6809,7 @@
         "region": "Yorkshire and The Humber",
         "local-authority-type-name": "Unitary authority",
         "county-la": "",
-        "combined-authority": "",
+        "combined-authority": "HYCA",
         "alt-names": [
             "East Riding of Yorkshire",
             "East Riding Of Yorkshire UA",
