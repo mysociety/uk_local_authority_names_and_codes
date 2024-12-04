@@ -28,7 +28,7 @@ runs:
       run: |
         composeFiles="-f docker-compose.yml"
         shellCommands='$@'
-        echo "docker-compose $composeFiles run --volume /home/runner:/home/runner/ ${{ inputs.app }} ${{ inputs.shell }} $shellCommands" > ${{ github.action_path }}/docker_command.sh
+        echo "docker compose $composeFiles run --volume /home/runner:/home/runner/ ${{ inputs.app }} ${{ inputs.shell }} $shellCommands" > ${{ github.action_path }}/docker_command.sh
         echo "${{ github.action_path }}" >> $GITHUB_PATH
 
     - name: Run script in docker
