@@ -332,6 +332,23 @@
         "notes": ""
     },
     {
+        "local-authority-code": "EMCA",
+        "official-name": "East Midlands Combined County Authority",
+        "nice-name": "East Midlands CA",
+        "gss-code": "E47000013 ",
+        "start-date": "2024-02-27",
+        "end-date": "",
+        "replaced-by": "",
+        "nation": "England",
+        "region": "East Midlands",
+        "local-authority-type-name": "Combined authority",
+        "county-la": "",
+        "combined-authority": "",
+        "alt-names": [],
+        "former-gss-codes": [],
+        "notes": ""
+    },
+    {
         "local-authority-code": "WSX",
         "official-name": "West Sussex County Council",
         "nice-name": "West Sussex",
@@ -3367,7 +3384,7 @@
         "region": "East Midlands",
         "local-authority-type-name": "County",
         "county-la": "",
-        "combined-authority": "",
+        "combined-authority": "EMCA",
         "alt-names": [
             "Nottinghamshire",
             "nottinghamshire",
@@ -3389,7 +3406,7 @@
         "region": "East Midlands",
         "local-authority-type-name": "Unitary authority",
         "county-la": "",
-        "combined-authority": "",
+        "combined-authority": "EMCA",
         "alt-names": [
             "Nottingham",
             "City of Nottingham UA",
@@ -7307,7 +7324,7 @@
         "region": "West Midlands",
         "local-authority-type-name": "County",
         "county-la": "",
-        "combined-authority": "",
+        "combined-authority": "EMCA",
         "alt-names": [
             "Derbyshire",
             "derbyshire",
@@ -7329,7 +7346,7 @@
         "region": "East Midlands",
         "local-authority-type-name": "Unitary authority",
         "county-la": "",
-        "combined-authority": "",
+        "combined-authority": "EMCA",
         "alt-names": [
             "Derby",
             "Derby City UA",
