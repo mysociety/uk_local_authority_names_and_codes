@@ -5,6 +5,6 @@ package: uk_la_future
 title: uk_la_future_xlsx
 filename: uk_la_future.xlsx
 version: latest
-full_version: 1.4.1
+full_version: 1.5.0
 file: /data/uk_la_future/latest/uk_la_future.xlsx
 ---

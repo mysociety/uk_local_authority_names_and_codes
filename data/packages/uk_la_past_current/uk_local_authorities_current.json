@@ -4498,7 +4498,7 @@
         "local-authority-type":"CTY",
         "local-authority-type-name":"County",
         "county-la":"",
-        "combined-authority":"",
+        "combined-authority":"EMCA",
         "alt-names":[
             "Derbyshire",
             "derbyshire",
@@ -4637,7 +4637,7 @@
         "local-authority-type":"UA",
         "local-authority-type-name":"Unitary authority",
         "county-la":"",
-        "combined-authority":"",
+        "combined-authority":"EMCA",
         "alt-names":[
             "Derby",
             "Derby City UA",
@@ -5887,6 +5887,50 @@
         "wdtk-id":133.0
     },
     {
+        "local-authority-code":"EMCA",
+        "official-name":"East Midlands Combined County Authority",
+        "nice-name":"East Midlands CCA",
+        "gss-code":"E47000013",
+        "start-date":"2024-02-27",
+        "end-date":"",
+        "replaced-by":"",
+        "nation":"England",
+        "region":"East Midlands",
+        "local-authority-type":"COMB",
+        "local-authority-type-name":"Combined authority",
+        "county-la":"",
+        "combined-authority":"",
+        "alt-names":[
+            "East Midlands CC"
+        ],
+        "former-gss-codes":[
+
+        ],
+        "notes":"",
+        "current-authority":true,
+        "BS-6879":"",
+        "ecode":"",
+        "even-older-register-and-code":"",
+        "gov-uk-slug":"",
+        "area":"",
+        "pop-2020":"",
+        "x":"",
+        "y":"",
+        "long":"",
+        "lat":"",
+        "powers":"combined",
+        "lower-or-unitary":false,
+        "mapit-area-code":"",
+        "ofcom":"",
+        "old-ons-la-code":"",
+        "old-register-and-code":"",
+        "open-council-data-id":"",
+        "os-file":"",
+        "os":"",
+        "snac":"",
+        "wdtk-id":""
+    },
+    {
         "local-authority-code":"ENF",
         "official-name":"London Borough of Enfield",
         "nice-name":"Enfield",
@@ -6169,7 +6213,7 @@
         "local-authority-type":"UA",
         "local-authority-type-name":"Unitary authority",
         "county-la":"",
-        "combined-authority":"",
+        "combined-authority":"HYCA",
         "alt-names":[
             "East Riding of Yorkshire",
             "East Riding Of Yorkshire UA",
@@ -9001,7 +9045,7 @@
         "local-authority-type":"UA",
         "local-authority-type-name":"Unitary authority",
         "county-la":"",
-        "combined-authority":"",
+        "combined-authority":"HYCA",
         "alt-names":[
             "Kingston upon Hull",
             "Kingston upon Hull, City of",
@@ -9804,7 +9848,7 @@
         "local-authority-type":"CTY",
         "local-authority-type-name":"County",
         "county-la":"",
-        "combined-authority":"",
+        "combined-authority":"GLCA",
         "alt-names":[
             "Lincolnshire",
             "lincolnshire",
@@ -11316,7 +11360,7 @@
         "local-authority-type":"UA",
         "local-authority-type-name":"Unitary authority",
         "county-la":"",
-        "combined-authority":"",
+        "combined-authority":"GLCA",
         "alt-names":[
             "North East Lincolnshire",
             "North East Lincolnshire UA",
@@ -11502,7 +11546,7 @@
         "local-authority-type":"UA",
         "local-authority-type-name":"Unitary authority",
         "county-la":"",
-        "combined-authority":"",
+        "combined-authority":"EMCA",
         "alt-names":[
             "Nottingham",
             "City of Nottingham UA",
@@ -12786,7 +12830,7 @@
         "local-authority-type":"UA",
         "local-authority-type-name":"Unitary authority",
         "county-la":"",
-        "combined-authority":"",
+        "combined-authority":"GLCA",
         "alt-names":[
             "North Lincolnshire",
             "North Lincolnshire UA",
@@ -13242,7 +13286,7 @@
         "local-authority-type":"CTY",
         "local-authority-type-name":"County",
         "county-la":"",
-        "combined-authority":"",
+        "combined-authority":"EMCA",
         "alt-names":[
             "Nottinghamshire",
             "nottinghamshire",
