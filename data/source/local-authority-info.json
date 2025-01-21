@@ -7251,7 +7251,7 @@
     },
     {
         "local-authority-code": "DNC",
-        "official-name": "Doncaster Metropolitan Borough Council",
+        "official-name": "City of Doncaster Council",
         "nice-name": "Doncaster",
         "gss-code": "E08000017",
         "start-date": "1974-04-01",
@@ -7266,7 +7266,11 @@
             "Doncaster",
             "doncaster",
             "doncaster district",
-            "doncaster metropolitan borough council"
+            "doncaster metropolitan borough council",
+            "city of doncaster council",
+            "city of doncaster",
+            "doncaster city council",
+            "doncaster city"
         ],
         "former-gss-codes": [],
         "notes": ""
