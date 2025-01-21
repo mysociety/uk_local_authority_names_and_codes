@@ -6150,7 +6150,7 @@
         "local-authority-code": "GLA",
         "official-name": "Greater London Authority",
         "nice-name": "Greater London",
-        "gss-code": "E12000007",
+        "gss-code": "E61000001",
         "start-date": "2005-06-22",
         "end-date": "",
         "replaced-by": "",
@@ -6164,7 +6164,7 @@
             "greater london"
         ],
         "former-gss-codes": [],
-        "notes": "gss code is for London region - when working from code point open use E18000007 and the NHS_HA_code column"
+        "notes": ""
     },
     {
         "local-authority-code": "GRY",
