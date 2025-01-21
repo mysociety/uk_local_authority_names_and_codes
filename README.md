@@ -1,5 +1,5 @@
 # UK Local Authority Names and Codes Lookup
-
+ 
 An easier to download version of this can be found at: https://mysociety.github.io/uk_local_authority_names_and_codes/
 
 --
