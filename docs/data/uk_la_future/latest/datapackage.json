@@ -2,7 +2,7 @@
     "name": "uk_la_future",
     "title": "UK Local Authorities (including future)",
     "description": "A dataset that includes current and previous local authorities, as well as some planned but not in force yet\n",
-    "version": "1.6.0",
+    "version": "1.7.0",
     "keywords": [
         "UK Local data",
         "United Kingdom"
@@ -69,11 +69,12 @@
             "1.4.0": "Change in data for resource(s): lookup_name_to_registry",
             "1.4.1": "Minor change in data for resource(s): uk_local_authorities_future",
             "1.5.0": "Change in data for resource(s): uk_local_authorities_future",
-            "1.6.0": "Change in data for resource(s): lookup_name_to_registry"
+            "1.6.0": "Change in data for resource(s): lookup_name_to_registry",
+            "1.7.0": "Change in data for resource(s): lookup_name_to_registry"
         },
         "datasette": {
             "about": "Info & Downloads",
-            "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_6_0"
+            "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_0"
         }
     },
     "resources": [
@@ -84,7 +85,7 @@
                 "row_count": 470,
                 "datasette": {
                     "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_6_0#uk_local_authorities_future"
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_0#uk_local_authorities_future"
                 }
             },
             "path": "uk_local_authorities_future.csv",
@@ -494,10 +495,10 @@
             "title": "Lookup table for local authority names to local authority codes (includes future councils)",
             "description": "This is a lookup table for local authority names to local authority codes (includes future councils)",
             "custom": {
-                "row_count": 1771,
+                "row_count": 1775,
                 "datasette": {
                     "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_6_0#lookup_name_to_registry"
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_0#lookup_name_to_registry"
                 }
             },
             "path": "lookup_name_to_registry.csv",
@@ -529,7 +530,7 @@
                     }
                 ]
             },
-            "hash": "a9de2320db4bd7925aed8a67d659fe73"
+            "hash": "9a68d3e30b10e2749799f49a14535a94"
         }
     ]
 }
