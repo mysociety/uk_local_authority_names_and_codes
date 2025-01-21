@@ -2,7 +2,7 @@
     "name": "uk_la_future",
     "title": "UK Local Authorities (including future)",
     "description": "A dataset that includes current and previous local authorities, as well as some planned but not in force yet\n",
-    "version": "1.5.0",
+    "version": "1.6.0",
     "keywords": [
         "UK Local data",
         "United Kingdom"
@@ -427,7 +427,7 @@
                 ]
             },
             "_sheet_order": 1,
-            "hash": "cfeb3b8460a917e9c3708b7e972d904f",
+            "hash": "27a31d34ba6f957fc28754cc14879e52",
             "data": [
                 {
                     "local-authority-code": "ABC",
@@ -4591,7 +4591,7 @@
                 },
                 {
                     "local-authority-code": "DNC",
-                    "official-name": "Doncaster Metropolitan Borough Council",
+                    "official-name": "City of Doncaster Council",
                     "nice-name": "Doncaster",
                     "gss-code": "E08000017",
                     "start-date": "1974-04-01",
@@ -4603,7 +4603,7 @@
                     "local-authority-type-name": "Metropolitan district",
                     "county-la": "",
                     "combined-authority": "SCR",
-                    "alt-names": "Doncaster,doncaster,doncaster district,doncaster metropolitan borough council",
+                    "alt-names": "Doncaster,doncaster,doncaster district,doncaster metropolitan borough council,city of doncaster council,city of doncaster,doncaster city council,doncaster city",
                     "former-gss-codes": "",
                     "notes": "",
                     "current-authority": true,
@@ -19235,7 +19235,7 @@
             "title": "Lookup table for local authority names to local authority codes (includes future councils)",
             "description": "This is a lookup table for local authority names to local authority codes (includes future councils)",
             "custom": {
-                "row_count": 1765
+                "row_count": 1771
             },
             "name": "lookup_name_to_registry",
             "profile": "tabular-data-resource",
@@ -19264,7 +19264,7 @@
                     }
                 ]
             },
-            "hash": "af34e38d2de08b8e35612408802272e2",
+            "hash": "a9de2320db4bd7925aed8a67d659fe73",
             "data": [
                 {
                     "la-name": "Armagh City, Banbridge and Craigavon Borough Council",
@@ -21311,6 +21311,14 @@
                     "local-authority-code": "ELS"
                 },
                 {
+                    "la-name": "East Midlands Combined County Authority",
+                    "local-authority-code": "EMCA"
+                },
+                {
+                    "la-name": "East Midlands CC",
+                    "local-authority-code": "EMCA"
+                },
+                {
                     "la-name": "London Borough of Enfield",
                     "local-authority-code": "ENF"
                 },
@@ -21625,6 +21633,14 @@
                 {
                     "la-name": "greater london",
                     "local-authority-code": "GLA"
+                },
+                {
+                    "la-name": "Greater Lincolnshire Combined County Authority",
+                    "local-authority-code": "GLCA"
+                },
+                {
+                    "la-name": "Greater Lincolnshire CA",
+                    "local-authority-code": "GLCA"
                 },
                 {
                     "la-name": "Glasgow City Council",
@@ -22153,6 +22169,14 @@
                 {
                     "la-name": "Huntingdonshire",
                     "local-authority-code": "HUN"
+                },
+                {
+                    "la-name": "Hull and East Yorkshire Mayoral Combined Authority",
+                    "local-authority-code": "HYCA"
+                },
+                {
+                    "la-name": "Yorkshire and The Humber CA",
+                    "local-authority-code": "HYCA"
                 },
                 {
                     "la-name": "Hyndburn Borough Council",

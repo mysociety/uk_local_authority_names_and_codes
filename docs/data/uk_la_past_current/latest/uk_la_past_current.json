@@ -2,7 +2,7 @@
     "name": "uk_la_past_current",
     "title": "UK Local Authorities (past and current)",
     "description": "A dataset that includes current and some past local authorities",
-    "version": "1.4.0",
+    "version": "1.5.0",
     "keywords": [
         "UK Local data",
         "UK"
@@ -427,7 +427,7 @@
                 ]
             },
             "_sheet_order": 1,
-            "hash": "fa130c83581cdcbb8fb0ea409fe8d167",
+            "hash": "62d158a0ef85d30e1cb937db6f7daf57",
             "data": [
                 {
                     "local-authority-code": "ABC",
@@ -4591,7 +4591,7 @@
                 },
                 {
                     "local-authority-code": "DNC",
-                    "official-name": "Doncaster Metropolitan Borough Council",
+                    "official-name": "City of Doncaster Council",
                     "nice-name": "Doncaster",
                     "gss-code": "E08000017",
                     "start-date": "1974-04-01",
@@ -4603,7 +4603,7 @@
                     "local-authority-type-name": "Metropolitan district",
                     "county-la": "",
                     "combined-authority": "SCR",
-                    "alt-names": "Doncaster,doncaster,doncaster district,doncaster metropolitan borough council",
+                    "alt-names": "Doncaster,doncaster,doncaster district,doncaster metropolitan borough council,city of doncaster council,city of doncaster,doncaster city council,doncaster city",
                     "former-gss-codes": "",
                     "notes": "",
                     "current-authority": true,
@@ -21116,7 +21116,7 @@
             "title": "Name to local authority code lookup",
             "description": "Dataset that maps variations on a name to the the ID for the council.",
             "custom": {
-                "row_count": 1767
+                "row_count": 1771
             },
             "name": "lookup_name_to_registry",
             "profile": "tabular-data-resource",
@@ -21145,7 +21145,7 @@
                     }
                 ]
             },
-            "hash": "7a47c4fdcc9c8eebee17fa4d3f6958fc",
+            "hash": "c400dbc4082f58f3e30fa410eb99c3ce",
             "data": [
                 {
                     "la-name": "Armagh City, Banbridge and Craigavon Borough Council",
@@ -22752,7 +22752,7 @@
                     "local-authority-code": "DGY"
                 },
                 {
-                    "la-name": "Doncaster Metropolitan Borough Council",
+                    "la-name": "City of Doncaster Council",
                     "local-authority-code": "DNC"
                 },
                 {
@@ -22769,6 +22769,22 @@
                 },
                 {
                     "la-name": "doncaster metropolitan borough council",
+                    "local-authority-code": "DNC"
+                },
+                {
+                    "la-name": "city of doncaster council",
+                    "local-authority-code": "DNC"
+                },
+                {
+                    "la-name": "city of doncaster",
+                    "local-authority-code": "DNC"
+                },
+                {
+                    "la-name": "doncaster city council",
+                    "local-authority-code": "DNC"
+                },
+                {
+                    "la-name": "doncaster city",
                     "local-authority-code": "DNC"
                 },
                 {

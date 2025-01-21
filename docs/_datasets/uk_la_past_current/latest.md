@@ -62,9 +62,10 @@ custom:
     1.3.0: 'Change in data for resource(s): uk_local_authorities_current,lookup_gss_to_registry,lookup_name_to_registry'
     1.3.1: 'Minor change in data for resource(s): uk_local_authorities_current'
     1.4.0: 'Change in data for resource(s): uk_local_authorities_current,lookup_gss_to_registry,lookup_name_to_registry'
+    1.5.0: 'Change in data for resource(s): lookup_name_to_registry'
   datasette:
     about: Info & Downloads
-    about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_4_0
+    about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_5_0
   formats:
     csv: true
     parquet: true
@@ -76,7 +77,7 @@ resources:
     row_count: 468
     datasette:
       about: Info & Downloads
-      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_4_0#uk_local_authorities_current
+      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_5_0#uk_local_authorities_current
   path: uk_local_authorities_current.csv
   name: uk_local_authorities_current
   profile: tabular-data-resource
@@ -374,7 +375,7 @@ resources:
         unique: false
       example: 3.0
   _sheet_order: 1
-  hash: fa130c83581cdcbb8fb0ea409fe8d167
+  hash: 62d158a0ef85d30e1cb937db6f7daf57
 - title: GSS to local authority code lookup
   description: Dataset that maps current and past gss codes (e.g. E07000239) for an
     area to the ID for the council.
@@ -382,7 +383,7 @@ resources:
     row_count: 482
     datasette:
       about: Info & Downloads
-      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_4_0#lookup_gss_to_registry
+      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_5_0#lookup_gss_to_registry
   path: lookup_gss_to_registry.csv
   name: lookup_gss_to_registry
   profile: tabular-data-resource
@@ -412,7 +413,7 @@ resources:
     row_count: 42620
     datasette:
       about: Info & Downloads
-      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_4_0#lookup_lsoa_to_registry
+      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_5_0#lookup_lsoa_to_registry
   path: lookup_lsoa_to_registry.csv
   name: lookup_lsoa_to_registry
   profile: tabular-data-resource
@@ -439,10 +440,10 @@ resources:
 - title: Name to local authority code lookup
   description: Dataset that maps variations on a name to the the ID for the council.
   custom:
-    row_count: 1767
+    row_count: 1771
     datasette:
       about: Info & Downloads
-      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_4_0#lookup_name_to_registry
+      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_5_0#lookup_name_to_registry
   path: lookup_name_to_registry.csv
   name: lookup_name_to_registry
   profile: tabular-data-resource
@@ -464,7 +465,7 @@ resources:
       constraints:
         unique: false
       example: ABC
-  hash: 7a47c4fdcc9c8eebee17fa4d3f6958fc
-full_version: 1.4.0
+  hash: c400dbc4082f58f3e30fa410eb99c3ce
+full_version: 1.5.0
 permalink: /datasets/uk_la_past_current/latest
 ---
