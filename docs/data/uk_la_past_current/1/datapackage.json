@@ -2,7 +2,7 @@
     "name": "uk_la_past_current",
     "title": "UK Local Authorities (past and current)",
     "description": "A dataset that includes current and some past local authorities",
-    "version": "1.5.0",
+    "version": "1.5.1",
     "keywords": [
         "UK Local data",
         "UK"
@@ -76,11 +76,12 @@
             "1.3.0": "Change in data for resource(s): uk_local_authorities_current,lookup_gss_to_registry,lookup_name_to_registry",
             "1.3.1": "Minor change in data for resource(s): uk_local_authorities_current",
             "1.4.0": "Change in data for resource(s): uk_local_authorities_current,lookup_gss_to_registry,lookup_name_to_registry",
-            "1.5.0": "Change in data for resource(s): lookup_name_to_registry"
+            "1.5.0": "Change in data for resource(s): lookup_name_to_registry",
+            "1.5.1": "Minor change in data for resource(s): uk_local_authorities_current,lookup_gss_to_registry"
         },
         "datasette": {
             "about": "Info & Downloads",
-            "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_5_0"
+            "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_5_1"
         }
     },
     "resources": [
@@ -91,7 +92,7 @@
                 "row_count": 468,
                 "datasette": {
                     "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_5_0#uk_local_authorities_current"
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_5_1#uk_local_authorities_current"
                 }
             },
             "path": "uk_local_authorities_current.csv",
@@ -277,7 +278,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "gss code is for London region - when working from code point open use E18000007 and the NHS_HA_code column"
+                        "example": "iso code and internal code may differ"
                     },
                     {
                         "name": "current-authority",
@@ -495,7 +496,7 @@
                 ]
             },
             "_sheet_order": 1,
-            "hash": "62d158a0ef85d30e1cb937db6f7daf57"
+            "hash": "a55c483b669260213c3b9d8430fef869"
         },
         {
             "title": "GSS to local authority code lookup",
@@ -504,7 +505,7 @@
                 "row_count": 482,
                 "datasette": {
                     "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_5_0#lookup_gss_to_registry"
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_5_1#lookup_gss_to_registry"
                 }
             },
             "path": "lookup_gss_to_registry.csv",
@@ -536,7 +537,7 @@
                     }
                 ]
             },
-            "hash": "d05d35e4c477c450c48b6eb23dd12e7d"
+            "hash": "7c65662f043468e4af503cec444489be"
         },
         {
             "title": "LSOA to local authority code lookup",
@@ -545,7 +546,7 @@
                 "row_count": 42620,
                 "datasette": {
                     "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_5_0#lookup_lsoa_to_registry"
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_5_1#lookup_lsoa_to_registry"
                 }
             },
             "path": "lookup_lsoa_to_registry.csv",
@@ -586,7 +587,7 @@
                 "row_count": 1771,
                 "datasette": {
                     "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_5_0#lookup_name_to_registry"
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_5_1#lookup_name_to_registry"
                 }
             },
             "path": "lookup_name_to_registry.csv",

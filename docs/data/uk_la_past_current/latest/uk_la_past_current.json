@@ -2,7 +2,7 @@
     "name": "uk_la_past_current",
     "title": "UK Local Authorities (past and current)",
     "description": "A dataset that includes current and some past local authorities",
-    "version": "1.5.0",
+    "version": "1.5.1",
     "keywords": [
         "UK Local data",
         "UK"
@@ -209,7 +209,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "gss code is for London region - when working from code point open use E18000007 and the NHS_HA_code column"
+                        "example": "iso code and internal code may differ"
                     },
                     {
                         "name": "current-authority",
@@ -427,7 +427,7 @@
                 ]
             },
             "_sheet_order": 1,
-            "hash": "62d158a0ef85d30e1cb937db6f7daf57",
+            "hash": "a55c483b669260213c3b9d8430fef869",
             "data": [
                 {
                     "local-authority-code": "ABC",
@@ -6513,7 +6513,7 @@
                     "local-authority-code": "GLA",
                     "official-name": "Greater London Authority",
                     "nice-name": "Greater London",
-                    "gss-code": "E12000007",
+                    "gss-code": "E61000001",
                     "start-date": "2005-06-22",
                     "end-date": "",
                     "replaced-by": "",
@@ -6525,7 +6525,7 @@
                     "combined-authority": "",
                     "alt-names": "Greater London,greater london",
                     "former-gss-codes": "",
-                    "notes": "gss code is for London region - when working from code point open use E18000007 and the NHS_HA_code column",
+                    "notes": "",
                     "current-authority": true,
                     "BS-6879": "GLA",
                     "ecode": "E5100",
@@ -19184,7 +19184,7 @@
                     }
                 ]
             },
-            "hash": "d05d35e4c477c450c48b6eb23dd12e7d",
+            "hash": "7c65662f043468e4af503cec444489be",
             "data": [
                 {
                     "gss-code": "N09000002",
@@ -19811,7 +19811,7 @@
                     "local-authority-code": "GED"
                 },
                 {
-                    "gss-code": "E12000007",
+                    "gss-code": "E61000001",
                     "local-authority-code": "GLA"
                 },
                 {

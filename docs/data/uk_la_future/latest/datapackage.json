@@ -2,7 +2,7 @@
     "name": "uk_la_future",
     "title": "UK Local Authorities (including future)",
     "description": "A dataset that includes current and previous local authorities, as well as some planned but not in force yet\n",
-    "version": "1.7.0",
+    "version": "1.7.1",
     "keywords": [
         "UK Local data",
         "United Kingdom"
@@ -70,11 +70,12 @@
             "1.4.1": "Minor change in data for resource(s): uk_local_authorities_future",
             "1.5.0": "Change in data for resource(s): uk_local_authorities_future",
             "1.6.0": "Change in data for resource(s): lookup_name_to_registry",
-            "1.7.0": "Change in data for resource(s): lookup_name_to_registry"
+            "1.7.0": "Change in data for resource(s): lookup_name_to_registry",
+            "1.7.1": "Minor change in data for resource(s): uk_local_authorities_future"
         },
         "datasette": {
             "about": "Info & Downloads",
-            "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_0"
+            "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_1"
         }
     },
     "resources": [
@@ -85,7 +86,7 @@
                 "row_count": 470,
                 "datasette": {
                     "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_0#uk_local_authorities_future"
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_1#uk_local_authorities_future"
                 }
             },
             "path": "uk_local_authorities_future.csv",
@@ -271,7 +272,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "gss code is for London region - when working from code point open use E18000007 and the NHS_HA_code column"
+                        "example": "iso code and internal code may differ"
                     },
                     {
                         "name": "current-authority",
@@ -489,7 +490,7 @@
                 ]
             },
             "_sheet_order": 1,
-            "hash": "27a31d34ba6f957fc28754cc14879e52"
+            "hash": "1c80dd58df10ab1569bc67fc9391bd6c"
         },
         {
             "title": "Lookup table for local authority names to local authority codes (includes future councils)",
@@ -498,7 +499,7 @@
                 "row_count": 1775,
                 "datasette": {
                     "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_0#lookup_name_to_registry"
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_1#lookup_name_to_registry"
                 }
             },
             "path": "lookup_name_to_registry.csv",

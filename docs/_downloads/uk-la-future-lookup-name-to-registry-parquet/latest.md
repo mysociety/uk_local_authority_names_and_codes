@@ -5,6 +5,6 @@ package: uk_la_future
 title: lookup_name_to_registry
 filename: lookup_name_to_registry.parquet
 version: latest
-full_version: 1.7.0
+full_version: 1.7.1
 file: /data/uk_la_future/latest/lookup_name_to_registry.parquet
 ---

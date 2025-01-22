@@ -2,7 +2,7 @@
     "name": "uk_la_future",
     "title": "UK Local Authorities (including future)",
     "description": "A dataset that includes current and previous local authorities, as well as some planned but not in force yet\n",
-    "version": "1.7.0",
+    "version": "1.7.1",
     "keywords": [
         "UK Local data",
         "United Kingdom"
@@ -209,7 +209,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": "gss code is for London region - when working from code point open use E18000007 and the NHS_HA_code column"
+                        "example": "iso code and internal code may differ"
                     },
                     {
                         "name": "current-authority",
@@ -427,7 +427,7 @@
                 ]
             },
             "_sheet_order": 1,
-            "hash": "27a31d34ba6f957fc28754cc14879e52",
+            "hash": "1c80dd58df10ab1569bc67fc9391bd6c",
             "data": [
                 {
                     "local-authority-code": "ABC",
@@ -6513,7 +6513,7 @@
                     "local-authority-code": "GLA",
                     "official-name": "Greater London Authority",
                     "nice-name": "Greater London",
-                    "gss-code": "E12000007",
+                    "gss-code": "E61000001",
                     "start-date": "2005-06-22",
                     "end-date": "",
                     "replaced-by": "",
@@ -6525,7 +6525,7 @@
                     "combined-authority": "",
                     "alt-names": "Greater London,greater london",
                     "former-gss-codes": "",
-                    "notes": "gss code is for London region - when working from code point open use E18000007 and the NHS_HA_code column",
+                    "notes": "",
                     "current-authority": true,
                     "BS-6879": "GLA",
                     "ecode": "E5100",
