@@ -1,0 +1,27 @@
+title: LSOA to local authority code lookup
+description: Dataset that maps LSOA the ID for the council.
+custom:
+  row_count: 42620
+path: lookup_lsoa_to_registry.csv
+name: lookup_lsoa_to_registry
+profile: tabular-data-resource
+scheme: file
+format: csv
+hashing: md5
+encoding: utf-8
+schema:
+  fields:
+  - name: lsoa
+    type: string
+    description: Small Area - Lower Super Outputer Area (England and Wales), DataZone
+      (Scotland), Super Output Area (NI)
+    constraints:
+      unique: true
+    example: 95AA01S1
+  - name: local-authority-code
+    type: string
+    description: Fixed ID for council, not linked to boundary changes.
+    constraints:
+      unique: false
+    example: ABC
+hash: a63221c4082a24958b1e2d9a560031b3
