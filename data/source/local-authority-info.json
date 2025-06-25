@@ -9787,5 +9787,41 @@
         ],
         "former-gss-codes": [],
         "notes": ""
+    },
+    {
+        "local-authority-code": "GLCA",
+        "official-name": "Greater Lincolnshire Combined County Authority",
+        "nice-name": "Greater Lincolnshire",
+        "gss-code": "E47000017",
+        "start-date": "2025-02-05",
+        "end-date": "",
+        "replaced-by": "",
+        "nation": "England",
+        "region": "East Midlands",
+        "local-authority-type-name": "Combined authority",
+        "county-la": "",
+        "combined-authority": "",
+        "alt-names": [
+        ],
+        "former-gss-codes": [],
+        "notes": ""
+    },
+    {
+        "local-authority-code": "HYCA",
+        "official-name": "Hull and East Yorkshire Mayoral Combined Authority",
+        "nice-name": "Hull and East Yorkshire",
+        "gss-code": "E47000016",
+        "start-date": "2025-02-05",
+        "end-date": "",
+        "replaced-by": "",
+        "nation": "England",
+        "region": "Yorkshire and The Humber",
+        "local-authority-type-name": "Combined authority",
+        "county-la": "",
+        "combined-authority": "",
+        "alt-names": [
+        ],
+        "former-gss-codes": [],
+        "notes": ""
     }
 ]
