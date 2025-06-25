@@ -22,6 +22,7 @@ The output files avaliable are in the `data` directory:
 * `lookup_gss_to_registry.csv` file converts from present and former GSS LAD codes (which refer to the boundary shape rather than the authority to the canonical code. 
 * `lookup_lsoa_to_registry.csv` lookup from lsoa/datazone/soa to *current* local authority. 
 
+
 ## What is 'local-authority-code'
 
 This project originally used the official [local authority registers](https://github.com/openregister/local-authority-data) to provide a canonical three character code and a canonical name for the local authority. This is required because the more common GSS id refers to boundaries rather than legal entities.
