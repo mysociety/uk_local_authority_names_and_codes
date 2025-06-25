@@ -22,6 +22,9 @@ The output files avaliable are in the `data` directory:
 * `lookup_gss_to_registry.csv` file converts from present and former GSS LAD codes (which refer to the boundary shape rather than the authority to the canonical code. 
 * `lookup_lsoa_to_registry.csv` lookup from lsoa/datazone/soa to *current* local authority. 
 
+## Testing offline
+
+Run `dataset build --all` to generate the package data, you can then use `dataset validate --all` to check underlying tests are met.
 
 ## What is 'local-authority-code'
 
@@ -63,7 +66,7 @@ Additional maps can be found [here](https://github.com/openregister/local-author
 | Authority type | Current authorities | Former authorities |
 | :--- | :--- | :--- |
 | City corporation | 1 | 0 |
-| Combined authority | 12 | 0 |
+| Combined authority | 14 | 0 |
 | County | 21 | 6 |
 | London borough | 32 | 0 |
 | Metropolitan district | 36 | 0 |
@@ -78,9 +81,9 @@ Additional maps can be found [here](https://github.com/openregister/local-author
 
 | Lower or unitary? | Count |
 | :--- | :--- |
-| No | 34 |
+| No | 36 |
 | Yes | 361 |
-| All | 395 |
+| All | 397 |
 
 ## Incomplete lookups
 
@@ -88,23 +91,23 @@ This are optional columns, and not entirely populated.
 
 | column | complete | % |
 | :--- | :--- | :--- |
-| area | 394 | 99.7% |
-| pop-2020 | 394 | 99.7% |
-| long | 391 | 99.0% |
-| lat | 391 | 99.0% |
-| x | 391 | 99.0% |
-| y | 391 | 99.0% |
-| BS-6879 | 387 | 98.0% |
-| wdtk-id | 387 | 98.0% |
-| old-register-and-code | 384 | 97.2% |
-| open-council-data-id | 373 | 94.4% |
-| gov-uk-slug | 371 | 93.9% |
-| os | 361 | 91.4% |
-| snac | 361 | 91.4% |
-| mapit-area-code | 310 | 78.5% |
-| ecode | 307 | 77.7% |
-| old-ons-la-code | 307 | 77.7% |
-| ofcom | 175 | 44.3% |
-| os-file | 167 | 42.3% |
-| even-older-register-and-code | 22 | 5.6% |
+| area | 394 | 99.2% |
+| pop-2020 | 394 | 99.2% |
+| long | 391 | 98.5% |
+| lat | 391 | 98.5% |
+| x | 391 | 98.5% |
+| y | 391 | 98.5% |
+| BS-6879 | 387 | 97.5% |
+| wdtk-id | 387 | 97.5% |
+| old-register-and-code | 384 | 96.7% |
+| open-council-data-id | 373 | 94.0% |
+| gov-uk-slug | 371 | 93.5% |
+| os | 361 | 90.9% |
+| snac | 361 | 90.9% |
+| mapit-area-code | 310 | 78.1% |
+| ecode | 307 | 77.3% |
+| old-ons-la-code | 307 | 77.3% |
+| ofcom | 175 | 44.1% |
+| os-file | 167 | 42.1% |
+| even-older-register-and-code | 22 | 5.5% |
 
