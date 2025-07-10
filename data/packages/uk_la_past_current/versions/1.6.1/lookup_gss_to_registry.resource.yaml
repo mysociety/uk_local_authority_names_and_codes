@@ -1,0 +1,28 @@
+title: GSS to local authority code lookup
+description: Dataset that maps current and past gss codes (e.g. E07000239) for an
+  area to the ID for the council.
+custom:
+  row_count: 484
+path: lookup_gss_to_registry.csv
+name: lookup_gss_to_registry
+profile: tabular-data-resource
+scheme: file
+format: csv
+hashing: md5
+encoding: utf-8
+schema:
+  fields:
+  - name: gss-code
+    type: string
+    description: Code for the statistical geography of a council. A council may have
+      multiple codes (past and present) as a result of boundary changes.
+    constraints:
+      unique: false
+    example: E06000001
+  - name: local-authority-code
+    type: string
+    description: Fixed ID for council, not linked to boundary changes.
+    constraints:
+      unique: false
+    example: ABC
+hash: 429a4bbda2a9e117a362dc739dcb27ee

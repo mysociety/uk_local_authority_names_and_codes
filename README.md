@@ -93,8 +93,8 @@ This are optional columns, and not entirely populated.
 | :--- | :--- | :--- |
 | area | 394 | 99.2% |
 | pop-2020 | 394 | 99.2% |
-| long | 391 | 98.5% |
 | lat | 391 | 98.5% |
+| long | 391 | 98.5% |
 | x | 391 | 98.5% |
 | y | 391 | 98.5% |
 | BS-6879 | 387 | 97.5% |

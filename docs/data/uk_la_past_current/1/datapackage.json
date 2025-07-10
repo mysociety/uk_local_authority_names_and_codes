@@ -2,7 +2,7 @@
     "name": "uk_la_past_current",
     "title": "UK Local Authorities (past and current)",
     "description": "A dataset that includes current and some past local authorities",
-    "version": "1.6.0",
+    "version": "1.6.1",
     "keywords": [
         "UK Local data",
         "UK"
@@ -78,11 +78,12 @@
             "1.4.0": "Change in data for resource(s): uk_local_authorities_current,lookup_gss_to_registry,lookup_name_to_registry",
             "1.5.0": "Change in data for resource(s): lookup_name_to_registry",
             "1.5.1": "Minor change in data for resource(s): uk_local_authorities_current,lookup_gss_to_registry",
-            "1.6.0": "Change in data for resource(s): uk_local_authorities_current,lookup_gss_to_registry,lookup_name_to_registry"
+            "1.6.0": "Change in data for resource(s): uk_local_authorities_current,lookup_gss_to_registry,lookup_name_to_registry",
+            "1.6.1": "Minor change in data for resource(s): uk_local_authorities_current"
         },
         "datasette": {
             "about": "Info & Downloads",
-            "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_6_0"
+            "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_6_1"
         }
     },
     "resources": [
@@ -93,7 +94,7 @@
                 "row_count": 470,
                 "datasette": {
                     "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_6_0#uk_local_authorities_current"
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_6_1#uk_local_authorities_current"
                 }
             },
             "path": "uk_local_authorities_current.csv",
@@ -367,18 +368,18 @@
                         "example": 13020.5326643405
                     },
                     {
-                        "name": "long",
+                        "name": "lat",
                         "type": "number",
-                        "description": "Longitude of the center of the local authority",
+                        "description": "Latitude of the center of the local authority",
                         "constraints": {
                             "unique": false
                         },
                         "example": 49.9369329141
                     },
                     {
-                        "name": "lat",
+                        "name": "long",
                         "type": "number",
-                        "description": "Latitude of the center of the local authority",
+                        "description": "Longitude of the center of the local authority",
                         "constraints": {
                             "unique": false
                         },
@@ -497,7 +498,7 @@
                 ]
             },
             "_sheet_order": 1,
-            "hash": "71a6e6e8582db3fb91ccf2fa35b9303d"
+            "hash": "b1ced1c7a633395eea6e2002726ab20b"
         },
         {
             "title": "GSS to local authority code lookup",
@@ -506,7 +507,7 @@
                 "row_count": 484,
                 "datasette": {
                     "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_6_0#lookup_gss_to_registry"
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_6_1#lookup_gss_to_registry"
                 }
             },
             "path": "lookup_gss_to_registry.csv",
@@ -547,7 +548,7 @@
                 "row_count": 42620,
                 "datasette": {
                     "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_6_0#lookup_lsoa_to_registry"
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_6_1#lookup_lsoa_to_registry"
                 }
             },
             "path": "lookup_lsoa_to_registry.csv",
@@ -588,7 +589,7 @@
                 "row_count": 1775,
                 "datasette": {
                     "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_6_0#lookup_name_to_registry"
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_6_1#lookup_name_to_registry"
                 }
             },
             "path": "lookup_name_to_registry.csv",

@@ -2,7 +2,7 @@
     "name": "uk_la_future",
     "title": "UK Local Authorities (including future)",
     "description": "A dataset that includes current and previous local authorities, as well as some planned but not in force yet\n",
-    "version": "1.7.2",
+    "version": "1.7.3",
     "keywords": [
         "UK Local data",
         "United Kingdom"
@@ -72,11 +72,12 @@
             "1.6.0": "Change in data for resource(s): lookup_name_to_registry",
             "1.7.0": "Change in data for resource(s): lookup_name_to_registry",
             "1.7.1": "Minor change in data for resource(s): uk_local_authorities_future",
-            "1.7.2": "Minor change in data for resource(s): uk_local_authorities_future"
+            "1.7.2": "Minor change in data for resource(s): uk_local_authorities_future",
+            "1.7.3": "Minor change in data for resource(s): uk_local_authorities_future"
         },
         "datasette": {
             "about": "Info & Downloads",
-            "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_2"
+            "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_3"
         }
     },
     "resources": [
@@ -87,7 +88,7 @@
                 "row_count": 470,
                 "datasette": {
                     "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_2#uk_local_authorities_future"
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_3#uk_local_authorities_future"
                 }
             },
             "path": "uk_local_authorities_future.csv",
@@ -361,18 +362,18 @@
                         "example": 13020.532664340468
                     },
                     {
-                        "name": "long",
+                        "name": "lat",
                         "type": "number",
-                        "description": "Longitude of the center of the local authority",
+                        "description": "Latitude of the center of the local authority",
                         "constraints": {
                             "unique": false
                         },
                         "example": 49.93693291412038
                     },
                     {
-                        "name": "lat",
+                        "name": "long",
                         "type": "number",
-                        "description": "Latitude of the center of the local authority",
+                        "description": "Longitude of the center of the local authority",
                         "constraints": {
                             "unique": false
                         },
@@ -491,7 +492,7 @@
                 ]
             },
             "_sheet_order": 1,
-            "hash": "ae1e792450f4dbc92e282b9d05fa2fdf"
+            "hash": "a3406df06b408d183564dbab599a59de"
         },
         {
             "title": "Lookup table for local authority names to local authority codes (includes future councils)",
@@ -500,7 +501,7 @@
                 "row_count": 1775,
                 "datasette": {
                     "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_2#lookup_name_to_registry"
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_3#lookup_name_to_registry"
                 }
             },
             "path": "lookup_name_to_registry.csv",

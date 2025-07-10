@@ -45,9 +45,11 @@ versions:
   - '1.5'
   - 1.5.1
   1.6.0:
+  - 1.6.0
+  1.6.1:
   - '1'
   - '1.6'
-  - 1.6.0
+  - 1.6.1
   - latest
 permalink: /datasets/uk_la_past_current/versions
 ---

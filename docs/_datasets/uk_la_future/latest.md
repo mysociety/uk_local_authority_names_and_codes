@@ -66,9 +66,10 @@ custom:
     1.7.0: 'Change in data for resource(s): lookup_name_to_registry'
     1.7.1: 'Minor change in data for resource(s): uk_local_authorities_future'
     1.7.2: 'Minor change in data for resource(s): uk_local_authorities_future'
+    1.7.3: 'Minor change in data for resource(s): uk_local_authorities_future'
   datasette:
     about: Info & Downloads
-    about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_2
+    about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_3
   formats:
     csv: true
     parquet: true
@@ -80,7 +81,7 @@ resources:
     row_count: 470
     datasette:
       about: Info & Downloads
-      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_2#uk_local_authorities_future
+      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_3#uk_local_authorities_future
   path: uk_local_authorities_future.csv
   name: uk_local_authorities_future
   profile: tabular-data-resource
@@ -286,15 +287,15 @@ resources:
       constraints:
         unique: false
       example: 13020.532664340468
-    - name: long
-      type: number
-      description: Longitude of the center of the local authority
-      constraints:
-        unique: false
-      example: 49.93693291412038
     - name: lat
       type: number
       description: Latitude of the center of the local authority
+      constraints:
+        unique: false
+      example: 49.93693291412038
+    - name: long
+      type: number
+      description: Longitude of the center of the local authority
       constraints:
         unique: false
       example: -7.503784363910277
@@ -377,7 +378,7 @@ resources:
         unique: false
       example: 3.0
   _sheet_order: 1
-  hash: ae1e792450f4dbc92e282b9d05fa2fdf
+  hash: a3406df06b408d183564dbab599a59de
 - title: Lookup table for local authority names to local authority codes (includes
     future councils)
   description: This is a lookup table for local authority names to local authority
@@ -386,7 +387,7 @@ resources:
     row_count: 1775
     datasette:
       about: Info & Downloads
-      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_2#lookup_name_to_registry
+      about_url: https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_3#lookup_name_to_registry
   path: lookup_name_to_registry.csv
   name: lookup_name_to_registry
   profile: tabular-data-resource
@@ -410,6 +411,6 @@ resources:
         unique: false
       example: ABC
   hash: 9a68d3e30b10e2749799f49a14535a94
-full_version: 1.7.2
+full_version: 1.7.3
 permalink: /datasets/uk_la_future/latest
 ---

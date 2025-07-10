@@ -5,6 +5,6 @@ package: uk_la_past_current
 title: uk_la_past_current_sqlite
 filename: uk_la_past_current.sqlite
 version: latest
-full_version: 1.6.0
+full_version: 1.6.1
 file: /data/uk_la_past_current/latest/uk_la_past_current.sqlite
 ---
