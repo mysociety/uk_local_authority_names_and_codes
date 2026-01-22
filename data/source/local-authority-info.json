@@ -1466,6 +1466,42 @@
         "notes": ""
     },
     {
+        "local-authority-code": "ESY",
+        "official-name": "East Surrey Council",
+        "nice-name": "East Surrey",
+        "gss-code": "",
+        "start-date": "2026-05-07",
+        "end-date": "",
+        "replaced-by": "",
+        "nation": "England",
+        "region": "South East",
+        "local-authority-type-name": "Unitary authority",
+        "county-la": "",
+        "combined-authority": "",
+        "alt-names": [
+        ],
+        "former-gss-codes": [],
+        "notes": ""
+    },
+    {
+        "local-authority-code": "WSY",
+        "official-name": "West Surrey Council",
+        "nice-name": "West Surrey",
+        "gss-code": "",
+        "start-date": "2026-05-07",
+        "end-date": "",
+        "replaced-by": "",
+        "nation": "England",
+        "region": "South East",
+        "local-authority-type-name": "Unitary authority",
+        "county-la": "",
+        "combined-authority": "",
+        "alt-names": [
+        ],
+        "former-gss-codes": [],
+        "notes": ""
+    },
+    {
         "local-authority-code": "SND",
         "official-name": "Sunderland City Council",
         "nice-name": "Sunderland",
