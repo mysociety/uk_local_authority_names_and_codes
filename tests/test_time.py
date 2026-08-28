@@ -3,12 +3,9 @@ Test properties of date and time
 
 """
 
-
 from datetime import datetime
-from pathlib import Path
 
 import pandas as pd
-from typing import Callable
 
 
 def datetime_valid(dt_str: str):

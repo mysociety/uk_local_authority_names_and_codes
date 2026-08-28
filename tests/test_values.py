@@ -2,19 +2,15 @@
 Tests of if values are correct and make sense
 """
 
-from datetime import datetime
 from pathlib import Path
 
 import pandas as pd
-from typing import Callable
-
 
 top_level = Path(__file__).parent.parent
 current_package = top_level / "data" / "packages" / "uk_la_past_current"
 
 
 def test_valid_authority_type(both_dfs: list[pd.DataFrame]):
-
     allowed_types = [
         "NI district",
         "Scottish unitary authority",
@@ -34,7 +30,6 @@ def test_valid_authority_type(both_dfs: list[pd.DataFrame]):
 
 
 def test_valid_region(both_dfs: list[pd.DataFrame]):
-
     allowed_types = [
         "Northern Ireland",
         "Scotland",

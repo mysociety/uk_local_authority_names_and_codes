@@ -4,21 +4,18 @@ the various source files
 
 """
 
-import json
-import sqlite3
-from pathlib import Path
-import shutil
 from datetime import datetime
+from pathlib import Path
+
 import nbformat
 import pandas as pd
+import rich
 from bs4 import BeautifulSoup
 from htmltabletomd import convert_table
 from nbconvert import MarkdownExporter
 from nbconvert.preprocessors import ExecutePreprocessor
-from traitlets.config import Config  # type: ignore
-import rich
-from typing import Any
 from rich.traceback import install
+from traitlets.config import Config  # type: ignore
 
 # Turn on rich tracebacks
 install(show_locals=False, width=None)
@@ -87,8 +84,6 @@ def create_overall_file(dest: Path):
     df = df[new_cols]
 
     df = df.sort_values("local-authority-code")
-
-    di = df.to_dict("records")
 
     to_json_and_csv(df, dest, "uk_local_authorities_future")
 
@@ -228,9 +223,9 @@ def remove_tables(body: str) -> str:
     soup = BeautifulSoup(body, "html.parser")
     for div in soup.find_all("table"):
         table = convert_table(str(div))
-        div.replaceWith(table)
+        div.replace_with(table)
     for div in soup.find_all("style"):
-        div.replaceWith("")
+        div.replace_with("")
 
     body = str(soup)
     body = body.replace("&lt;br/&gt;", "<br/>")

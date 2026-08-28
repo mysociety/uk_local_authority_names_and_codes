@@ -1,26 +1,29 @@
-#!/bin/bash 
+#!/bin/bash
 
 echo "--------------"
 echo "Running pytest"
 echo "--------------"
-pytest
+uv run pytest
 pytestexit=$?
 echo "--------------"
-echo "Running black"
+echo "Running ruff"
 echo "--------------"
-black . --check
-blackexit=$?
+uv run ruff check .
+ruffcheckexit=$?
+uv run ruff format . --check
+ruffformatexit=$?
 echo "--------------"
 echo "Running pyright"
 echo "--------------"
-pyright
+uv run pyright
 pyrightexit=$?
 
 echo "Pytest status: $pytestexit"
-echo "Black status: $blackexit"
+echo "Ruff Check status: $ruffcheckexit"
+echo "Ruff Format status: $ruffformatexit"
 echo "Pyright status: $pyrightexit"
 
-sum="$(($pytestexit + $blackexit + $pyrightexit))"
+sum="$(($pytestexit + $pyrightexit + $ruffcheckexit + $ruffformatexit))"
 
 if [ "$sum" != "0" ]; then
     exit 1

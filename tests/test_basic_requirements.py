@@ -3,13 +3,7 @@ Test required columns are present and are not duplicated
 
 """
 
-
-from datetime import datetime
 from pathlib import Path
-from typing import Callable
-
-import pandas as pd
-import pytest
 
 top_level = Path(__file__).parent.parent
 current_package = top_level / "data" / "packages" / "uk_la_past_current"

@@ -1,4 +1,5 @@
 import rich_click as click
+
 from uk_local_authority_names_and_codes.build import (
     create_all_files,
     create_future_only,

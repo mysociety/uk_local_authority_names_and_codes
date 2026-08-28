@@ -3,12 +3,9 @@ Tests that the current version is correctly excluding all references to the futu
 
 """
 
-
 from datetime import datetime
-from pathlib import Path
 
 import pandas as pd
-import pytest
 
 
 def test_no_future_start_date(df):
