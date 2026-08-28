@@ -15,7 +15,7 @@ jobs:
     steps:
 
       - name: Checkout repo content
-        uses: actions/checkout@v3
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           submodules: 'recursive'
           
@@ -28,6 +28,6 @@ jobs:
             dataset version auto --auto-ban major --all --publish
             
       - name: Push new data
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@4a55954c782fc1ea30b9056cd3e7a2b40ca8887d # v7.2.0
         with:
           commit_message: "Update repo data based on source changes"
