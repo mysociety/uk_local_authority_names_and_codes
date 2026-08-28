@@ -1,0 +1,13 @@
+#!/bin/bash
+set -euo pipefail
+
+if ! command -v gh >/dev/null 2>&1; then
+    echo "GitHub CLI (gh) is required." >&2
+    exit 127
+fi
+
+if ! gh extension list | awk 'index($0, "github/gh-actions-lock") { found = 1 } END { exit !found }'; then
+    gh extension install github/gh-actions-lock
+fi
+
+gh actions-lock "$@"

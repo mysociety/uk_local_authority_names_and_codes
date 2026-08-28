@@ -17,7 +17,7 @@ runs:
 
   steps:
     - name: Build image from docker-compose
-      uses: ./.github/actions/cached-build
+      uses: $/.github/actions/cached-build
       with:
         branch: "main"
         dockerfile: Dockerfile

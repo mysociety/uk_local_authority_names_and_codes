@@ -1,3 +1,5 @@
+# This workflow is managed by gh actions-lock.
+
 name: Run project tests
 
 concurrency: 
@@ -17,12 +19,12 @@ jobs:
     steps:
 
       - name: checkout repo content
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7.0.1
         with:
           submodules: 'recursive'
 
       - name: Run project tests
-        uses: ./.github/actions/in-dev-container
+        uses: $/.github/actions/in-dev-container
         with:
           run: |
             script/test
