@@ -3,7 +3,8 @@ services:
     image: mysociety/uk_local_authority_names_and_codes:${TAG:-latest}
     build:
       context: .
-      dockerfile: Dockerfile.dev
+      dockerfile: Dockerfile
     working_dir: /workspaces/uk_local_authority_names_and_codes
     volumes:
       - ./:/workspaces/uk_local_authority_names_and_codes/
+      - /workspaces/uk_local_authority_names_and_codes/.venv

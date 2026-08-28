@@ -20,7 +20,7 @@ runs:
       uses: ./.github/actions/cached-build
       with:
         branch: "main"
-        dockerfile: Dockerfile.dev
+        dockerfile: Dockerfile
         push_to_registry: false
     
     - name: construct docker command

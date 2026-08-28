@@ -6,3 +6,7 @@ git checkout main
 cd ../..
 cd docs/theme
 git checkout main
+
+cd ../..
+uv sync --group notebook
+echo 'eval "$(_DATASET_COMPLETE=bash_source dataset)"' >> ~/.bashrc
