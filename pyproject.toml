@@ -21,6 +21,7 @@ project = "uk_local_authority_names_and_codes.__main__:main"
 
 [dependency-groups]
 test = [
+    { include-group = "render" },
     "pytest>=8",
 ]
 lint = [

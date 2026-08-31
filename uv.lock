@@ -4175,6 +4175,7 @@ dependencies = [
 
 [package.dev-dependencies]
 dev = [
+    { name = "data-common", extra = ["render"] },
     { name = "pandas-stubs", version = "2.3.3.260113", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.11'" },
     { name = "pandas-stubs", version = "3.0.5.260730", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.11'" },
     { name = "pyright" },
@@ -4195,6 +4196,7 @@ render = [
     { name = "data-common", extra = ["render"] },
 ]
 test = [
+    { name = "data-common", extra = ["render"] },
     { name = "pytest" },
 ]
 type = [
@@ -4219,6 +4221,7 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 dev = [
+    { name = "data-common", extras = ["render"], editable = "src/data_common" },
     { name = "pandas-stubs", specifier = ">=2.2" },
     { name = "pyright", specifier = ">=1.1.248" },
     { name = "pytest", specifier = ">=8" },
@@ -4231,7 +4234,10 @@ notebook = [
     { name = "jupyterlab", specifier = ">=4" },
 ]
 render = [{ name = "data-common", extras = ["render"], editable = "src/data_common" }]
-test = [{ name = "pytest", specifier = ">=8" }]
+test = [
+    { name = "data-common", extras = ["render"], editable = "src/data_common" },
+    { name = "pytest", specifier = ">=8" },
+]
 type = [
     { name = "pandas-stubs", specifier = ">=2.2" },
     { name = "pyright", specifier = ">=1.1.248" },
