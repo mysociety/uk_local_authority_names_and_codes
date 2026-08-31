@@ -1,9 +1,9 @@
-title: Lookup table for local authority names to local authority codes (includes future
-  councils)
-description: This is a lookup table for local authority names to local authority codes
-  (includes future councils)
+title: Lookup table for local authority names to local authority codes (includes
+  future councils)
+description: This is a lookup table for local authority names to local authority
+  codes (includes future councils)
 custom:
-  row_count: 1775
+  row_count: 1774
 path: lookup_name_to_registry.csv
 name: lookup_name_to_registry
 profile: tabular-data-resource
@@ -21,8 +21,8 @@ schema:
     example: Aberdeen City
   - name: local-authority-code
     type: string
-    description: Local authority code (three letters for standard councils, four letters
-      for combined authorities)
+    description: Local authority code (three letters for standard councils, four
+      letters for combined authorities)
     constraints:
       unique: false
     example: ABC

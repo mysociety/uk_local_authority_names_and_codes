@@ -1,6 +1,7 @@
 title: UK Local Authorities (past/current/future)
-description: Table of information about local authorities, and mapping between different
-  ID schemes. Includes current, some past, and some future authorities.
+description: Table of information about local authorities, and mapping between 
+  different ID schemes. Includes current, some past, and some future 
+  authorities.
 custom:
   row_count: 470
 path: uk_local_authorities_future.csv
@@ -14,8 +15,8 @@ schema:
   fields:
   - name: local-authority-code
     type: string
-    description: Fixed ID for council, not linked to boundary changes. Based on old
-      local authorities register.
+    description: Fixed ID for council, not linked to boundary changes. Based on 
+      old local authorities register.
     constraints:
       unique: true
     example: ABC
@@ -33,27 +34,30 @@ schema:
     example: Aberdeen City
   - name: gss-code
     type: string
-    description: The code for the statistical geography of the boundaries of the authority
+    description: The code for the statistical geography of the boundaries of the
+      authority
     constraints:
       unique: false
     example: E06000001
   - name: start-date
     type: string
-    description: The date the authority came into existance (YYYY-MM-DD). Can be blank.
+    description: The date the authority came into existance (YYYY-MM-DD). Can be
+      blank.
     constraints:
       unique: false
     example: '1974-04-01'
   - name: end-date
     type: string
-    description: The date the authority was abolished (YYYY-MM-DD). Can be blank.
+    description: The date the authority was abolished (YYYY-MM-DD). Can be 
+      blank.
     constraints:
       unique: false
     example: '2015-03-31'
   - name: replaced-by
     type: string
-    description: If the council was abolished a comma seperated list of successor
-      bodies. Comma seperated when there are multiple (rare - when a county council
-      area is divided into two unitaries).
+    description: If the council was abolished a comma seperated list of 
+      successor bodies. Comma seperated when there are multiple (rare - when a 
+      county council area is divided into two unitaries).
     constraints:
       unique: false
     example: BPC
@@ -70,7 +74,8 @@ schema:
     example: England
   - name: region
     type: string
-    description: English region, but using the nation for non-English authorities.
+    description: English region, but using the nation for non-English 
+      authorities.
     constraints:
       unique: false
     example: East Midlands
@@ -112,42 +117,44 @@ schema:
     example: City corporation
   - name: county-la
     type: string
-    description: If this council overlaps with a county council, the local-authority-code
-      of this council. Can be none.
+    description: If this council overlaps with a county council, the 
+      local-authority-code of this council. Can be none.
     constraints:
       unique: false
     example: BKM
   - name: combined-authority
     type: string
-    description: If the council overlaps with a combined authority, the local-authority-code
-      of this council. Can be done.
+    description: If the council overlaps with a combined authority, the 
+      local-authority-code of this council. Can be done.
     constraints:
       unique: false
     example: CPCA
   - name: alt-names
     type: string
-    description: Comma seperated list of alternative names for a local authority.
+    description: Comma seperated list of alternative names for a local 
+      authority.
     constraints:
       unique: true
-    example: Aberdeen City,aberdeen c ity,aberdeen city,aberdeen city council,aberdeen
-      cuty,aberdeen,city of aberdeen
+    example: Aberdeen City,aberdeen c ity,aberdeen city,aberdeen city 
+      council,aberdeen cuty,aberdeen,city of aberdeen
   - name: former-gss-codes
     type: string
-    description: A list of any gss codes for an area that apply to the former boundaries
-      of a local authority.
+    description: A list of any gss codes for an area that apply to the former 
+      boundaries of a local authority.
     constraints:
       unique: false
     example: E06000048
   - name: notes
     type: string
-    description: Any notes on columns or values that require special interpretation.
+    description: Any notes on columns or values that require special 
+      interpretation.
     constraints:
       unique: false
     example: iso code and internal code may differ
   - name: current-authority
     type: boolean
-    description: a boolean saying if the authority is currently a legal authority
-      (not a past or future authority)
+    description: a boolean saying if the authority is currently a legal 
+      authority (not a past or future authority)
     constraints:
       unique: false
       enum:
@@ -156,8 +163,9 @@ schema:
     example: 'False'
   - name: BS-6879
     type: string
-    description: A 3-4 letter code for the authority. Substancially the same as local-authority-code,
-      but local-authority-code is now assigned seperately and there may be drift.
+    description: A 3-4 letter code for the authority. Substancially the same as 
+      local-authority-code, but local-authority-code is now assigned seperately 
+      and there may be drift.
     constraints:
       unique: false
     example: ABC
@@ -169,7 +177,8 @@ schema:
     example: E0101
   - name: even-older-register-and-code
     type: string
-    description: A combination of register and code used in the former official registers.
+    description: A combination of register and code used in the former official 
+      registers.
     constraints:
       unique: false
     example: local-authority-wls:AGY
@@ -187,7 +196,8 @@ schema:
     example: 3.0
   - name: pop-2020
     type: number
-    description: The estimated number of people living in the local authority in 2020.
+    description: The estimated number of people living in the local authority in
+      2020.
     constraints:
       unique: false
     example: 2226.0
@@ -217,8 +227,8 @@ schema:
     example: -7.503784363910277
   - name: powers
     type: string
-    description: A grouping of local authority type based on the actual powers of
-      an area (merges several effective 'unitary' categories)
+    description: A grouping of local authority type based on the actual powers 
+      of an area (merges several effective 'unitary' categories)
     constraints:
       unique: false
       enum:
@@ -230,8 +240,8 @@ schema:
     example: combined
   - name: lower-or-unitary
     type: boolean
-    description: Boolean stating if the council is a district (lower tier) or unitary
-      council
+    description: Boolean stating if the council is a district (lower tier) or 
+      unitary council
     constraints:
       unique: false
       enum:
@@ -240,7 +250,8 @@ schema:
     example: 'False'
   - name: mapit-area-code
     type: string
-    description: Where avaliable, the kind of geography this authority is in mapit.
+    description: Where avaliable, the kind of geography this authority is in 
+      mapit.
     constraints:
       unique: false
     example: COI
@@ -258,7 +269,8 @@ schema:
     example: 11UB
   - name: old-register-and-code
     type: string
-    description: A lookup to the paired register and code on the former register project.
+    description: A lookup to the paired register and code on the former register
+      project.
     constraints:
       unique: false
     example: local-authority-eng:ADU

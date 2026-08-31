@@ -1,7 +1,8 @@
 title: Name to local authority code lookup
-description: Dataset that maps variations on a name to the the ID for the council.
+description: Dataset that maps variations on a name to the the ID for the 
+  council.
 custom:
-  row_count: 1775
+  row_count: 1774
 path: lookup_name_to_registry.csv
 name: lookup_name_to_registry
 profile: tabular-data-resource

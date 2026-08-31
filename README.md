@@ -91,19 +91,19 @@ This are optional columns, and not entirely populated.
 
 | column | complete | % |
 | :--- | :--- | :--- |
-| area | 394 | 99.2% |
 | pop-2020 | 394 | 99.2% |
-| lat | 391 | 98.5% |
-| long | 391 | 98.5% |
+| area | 394 | 99.2% |
 | x | 391 | 98.5% |
+| lat | 391 | 98.5% |
 | y | 391 | 98.5% |
+| long | 391 | 98.5% |
 | BS-6879 | 387 | 97.5% |
 | wdtk-id | 387 | 97.5% |
 | old-register-and-code | 384 | 96.7% |
 | open-council-data-id | 373 | 94.0% |
 | gov-uk-slug | 371 | 93.5% |
-| os | 361 | 90.9% |
 | snac | 361 | 90.9% |
+| os | 361 | 90.9% |
 | mapit-area-code | 310 | 78.1% |
 | ecode | 307 | 77.3% |
 | old-ons-la-code | 307 | 77.3% |
