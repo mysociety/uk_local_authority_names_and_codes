@@ -12,6 +12,6 @@ default:
     rerun: true
     hide_input: true
   upload:
-    gdrive:
-     g_folder_id: blank
-     g_drive_id: blank
+    site:
+      description: Example analysis generated from the repository notebook.
+      order: 10

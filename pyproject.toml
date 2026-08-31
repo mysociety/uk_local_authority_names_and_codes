@@ -50,6 +50,9 @@ dev = [
 [tool.uv.sources]
 data-common = { path = "src/data_common/", editable = true }
 
+[tool.pytest.ini_options]
+markers = ["notebook: exercises notebook execution and analysis bundle production"]
+
 [build-system]
 requires = ["uv_build>=0.8.3,<0.9.0"]
 build-backend = "uv_build"
@@ -65,10 +68,32 @@ default_page_title = "Settings file defined title"
 
 [tool.dataset]
 dataset_dir = "data/packages"
-publish_dir = "docs/"
+publish_dir = "data/packages/_published"
 publish_url = "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/"
 credit_text = "If you find this data useful, please let us know to help us make the case for future funding."
 credit_url = "https://survey.alchemer.com/s3/6876792/Data-usage"
+
+[tool.dataset.site]
+title = "UK Local Authorities"
+homepage_title = "UK local authorities lookup table"
+description = "Dataset of basic information and ID lookup for UK local authorities."
+intro = "Datasets to better join up and compare local authority information between different datasets."
+base_url = "/uk_local_authority_names_and_codes"
+canonical_url = "https://pages.mysociety.org/uk_local_authority_names_and_codes"
+source_url = "https://github.com/mysociety/uk_local_authority_names_and_codes"
+output_dir = "_site"
+accent_colour = "#4faded"
+
+[tool.dataset.site.downloads]
+gate = "soft"
+survey = "6876792/Data-usage"
+form_header = "Can you help us with funding by telling us more about yourself?"
+show_code_examples = true
+show_subscription = true
+
+[tool.dataset.site.analysis]
+enabled = true
+bundle_dir = "_render/site/analysis"
 
 [tool.ruff]
 extend-exclude = ["migrations", "*.pyi"]
