@@ -7,7 +7,6 @@ workflows:
         - 'actions/checkout@v7.0.1'
         - 'actions/configure-pages@v6.0.0'
         - 'actions/deploy-pages@v5.0.0'
-        - 'actions/jekyll-build-pages@v1.0.13'
         - 'actions/upload-pages-artifact@v5.0.0'
         - 'docker/login-action@v4.6.0'
         - 'docker/metadata-action@v6.2.0'
@@ -34,11 +33,6 @@ dependencies:
         commit: 'sha1-cd2ce8fcbc39b97be8ca5fce6e763baed58fa128'
         owner_id: 44036562
         repo_id: 438112499
-    'actions/jekyll-build-pages@v1.0.13':
-        ref: 'v1.0.13'
-        commit: 'sha1-44a6e6beabd48582f863aeeb6cb2151cc1716697'
-        owner_id: 44036562
-        repo_id: 438323626
     'actions/upload-artifact@bbbca2ddaa5d8feaa63e36b76fdaad77386f024f':
         ref: 'v7.0.0'
         commit: 'sha1-bbbca2ddaa5d8feaa63e36b76fdaad77386f024f'
