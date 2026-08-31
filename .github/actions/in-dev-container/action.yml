@@ -17,26 +17,20 @@ runs:
 
   steps:
     - name: Build image from docker-compose
-      uses: ./.github/actions/cached-build
+      uses: $/.github/actions/cached-build
       with:
         branch: "main"
         dockerfile: Dockerfile
         push_to_registry: false
     
-    - name: construct docker command
-      shell: bash
-      run: |
-        composeFiles="-f docker-compose.yml"
-        shellCommands='$@'
-        echo "docker compose $composeFiles run --volume /home/runner:/home/runner/ ${{ inputs.app }} ${{ inputs.shell }} $shellCommands" > ${{ github.action_path }}/docker_command.sh
-        echo "${{ github.action_path }}" >> $GITHUB_PATH
-
     - name: Run script in docker
-      shell: bash docker_command.sh {0}
-      run: |
-        ${{ inputs.run }}
-
-    - name: Clean up created shell
       shell: bash
+      env:
+        DEV_CONTAINER_APP: ${{ inputs.app }}
+        DEV_CONTAINER_RUN: ${{ inputs.run }}
+        DEV_CONTAINER_SHELL: ${{ inputs.shell }}
       run: |
-        rm -r ${{ github.action_path }}/docker_command.sh
+        read -r -a shell_args <<< "$DEV_CONTAINER_SHELL"
+        printf '%s\n' "$DEV_CONTAINER_RUN" | docker compose -f docker-compose.yml run \
+          --volume /home/runner:/home/runner/ \
+          "$DEV_CONTAINER_APP" "${shell_args[@]}" -s

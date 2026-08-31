@@ -43,12 +43,12 @@ runs:
   - name: Build and push Docker image (base if present)
     shell: bash
     run: |
-      if grep -q " as base" "./${{ inputs.dockerfile }}"; then
+      if grep -q " as base" "./${INPUTS_DOCKERFILE}"; then
         docker build \
           --target base \
           --cache-from $REGISTRY/$IMAGE_NAME:base_$BRANCH \
           --tag $REGISTRY/$IMAGE_NAME:base_$BRANCH \
-          --file ./${{ inputs.dockerfile }} \
+          --file "./${INPUTS_DOCKERFILE}" \
           --build-arg BUILDKIT_INLINE_CACHE=1 \
           "."
       fi
@@ -58,11 +58,12 @@ runs:
       BRANCH: ${{ inputs.branch }}
       DOCKER_BUILDKIT: 1
       COMPOSE_DOCKER_CLI_BUILD: 1
+      INPUTS_DOCKERFILE: ${{ inputs.dockerfile }}
 
   - name: Build and tag relevant app from docker-compose
     shell: bash
     run: |
-      docker compose -f  ${{ inputs.docker_compose_file }} build ${{ inputs.docker_compose_file_app }}
+      docker compose -f "${INPUTS_DOCKER_COMPOSE_FILE}" build "${INPUTS_DOCKER_COMPOSE_FILE_APP}"
       docker tag "$IMAGE_NAME" "$REGISTRY/$IMAGE_NAME"
       for val in $TAGS; do
         docker tag "$IMAGE_NAME" "$val"
@@ -73,6 +74,8 @@ runs:
       IMAGE_NAME: ${{ github.repository }}
       DOCKER_BUILDKIT: 1
       COMPOSE_DOCKER_CLI_BUILD: 1
+      INPUTS_DOCKER_COMPOSE_FILE: ${{ inputs.docker_compose_file }}
+      INPUTS_DOCKER_COMPOSE_FILE_APP: ${{ inputs.docker_compose_file_app }}
 
   - name: Log in to the Container registry
     if: ${{ inputs.push_to_registry == 'true' }}
