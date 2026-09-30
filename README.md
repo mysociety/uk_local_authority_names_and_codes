@@ -8,14 +8,14 @@ Lookup between the many, many different ways of naming and coding UK local autho
 
 If you ever try to match UK local authority statistics against each other you'll quickly find your efforts frustrated by inconsistent uses of official codes and different versions of LA names. These lookups are an on-going tool to help translate between these. 
 
-To update this information, update the files in the `source` folder:
+To update this information, update the files in the `data\source` folder:
 
-* `source\local-authority-info.json` is the core file, with most key relational information. 
-* `source\lookups` contains csvs which will be merged on the basis of keys in the main file. This is mostly for lookups between ID schemes. 
+* `data\source\local-authority-info.json` is the core file, with most key relational information. 
+* `data\source\lookups` contains csvs which will be merged on the basis of keys in the main file. This is mostly for lookups between ID schemes. 
 
 Updating these files and pushing to github will trigger a rebuild and test of the output files.
 
-The output files avaliable are in the `data` directory:
+The output files available are in the `data` directory:
 
 * `uk_local_authorities.csv` - big lookup table. 
 * `lookup_name_to_registry.csv` combines all alternate names into one column to let you quickly match any data and get back a canonical code (which can be checked against the other table to convert to your preferred format). Also combined with this [name lookup](https://github.com/openregister/local-authority-data/edit/master/maps/name.tsv) from openregister for fuller coverage.
@@ -24,7 +24,14 @@ The output files avaliable are in the `data` directory:
 
 ## Testing offline
 
+Follow steps in 'Set up package for local testing'
 Run `dataset build --all` to generate the package data, you can then use `dataset validate --all` to check underlying tests are met.
+
+## Set up package for local testing
+```sh
+git submodule update --init --recursive
+poetry install
+```
 
 ## What is 'local-authority-code'
 
