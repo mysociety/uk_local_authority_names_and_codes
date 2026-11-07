@@ -2410,7 +2410,7 @@
         "local-authority-code": "SHF",
         "official-name": "Sheffield City Council",
         "nice-name": "Sheffield",
-        "gss-code": "E08000019",
+        "gss-code": "E08000039",
         "start-date": "2005-06-08",
         "end-date": "",
         "replaced-by": "",
@@ -2425,7 +2425,9 @@
             "sheffield city council",
             "sheffield district"
         ],
-        "former-gss-codes": [],
+        "former-gss-codes": [
+            "E08000019"
+        ],
         "notes": ""
     },
     {
@@ -9335,7 +9337,7 @@
         "local-authority-code": "BNS",
         "official-name": "Barnsley Metropolitan Borough Council",
         "nice-name": "Barnsley",
-        "gss-code": "E08000016",
+        "gss-code": "E08000038",
         "start-date": "1974-04-01",
         "end-date": "",
         "replaced-by": "",
@@ -9350,7 +9352,9 @@
             "barnsley district",
             "barnsley metropolitan borough council"
         ],
-        "former-gss-codes": [],
+        "former-gss-codes": [
+            "E08000016"
+        ],
         "notes": ""
     },
     {
