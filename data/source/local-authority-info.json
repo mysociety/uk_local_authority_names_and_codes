@@ -1052,7 +1052,7 @@
         "region": "South West",
         "local-authority-type-name": "Unitary authority",
         "county-la": "",
-        "combined-authority": "",
+        "combined-authority": "DTCA",
         "alt-names": [
             "Torbay",
             "Torbay UA",
@@ -1477,7 +1477,7 @@
         "region": "North East",
         "local-authority-type-name": "Metropolitan district",
         "county-la": "",
-        "combined-authority": "NECA",
+        "combined-authority": "NESA",
         "alt-names": [
             "Sunderland",
             "sunderland",
@@ -1899,7 +1899,7 @@
         "region": "North East",
         "local-authority-type-name": "Metropolitan district",
         "county-la": "",
-        "combined-authority": "NECA",
+        "combined-authority": "NESA",
         "alt-names": [
             "South Tyneside",
             "south tyneside",
@@ -3490,7 +3490,7 @@
         "region": "North East",
         "local-authority-type-name": "Unitary authority",
         "county-la": "",
-        "combined-authority": "NTCA",
+        "combined-authority": "NESA",
         "alt-names": [
             "Northumberland",
             "Northumberland UA",
@@ -3638,7 +3638,7 @@
         "region": "North East",
         "local-authority-type-name": "Metropolitan district",
         "county-la": "",
-        "combined-authority": "NTCA",
+        "combined-authority": "NESA",
         "alt-names": [
             "North Tyneside",
             "north tyneside",
@@ -3678,8 +3678,8 @@
         "nice-name": "North of Tyne",
         "gss-code": "E47000011",
         "start-date": "2018-11-02",
-        "end-date": "",
-        "replaced-by": "",
+        "end-date": "2024-05-07",
+        "replaced-by": "NESA",
         "nation": "England",
         "region": "North East",
         "local-authority-type-name": "Combined authority",
@@ -3855,13 +3855,76 @@
         "notes": ""
     },
     {
+        "local-authority-code": "NESA",
+        "official-name": "North East Mayoral Strategic Authority",
+        "nice-name": "North East MSA",
+        "gss-code": "E47000014",
+        "start-date": "2024-05-07",
+        "end-date": "",
+        "replaced-by": "",
+        "nation": "England",
+        "region": "North East",
+        "local-authority-type-name": "Combined authority",
+        "county-la": "",
+        "combined-authority": "",
+        "alt-names": [
+            "North East Mayoral Combined Authority",
+            "North East MCA",
+            "North East Strategic Authority"
+        ],
+        "former-gss-codes": [],
+        "notes": "Renamed from North East Mayoral Combined Authority on 2026-05-18"
+    },
+    {
+        "local-authority-code": "LCCA",
+        "official-name": "Lancashire Combined County Authority",
+        "nice-name": "Lancashire CCA",
+        "gss-code": "E47000018",
+        "start-date": "2025-02-05",
+        "end-date": "",
+        "replaced-by": "",
+        "nation": "England",
+        "region": "North West",
+        "local-authority-type-name": "Combined authority",
+        "county-la": "",
+        "combined-authority": "",
+        "alt-names": [
+            "Lancashire CA"
+        ],
+        "former-gss-codes": [],
+        "notes": ""
+    },
+    {
+        "local-authority-code": "DTCA",
+        "official-name": "Devon and Torbay Combined County Authority",
+        "nice-name": "Devon and Torbay CCA",
+        "gss-code": "E47000015",
+        "start-date": "2025-02-05",
+        "end-date": "",
+        "replaced-by": "",
+        "nation": "England",
+        "region": "South West",
+        "local-authority-type-name": "Combined authority",
+        "county-la": "",
+        "combined-authority": "",
+        "alt-names": [
+            "Devon and Torbay CA",
+            "Devon and Torbay Combined Authority",
+            "Devon & Torbay Combined County Authority",
+            "Devon & Torbay CA",
+            "Devon & Torbay Combined Authority"
+        ],
+        "former-gss-codes": [],
+        "notes": ""
+    },
+    {
         "local-authority-code": "NECA",
         "official-name": "North East Combined Authority",
         "nice-name": "North East",
         "gss-code": "E47000010",
         "start-date": "2014-04-15",
-        "end-date": "",
-        "replaced-by": "",
+        "end-date": "2024-05-07",
+        "replaced-by": "NESA",
         "nation": "England",
         "region": "North East",
         "local-authority-type-name": "Combined authority",
@@ -4096,7 +4159,7 @@
         "region": "North East",
         "local-authority-type-name": "Metropolitan district",
         "county-la": "",
-        "combined-authority": "NTCA",
+        "combined-authority": "NESA",
         "alt-names": [
             "Newcastle upon Tyne",
             "newcastle city council",
@@ -5517,7 +5580,7 @@
         "region": "North West",
         "local-authority-type-name": "County",
         "county-la": "",
-        "combined-authority": "",
+        "combined-authority": "LCCA",
         "alt-names": [
             "Lancashire",
             "lancashire",
@@ -6325,7 +6388,7 @@
         "region": "North East",
         "local-authority-type-name": "Metropolitan district",
         "county-la": "",
-        "combined-authority": "NECA",
+        "combined-authority": "NESA",
         "alt-names": [
             "Gateshead",
             "gateshead",
@@ -7071,7 +7134,7 @@
         "region": "North East",
         "local-authority-type-name": "Unitary authority",
         "county-la": "",
-        "combined-authority": "NECA",
+        "combined-authority": "NESA",
         "alt-names": [
             "County Durham",
             "Durham",
@@ -7287,7 +7350,7 @@
         "region": "South West",
         "local-authority-type-name": "County",
         "county-la": "",
-        "combined-authority": "",
+        "combined-authority": "DTCA",
         "alt-names": [
             "Devon",
             "devon",
@@ -9111,7 +9174,7 @@
         "region": "North West",
         "local-authority-type-name": "Unitary authority",
         "county-la": "",
-        "combined-authority": "",
+        "combined-authority": "LCCA",
         "alt-names": [
             "Blackpool",
             "Blackpool UA",
@@ -9133,7 +9196,7 @@
         "region": "North West",
         "local-authority-type-name": "Unitary authority",
         "county-la": "",
-        "combined-authority": "",
+        "combined-authority": "LCCA",
         "alt-names": [
             "Blackburn with Darwen",
             "Blackburn With Darwen UA",
