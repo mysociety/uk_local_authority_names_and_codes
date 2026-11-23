@@ -2,7 +2,7 @@
     "name": "uk_la_future",
     "title": "UK Local Authorities (including future)",
     "description": "A dataset that includes current and previous local authorities, as well as some planned but not in force yet\n",
-    "version": "1.7.3",
+    "version": "1.8.0",
     "keywords": [
         "UK Local data",
         "United Kingdom"
@@ -23,24 +23,14 @@
     ],
     "custom": {
         "build": "uk_local_authority_names_and_codes.build:create_future_only",
-        "dataset_order": 2,
         "tests": [
             "test_basic_requirements",
             "test_time",
             "test_values"
         ],
-        "download_options": {
-            "gate": "default",
-            "survey": "default",
-            "header_text": "default"
-        },
+        "dataset_order": 2,
         "composite": {
             "xlsx": {
-                "include": "all",
-                "exclude": "none",
-                "render": true
-            },
-            "sqlite": {
                 "include": "all",
                 "exclude": "none",
                 "render": true
@@ -49,7 +39,17 @@
                 "include": "all",
                 "exclude": "none",
                 "render": true
+            },
+            "sqlite": {
+                "include": "all",
+                "exclude": "none",
+                "render": true
             }
+        },
+        "download_options": {
+            "gate": "default",
+            "survey": "default",
+            "header_text": "default"
         },
         "change_log": {
             "0.1.0": "Initial commit of new data",
@@ -73,22 +73,64 @@
             "1.7.0": "Change in data for resource(s): lookup_name_to_registry",
             "1.7.1": "Minor change in data for resource(s): uk_local_authorities_future",
             "1.7.2": "Minor change in data for resource(s): uk_local_authorities_future",
-            "1.7.3": "Minor change in data for resource(s): uk_local_authorities_future"
+            "1.7.3": "Minor change in data for resource(s): uk_local_authorities_future",
+            "1.8.0": "Change in data for resource(s): uk_local_authorities_future"
         },
         "datasette": {
             "about": "Info & Downloads",
-            "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_3"
+            "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_8_0"
         }
     },
     "resources": [
         {
+            "title": "Lookup table for local authority names to local authority codes (includes future councils)",
+            "description": "This is a lookup table for local authority names to local authority codes (includes future councils)",
+            "custom": {
+                "row_count": 1774,
+                "datasette": {
+                    "about": "Info & Downloads",
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_8_0#lookup_name_to_registry"
+                }
+            },
+            "path": "lookup_name_to_registry.csv",
+            "name": "lookup_name_to_registry",
+            "profile": "tabular-data-resource",
+            "scheme": "file",
+            "format": "csv",
+            "hashing": "md5",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "la-name",
+                        "type": "string",
+                        "description": "Local authority name",
+                        "constraints": {
+                            "unique": false
+                        },
+                        "example": "Aberdeen City"
+                    },
+                    {
+                        "name": "local-authority-code",
+                        "type": "string",
+                        "description": "Local authority code (three letters for standard councils, four letters for combined authorities)",
+                        "constraints": {
+                            "unique": false
+                        },
+                        "example": "ABC"
+                    }
+                ]
+            },
+            "hash": "9a68d3e30b10e2749799f49a14535a94"
+        },
+        {
             "title": "UK Local Authorities (past/current/future)",
             "description": "Table of information about local authorities, and mapping between different ID schemes. Includes current, some past, and some future authorities.",
             "custom": {
-                "row_count": 470,
+                "row_count": 473,
                 "datasette": {
                     "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_3#uk_local_authorities_future"
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_8_0#uk_local_authorities_future"
                 }
             },
             "path": "uk_local_authorities_future.csv",
@@ -150,7 +192,16 @@
                         "type": "string",
                         "description": "The date the authority was abolished (YYYY-MM-DD). Can be blank.",
                         "constraints": {
-                            "unique": false
+                            "unique": false,
+                            "enum": [
+                                "2015-03-31",
+                                "2019-03-31",
+                                "2020-03-31",
+                                "2021-04-01",
+                                "2023-04-01",
+                                "2024-05-07",
+                                "nan"
+                            ]
                         },
                         "example": "2015-03-31"
                     },
@@ -183,7 +234,22 @@
                         "type": "string",
                         "description": "English region, but using the nation for non-English authorities.",
                         "constraints": {
-                            "unique": false
+                            "unique": false,
+                            "enum": [
+                                "East Midlands",
+                                "East of England",
+                                "London",
+                                "North East",
+                                "North West",
+                                "Northern Ireland",
+                                "Scotland",
+                                "South East",
+                                "South West",
+                                "Wales",
+                                "West Midlands",
+                                "Yorkshire and The Humber",
+                                "nan"
+                            ]
                         },
                         "example": "East Midlands"
                     },
@@ -263,7 +329,22 @@
                         "type": "string",
                         "description": "A list of any gss codes for an area that apply to the former boundaries of a local authority.",
                         "constraints": {
-                            "unique": false
+                            "unique": false,
+                            "enum": [
+                                "E06000048",
+                                "E07000097",
+                                "E07000100",
+                                "E07000101",
+                                "E07000104",
+                                "E08000020",
+                                "E47000005",
+                                "S12000009",
+                                "S12000015",
+                                "S12000024",
+                                "S12000044",
+                                "S12000046,S12000043",
+                                "nan"
+                            ]
                         },
                         "example": "E06000048"
                     },
@@ -272,9 +353,14 @@
                         "type": "string",
                         "description": "Any notes on columns or values that require special interpretation.",
                         "constraints": {
-                            "unique": false
+                            "unique": false,
+                            "enum": [
+                                "Renamed from North East Mayoral Combined Authority on 2026-05-18",
+                                "iso code and internal code may differ",
+                                "nan"
+                            ]
                         },
-                        "example": "iso code and internal code may differ"
+                        "example": "Renamed from North East Mayoral Combined Authority on 2026-05-18"
                     },
                     {
                         "name": "current-authority",
@@ -332,7 +418,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 3.0
+                        "example": "101.0"
                     },
                     {
                         "name": "pop-2020",
@@ -341,7 +427,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 2226.0
+                        "example": "100008.0"
                     },
                     {
                         "name": "x",
@@ -350,7 +436,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 43329.5655016295
+                        "example": "106921.96907878877"
                     },
                     {
                         "name": "y",
@@ -359,7 +445,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 13020.532664340468
+                        "example": "100809.89639360756"
                     },
                     {
                         "name": "lat",
@@ -368,7 +454,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 49.93693291412038
+                        "example": "49.93693291412038"
                     },
                     {
                         "name": "long",
@@ -377,7 +463,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": -7.503784363910277
+                        "example": "-0.0082579319757085"
                     },
                     {
                         "name": "powers",
@@ -413,7 +499,16 @@
                         "type": "string",
                         "description": "Where avaliable, the kind of geography this authority is in mapit.",
                         "constraints": {
-                            "unique": false
+                            "unique": false,
+                            "enum": [
+                                "COI",
+                                "CTY",
+                                "DIS",
+                                "LBO",
+                                "MTD",
+                                "UTA",
+                                "nan"
+                            ]
                         },
                         "example": "COI"
                     },
@@ -451,7 +546,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 1.0
+                        "example": "1.0"
                     },
                     {
                         "name": "os-file",
@@ -469,7 +564,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 7000000000000000.0
+                        "example": "7000000000000000.0"
                     },
                     {
                         "name": "snac",
@@ -487,53 +582,12 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 3.0
+                        "example": "100.0"
                     }
                 ]
             },
             "_sheet_order": 1,
-            "hash": "a3406df06b408d183564dbab599a59de"
-        },
-        {
-            "title": "Lookup table for local authority names to local authority codes (includes future councils)",
-            "description": "This is a lookup table for local authority names to local authority codes (includes future councils)",
-            "custom": {
-                "row_count": 1775,
-                "datasette": {
-                    "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_future/1_7_3#lookup_name_to_registry"
-                }
-            },
-            "path": "lookup_name_to_registry.csv",
-            "name": "lookup_name_to_registry",
-            "profile": "tabular-data-resource",
-            "scheme": "file",
-            "format": "csv",
-            "hashing": "md5",
-            "encoding": "utf-8",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "la-name",
-                        "type": "string",
-                        "description": "Local authority name",
-                        "constraints": {
-                            "unique": false
-                        },
-                        "example": "Aberdeen City"
-                    },
-                    {
-                        "name": "local-authority-code",
-                        "type": "string",
-                        "description": "Local authority code (three letters for standard councils, four letters for combined authorities)",
-                        "constraints": {
-                            "unique": false
-                        },
-                        "example": "ABC"
-                    }
-                ]
-            },
-            "hash": "9a68d3e30b10e2749799f49a14535a94"
+            "hash": "7e25104525e0aaae3209cd1bb9a6b423"
         }
     ]
 }

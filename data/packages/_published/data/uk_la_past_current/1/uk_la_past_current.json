@@ -2,7 +2,7 @@
     "name": "uk_la_past_current",
     "title": "UK Local Authorities (past and current)",
     "description": "A dataset that includes current and some past local authorities",
-    "version": "1.6.1",
+    "version": "1.7.0",
     "keywords": [
         "UK Local data",
         "UK"
@@ -23,10 +23,1991 @@
     ],
     "resources": [
         {
+            "title": "GSS to local authority code lookup",
+            "description": "Dataset that maps current and past gss codes (e.g. E07000239) for an area to the ID for the council.",
+            "custom": {
+                "row_count": 486
+            },
+            "name": "lookup_gss_to_registry",
+            "profile": "tabular-data-resource",
+            "format": "json",
+            "hashing": "md5",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "gss-code",
+                        "type": "string",
+                        "description": "Code for the statistical geography of a council. A council may have multiple codes (past and present) as a result of boundary changes.",
+                        "constraints": {
+                            "unique": false
+                        },
+                        "example": "E06000001"
+                    },
+                    {
+                        "name": "local-authority-code",
+                        "type": "string",
+                        "description": "Fixed ID for council, not linked to boundary changes.",
+                        "constraints": {
+                            "unique": false
+                        },
+                        "example": "ABC"
+                    }
+                ]
+            },
+            "hash": "a10ecbb431baf76f75fbdc8601d56256",
+            "data": [
+                {
+                    "gss-code": "N09000002",
+                    "local-authority-code": "ABC"
+                },
+                {
+                    "gss-code": "S12000034",
+                    "local-authority-code": "ABD"
+                },
+                {
+                    "gss-code": "S12000033",
+                    "local-authority-code": "ABE"
+                },
+                {
+                    "gss-code": "E07000223",
+                    "local-authority-code": "ADU"
+                },
+                {
+                    "gss-code": "S12000035",
+                    "local-authority-code": "AGB"
+                },
+                {
+                    "gss-code": "W06000001",
+                    "local-authority-code": "AGY"
+                },
+                {
+                    "gss-code": "E07000026",
+                    "local-authority-code": "ALL"
+                },
+                {
+                    "gss-code": "E07000032",
+                    "local-authority-code": "AMB"
+                },
+                {
+                    "gss-code": "N09000011",
+                    "local-authority-code": "AND"
+                },
+                {
+                    "gss-code": "N09000001",
+                    "local-authority-code": "ANN"
+                },
+                {
+                    "gss-code": "S12000041",
+                    "local-authority-code": "ANS"
+                },
+                {
+                    "gss-code": "E07000224",
+                    "local-authority-code": "ARU"
+                },
+                {
+                    "gss-code": "E07000105",
+                    "local-authority-code": "ASF"
+                },
+                {
+                    "gss-code": "E07000170",
+                    "local-authority-code": "ASH"
+                },
+                {
+                    "gss-code": "E07000004",
+                    "local-authority-code": "AYL"
+                },
+                {
+                    "gss-code": "E07000200",
+                    "local-authority-code": "BAB"
+                },
+                {
+                    "gss-code": "E07000171",
+                    "local-authority-code": "BAE"
+                },
+                {
+                    "gss-code": "E07000066",
+                    "local-authority-code": "BAI"
+                },
+                {
+                    "gss-code": "E07000084",
+                    "local-authority-code": "BAN"
+                },
+                {
+                    "gss-code": "E07000027",
+                    "local-authority-code": "BAR"
+                },
+                {
+                    "gss-code": "E06000022",
+                    "local-authority-code": "BAS"
+                },
+                {
+                    "gss-code": "E06000008",
+                    "local-authority-code": "BBD"
+                },
+                {
+                    "gss-code": "E06000055",
+                    "local-authority-code": "BDF"
+                },
+                {
+                    "gss-code": "E09000002",
+                    "local-authority-code": "BDG"
+                },
+                {
+                    "gss-code": "E09000005",
+                    "local-authority-code": "BEN"
+                },
+                {
+                    "gss-code": "E09000004",
+                    "local-authority-code": "BEX"
+                },
+                {
+                    "gss-code": "N09000003",
+                    "local-authority-code": "BFS"
+                },
+                {
+                    "gss-code": "W06000013",
+                    "local-authority-code": "BGE"
+                },
+                {
+                    "gss-code": "W06000019",
+                    "local-authority-code": "BGW"
+                },
+                {
+                    "gss-code": "E08000025",
+                    "local-authority-code": "BIR"
+                },
+                {
+                    "gss-code": "E10000002",
+                    "local-authority-code": "BKM"
+                },
+                {
+                    "gss-code": "E07000129",
+                    "local-authority-code": "BLA"
+                },
+                {
+                    "gss-code": "E06000028",
+                    "local-authority-code": "BMH"
+                },
+                {
+                    "gss-code": "E09000003",
+                    "local-authority-code": "BNE"
+                },
+                {
+                    "gss-code": "E06000043",
+                    "local-authority-code": "BNH"
+                },
+                {
+                    "gss-code": "E08000016",
+                    "local-authority-code": "BNS"
+                },
+                {
+                    "gss-code": "E08000001",
+                    "local-authority-code": "BOL"
+                },
+                {
+                    "gss-code": "E07000033",
+                    "local-authority-code": "BOS"
+                },
+                {
+                    "gss-code": "E07000136",
+                    "local-authority-code": "BOT"
+                },
+                {
+                    "gss-code": "E06000058",
+                    "local-authority-code": "BPC"
+                },
+                {
+                    "gss-code": "E06000009",
+                    "local-authority-code": "BPL"
+                },
+                {
+                    "gss-code": "E07000067",
+                    "local-authority-code": "BRA"
+                },
+                {
+                    "gss-code": "E06000036",
+                    "local-authority-code": "BRC"
+                },
+                {
+                    "gss-code": "E08000032",
+                    "local-authority-code": "BRD"
+                },
+                {
+                    "gss-code": "E07000143",
+                    "local-authority-code": "BRE"
+                },
+                {
+                    "gss-code": "E07000234",
+                    "local-authority-code": "BRM"
+                },
+                {
+                    "gss-code": "E07000144",
+                    "local-authority-code": "BRO"
+                },
+                {
+                    "gss-code": "E07000172",
+                    "local-authority-code": "BRT"
+                },
+                {
+                    "gss-code": "E07000068",
+                    "local-authority-code": "BRW"
+                },
+                {
+                    "gss-code": "E07000095",
+                    "local-authority-code": "BRX"
+                },
+                {
+                    "gss-code": "E09000006",
+                    "local-authority-code": "BRY"
+                },
+                {
+                    "gss-code": "E06000023",
+                    "local-authority-code": "BST"
+                },
+                {
+                    "gss-code": "E06000060",
+                    "local-authority-code": "BUC"
+                },
+                {
+                    "gss-code": "E07000117",
+                    "local-authority-code": "BUN"
+                },
+                {
+                    "gss-code": "E08000002",
+                    "local-authority-code": "BUR"
+                },
+                {
+                    "gss-code": "E07000008",
+                    "local-authority-code": "CAB"
+                },
+                {
+                    "gss-code": "E10000003",
+                    "local-authority-code": "CAM"
+                },
+                {
+                    "gss-code": "E07000192",
+                    "local-authority-code": "CAN"
+                },
+                {
+                    "gss-code": "E07000028",
+                    "local-authority-code": "CAR"
+                },
+                {
+                    "gss-code": "E07000069",
+                    "local-authority-code": "CAS"
+                },
+                {
+                    "gss-code": "E07000106",
+                    "local-authority-code": "CAT"
+                },
+                {
+                    "gss-code": "W06000018",
+                    "local-authority-code": "CAY"
+                },
+                {
+                    "gss-code": "E06000063",
+                    "local-authority-code": "CBD"
+                },
+                {
+                    "gss-code": "E06000056",
+                    "local-authority-code": "CBF"
+                },
+                {
+                    "gss-code": "N09000004",
+                    "local-authority-code": "CCG"
+                },
+                {
+                    "gss-code": "W06000008",
+                    "local-authority-code": "CGN"
+                },
+                {
+                    "gss-code": "E07000130",
+                    "local-authority-code": "CHA"
+                },
+                {
+                    "gss-code": "E07000048",
+                    "local-authority-code": "CHC"
+                },
+                {
+                    "gss-code": "E06000049",
+                    "local-authority-code": "CHE"
+                },
+                {
+                    "gss-code": "E07000225",
+                    "local-authority-code": "CHI"
+                },
+                {
+                    "gss-code": "E07000070",
+                    "local-authority-code": "CHL"
+                },
+                {
+                    "gss-code": "E07000005",
+                    "local-authority-code": "CHN"
+                },
+                {
+                    "gss-code": "E07000118",
+                    "local-authority-code": "CHO"
+                },
+                {
+                    "gss-code": "E07000177",
+                    "local-authority-code": "CHR"
+                },
+                {
+                    "gss-code": "E07000034",
+                    "local-authority-code": "CHS"
+                },
+                {
+                    "gss-code": "E07000078",
+                    "local-authority-code": "CHT"
+                },
+                {
+                    "gss-code": "E06000050",
+                    "local-authority-code": "CHW"
+                },
+                {
+                    "gss-code": "E08000033",
+                    "local-authority-code": "CLD"
+                },
+                {
+                    "gss-code": "S12000005",
+                    "local-authority-code": "CLK"
+                },
+                {
+                    "gss-code": "E10000006",
+                    "local-authority-code": "CMA"
+                },
+                {
+                    "gss-code": "E09000007",
+                    "local-authority-code": "CMD"
+                },
+                {
+                    "gss-code": "W06000010",
+                    "local-authority-code": "CMN"
+                },
+                {
+                    "gss-code": "E07000071",
+                    "local-authority-code": "COL"
+                },
+                {
+                    "gss-code": "E06000052",
+                    "local-authority-code": "CON"
+                },
+                {
+                    "gss-code": "E07000029",
+                    "local-authority-code": "COP"
+                },
+                {
+                    "gss-code": "E07000150",
+                    "local-authority-code": "COR"
+                },
+                {
+                    "gss-code": "E07000079",
+                    "local-authority-code": "COT"
+                },
+                {
+                    "gss-code": "E08000026",
+                    "local-authority-code": "COV"
+                },
+                {
+                    "gss-code": "E47000008",
+                    "local-authority-code": "CPCA"
+                },
+                {
+                    "gss-code": "E07000163",
+                    "local-authority-code": "CRA"
+                },
+                {
+                    "gss-code": "W06000015",
+                    "local-authority-code": "CRF"
+                },
+                {
+                    "gss-code": "E07000226",
+                    "local-authority-code": "CRW"
+                },
+                {
+                    "gss-code": "E09000008",
+                    "local-authority-code": "CRY"
+                },
+                {
+                    "gss-code": "W06000003",
+                    "local-authority-code": "CWY"
+                },
+                {
+                    "gss-code": "E07000096",
+                    "local-authority-code": "DAC"
+                },
+                {
+                    "gss-code": "E06000005",
+                    "local-authority-code": "DAL"
+                },
+                {
+                    "gss-code": "E07000107",
+                    "local-authority-code": "DAR"
+                },
+                {
+                    "gss-code": "E07000151",
+                    "local-authority-code": "DAV"
+                },
+                {
+                    "gss-code": "E10000007",
+                    "local-authority-code": "DBY"
+                },
+                {
+                    "gss-code": "E07000035",
+                    "local-authority-code": "DEB"
+                },
+                {
+                    "gss-code": "W06000004",
+                    "local-authority-code": "DEN"
+                },
+                {
+                    "gss-code": "E06000015",
+                    "local-authority-code": "DER"
+                },
+                {
+                    "gss-code": "E10000008",
+                    "local-authority-code": "DEV"
+                },
+                {
+                    "gss-code": "S12000006",
+                    "local-authority-code": "DGY"
+                },
+                {
+                    "gss-code": "E08000017",
+                    "local-authority-code": "DNC"
+                },
+                {
+                    "gss-code": "S12000042",
+                    "local-authority-code": "DND"
+                },
+                {
+                    "gss-code": "E10000009",
+                    "local-authority-code": "DOR"
+                },
+                {
+                    "gss-code": "E07000108",
+                    "local-authority-code": "DOV"
+                },
+                {
+                    "gss-code": "N09000005",
+                    "local-authority-code": "DRS"
+                },
+                {
+                    "gss-code": "E06000059",
+                    "local-authority-code": "DST"
+                },
+                {
+                    "gss-code": "E47000015",
+                    "local-authority-code": "DTCA"
+                },
+                {
+                    "gss-code": "E08000027",
+                    "local-authority-code": "DUD"
+                },
+                {
+                    "gss-code": "E06000047",
+                    "local-authority-code": "DUR"
+                },
+                {
+                    "gss-code": "E09000009",
+                    "local-authority-code": "EAL"
+                },
+                {
+                    "gss-code": "E07000061",
+                    "local-authority-code": "EAS"
+                },
+                {
+                    "gss-code": "E07000086",
+                    "local-authority-code": "EAT"
+                },
+                {
+                    "gss-code": "S12000008",
+                    "local-authority-code": "EAY"
+                },
+                {
+                    "gss-code": "E07000009",
+                    "local-authority-code": "ECA"
+                },
+                {
+                    "gss-code": "E07000040",
+                    "local-authority-code": "EDE"
+                },
+                {
+                    "gss-code": "S12000036",
+                    "local-authority-code": "EDH"
+                },
+                {
+                    "gss-code": "E07000030",
+                    "local-authority-code": "EDN"
+                },
+                {
+                    "gss-code": "E07000049",
+                    "local-authority-code": "EDO"
+                },
+                {
+                    "gss-code": "S12000045",
+                    "local-authority-code": "EDU"
+                },
+                {
+                    "gss-code": "S12000009",
+                    "local-authority-code": "EDU"
+                },
+                {
+                    "gss-code": "E07000085",
+                    "local-authority-code": "EHA"
+                },
+                {
+                    "gss-code": "E07000242",
+                    "local-authority-code": "EHE"
+                },
+                {
+                    "gss-code": "E07000097",
+                    "local-authority-code": "EHE"
+                },
+                {
+                    "gss-code": "E07000137",
+                    "local-authority-code": "ELI"
+                },
+                {
+                    "gss-code": "E07000207",
+                    "local-authority-code": "ELM"
+                },
+                {
+                    "gss-code": "S12000010",
+                    "local-authority-code": "ELN"
+                },
+                {
+                    "gss-code": "S12000013",
+                    "local-authority-code": "ELS"
+                },
+                {
+                    "gss-code": "E47000013",
+                    "local-authority-code": "EMCA"
+                },
+                {
+                    "gss-code": "E09000010",
+                    "local-authority-code": "ENF"
+                },
+                {
+                    "gss-code": "E07000152",
+                    "local-authority-code": "ENO"
+                },
+                {
+                    "gss-code": "E07000072",
+                    "local-authority-code": "EPP"
+                },
+                {
+                    "gss-code": "E07000208",
+                    "local-authority-code": "EPS"
+                },
+                {
+                    "gss-code": "E07000036",
+                    "local-authority-code": "ERE"
+                },
+                {
+                    "gss-code": "S12000011",
+                    "local-authority-code": "ERW"
+                },
+                {
+                    "gss-code": "E06000011",
+                    "local-authority-code": "ERY"
+                },
+                {
+                    "gss-code": "E07000244",
+                    "local-authority-code": "ESK"
+                },
+                {
+                    "gss-code": "E10000012",
+                    "local-authority-code": "ESS"
+                },
+                {
+                    "gss-code": "E07000193",
+                    "local-authority-code": "EST"
+                },
+                {
+                    "gss-code": "E10000011",
+                    "local-authority-code": "ESX"
+                },
+                {
+                    "gss-code": "E07000041",
+                    "local-authority-code": "EXE"
+                },
+                {
+                    "gss-code": "S12000014",
+                    "local-authority-code": "FAL"
+                },
+                {
+                    "gss-code": "E07000087",
+                    "local-authority-code": "FAR"
+                },
+                {
+                    "gss-code": "E07000010",
+                    "local-authority-code": "FEN"
+                },
+                {
+                    "gss-code": "S12000047",
+                    "local-authority-code": "FIF"
+                },
+                {
+                    "gss-code": "S12000015",
+                    "local-authority-code": "FIF"
+                },
+                {
+                    "gss-code": "W06000005",
+                    "local-authority-code": "FLN"
+                },
+                {
+                    "gss-code": "N09000006",
+                    "local-authority-code": "FMO"
+                },
+                {
+                    "gss-code": "E07000080",
+                    "local-authority-code": "FOE"
+                },
+                {
+                    "gss-code": "E07000201",
+                    "local-authority-code": "FOR"
+                },
+                {
+                    "gss-code": "E07000119",
+                    "local-authority-code": "FYL"
+                },
+                {
+                    "gss-code": "E08000037",
+                    "local-authority-code": "GAT"
+                },
+                {
+                    "gss-code": "E08000020",
+                    "local-authority-code": "GAT"
+                },
+                {
+                    "gss-code": "E07000173",
+                    "local-authority-code": "GED"
+                },
+                {
+                    "gss-code": "E61000001",
+                    "local-authority-code": "GLA"
+                },
+                {
+                    "gss-code": "E47000017",
+                    "local-authority-code": "GLCA"
+                },
+                {
+                    "gss-code": "S12000049",
+                    "local-authority-code": "GLG"
+                },
+                {
+                    "gss-code": "S12000046",
+                    "local-authority-code": "GLG"
+                },
+                {
+                    "gss-code": "S12000043",
+                    "local-authority-code": "GLG"
+                },
+                {
+                    "gss-code": "E07000081",
+                    "local-authority-code": "GLO"
+                },
+                {
+                    "gss-code": "E10000013",
+                    "local-authority-code": "GLS"
+                },
+                {
+                    "gss-code": "E47000001",
+                    "local-authority-code": "GMCA"
+                },
+                {
+                    "gss-code": "E07000088",
+                    "local-authority-code": "GOS"
+                },
+                {
+                    "gss-code": "E07000109",
+                    "local-authority-code": "GRA"
+                },
+                {
+                    "gss-code": "E09000011",
+                    "local-authority-code": "GRE"
+                },
+                {
+                    "gss-code": "E07000209",
+                    "local-authority-code": "GRT"
+                },
+                {
+                    "gss-code": "E07000145",
+                    "local-authority-code": "GRY"
+                },
+                {
+                    "gss-code": "W06000002",
+                    "local-authority-code": "GWN"
+                },
+                {
+                    "gss-code": "E07000090",
+                    "local-authority-code": "HAA"
+                },
+                {
+                    "gss-code": "E07000164",
+                    "local-authority-code": "HAE"
+                },
+                {
+                    "gss-code": "E07000165",
+                    "local-authority-code": "HAG"
+                },
+                {
+                    "gss-code": "E06000006",
+                    "local-authority-code": "HAL"
+                },
+                {
+                    "gss-code": "E10000014",
+                    "local-authority-code": "HAM"
+                },
+                {
+                    "gss-code": "E07000131",
+                    "local-authority-code": "HAO"
+                },
+                {
+                    "gss-code": "E07000073",
+                    "local-authority-code": "HAR"
+                },
+                {
+                    "gss-code": "E07000062",
+                    "local-authority-code": "HAS"
+                },
+                {
+                    "gss-code": "E07000089",
+                    "local-authority-code": "HAT"
+                },
+                {
+                    "gss-code": "E09000016",
+                    "local-authority-code": "HAV"
+                },
+                {
+                    "gss-code": "E09000012",
+                    "local-authority-code": "HCK"
+                },
+                {
+                    "gss-code": "E06000019",
+                    "local-authority-code": "HEF"
+                },
+                {
+                    "gss-code": "E07000098",
+                    "local-authority-code": "HER"
+                },
+                {
+                    "gss-code": "E07000037",
+                    "local-authority-code": "HIG"
+                },
+                {
+                    "gss-code": "E09000017",
+                    "local-authority-code": "HIL"
+                },
+                {
+                    "gss-code": "E07000132",
+                    "local-authority-code": "HIN"
+                },
+                {
+                    "gss-code": "S12000017",
+                    "local-authority-code": "HLD"
+                },
+                {
+                    "gss-code": "E09000013",
+                    "local-authority-code": "HMF"
+                },
+                {
+                    "gss-code": "E09000018",
+                    "local-authority-code": "HNS"
+                },
+                {
+                    "gss-code": "E07000227",
+                    "local-authority-code": "HOR"
+                },
+                {
+                    "gss-code": "E06000001",
+                    "local-authority-code": "HPL"
+                },
+                {
+                    "gss-code": "E10000015",
+                    "local-authority-code": "HRT"
+                },
+                {
+                    "gss-code": "E09000015",
+                    "local-authority-code": "HRW"
+                },
+                {
+                    "gss-code": "E09000014",
+                    "local-authority-code": "HRY"
+                },
+                {
+                    "gss-code": "E07000011",
+                    "local-authority-code": "HUN"
+                },
+                {
+                    "gss-code": "E47000016",
+                    "local-authority-code": "HYCA"
+                },
+                {
+                    "gss-code": "E07000120",
+                    "local-authority-code": "HYN"
+                },
+                {
+                    "gss-code": "E06000053",
+                    "local-authority-code": "IOS"
+                },
+                {
+                    "gss-code": "E06000046",
+                    "local-authority-code": "IOW"
+                },
+                {
+                    "gss-code": "E07000202",
+                    "local-authority-code": "IPS"
+                },
+                {
+                    "gss-code": "E09000019",
+                    "local-authority-code": "ISL"
+                },
+                {
+                    "gss-code": "S12000018",
+                    "local-authority-code": "IVC"
+                },
+                {
+                    "gss-code": "E09000020",
+                    "local-authority-code": "KEC"
+                },
+                {
+                    "gss-code": "E10000016",
+                    "local-authority-code": "KEN"
+                },
+                {
+                    "gss-code": "E07000153",
+                    "local-authority-code": "KET"
+                },
+                {
+                    "gss-code": "E06000010",
+                    "local-authority-code": "KHL"
+                },
+                {
+                    "gss-code": "E07000146",
+                    "local-authority-code": "KIN"
+                },
+                {
+                    "gss-code": "E08000034",
+                    "local-authority-code": "KIR"
+                },
+                {
+                    "gss-code": "E09000021",
+                    "local-authority-code": "KTT"
+                },
+                {
+                    "gss-code": "E08000011",
+                    "local-authority-code": "KWL"
+                },
+                {
+                    "gss-code": "E07000121",
+                    "local-authority-code": "LAC"
+                },
+                {
+                    "gss-code": "E10000017",
+                    "local-authority-code": "LAN"
+                },
+                {
+                    "gss-code": "N09000007",
+                    "local-authority-code": "LBC"
+                },
+                {
+                    "gss-code": "E09000022",
+                    "local-authority-code": "LBH"
+                },
+                {
+                    "gss-code": "E47000018",
+                    "local-authority-code": "LCCA"
+                },
+                {
+                    "gss-code": "E06000016",
+                    "local-authority-code": "LCE"
+                },
+                {
+                    "gss-code": "E47000004",
+                    "local-authority-code": "LCR"
+                },
+                {
+                    "gss-code": "E08000035",
+                    "local-authority-code": "LDS"
+                },
+                {
+                    "gss-code": "E10000018",
+                    "local-authority-code": "LEC"
+                },
+                {
+                    "gss-code": "E07000063",
+                    "local-authority-code": "LEE"
+                },
+                {
+                    "gss-code": "E09000023",
+                    "local-authority-code": "LEW"
+                },
+                {
+                    "gss-code": "E07000138",
+                    "local-authority-code": "LIC"
+                },
+                {
+                    "gss-code": "E07000194",
+                    "local-authority-code": "LIF"
+                },
+                {
+                    "gss-code": "E10000019",
+                    "local-authority-code": "LIN"
+                },
+                {
+                    "gss-code": "E08000012",
+                    "local-authority-code": "LIV"
+                },
+                {
+                    "gss-code": "E09000001",
+                    "local-authority-code": "LND"
+                },
+                {
+                    "gss-code": "E06000032",
+                    "local-authority-code": "LUT"
+                },
+                {
+                    "gss-code": "E07000110",
+                    "local-authority-code": "MAI"
+                },
+                {
+                    "gss-code": "E07000074",
+                    "local-authority-code": "MAL"
+                },
+                {
+                    "gss-code": "E08000003",
+                    "local-authority-code": "MAN"
+                },
+                {
+                    "gss-code": "E07000174",
+                    "local-authority-code": "MAS"
+                },
+                {
+                    "gss-code": "E07000235",
+                    "local-authority-code": "MAV"
+                },
+                {
+                    "gss-code": "E06000002",
+                    "local-authority-code": "MDB"
+                },
+                {
+                    "gss-code": "E07000042",
+                    "local-authority-code": "MDE"
+                },
+                {
+                    "gss-code": "E06000035",
+                    "local-authority-code": "MDW"
+                },
+                {
+                    "gss-code": "N09000008",
+                    "local-authority-code": "MEA"
+                },
+                {
+                    "gss-code": "E07000133",
+                    "local-authority-code": "MEL"
+                },
+                {
+                    "gss-code": "E07000187",
+                    "local-authority-code": "MEN"
+                },
+                {
+                    "gss-code": "E06000042",
+                    "local-authority-code": "MIK"
+                },
+                {
+                    "gss-code": "S12000019",
+                    "local-authority-code": "MLN"
+                },
+                {
+                    "gss-code": "E07000210",
+                    "local-authority-code": "MOL"
+                },
+                {
+                    "gss-code": "W06000021",
+                    "local-authority-code": "MON"
+                },
+                {
+                    "gss-code": "E09000024",
+                    "local-authority-code": "MRT"
+                },
+                {
+                    "gss-code": "S12000020",
+                    "local-authority-code": "MRY"
+                },
+                {
+                    "gss-code": "E07000228",
+                    "local-authority-code": "MSS"
+                },
+                {
+                    "gss-code": "E07000203",
+                    "local-authority-code": "MSU"
+                },
+                {
+                    "gss-code": "W06000024",
+                    "local-authority-code": "MTY"
+                },
+                {
+                    "gss-code": "N09000009",
+                    "local-authority-code": "MUL"
+                },
+                {
+                    "gss-code": "S12000021",
+                    "local-authority-code": "NAY"
+                },
+                {
+                    "gss-code": "E06000057",
+                    "local-authority-code": "NBL"
+                },
+                {
+                    "gss-code": "E06000048",
+                    "local-authority-code": "NBL"
+                },
+                {
+                    "gss-code": "E07000043",
+                    "local-authority-code": "NDE"
+                },
+                {
+                    "gss-code": "E07000050",
+                    "local-authority-code": "NDO"
+                },
+                {
+                    "gss-code": "E07000175",
+                    "local-authority-code": "NEA"
+                },
+                {
+                    "gss-code": "E07000195",
+                    "local-authority-code": "NEC"
+                },
+                {
+                    "gss-code": "E47000010",
+                    "local-authority-code": "NECA"
+                },
+                {
+                    "gss-code": "E47000005",
+                    "local-authority-code": "NECA"
+                },
+                {
+                    "gss-code": "E07000038",
+                    "local-authority-code": "NED"
+                },
+                {
+                    "gss-code": "E06000012",
+                    "local-authority-code": "NEL"
+                },
+                {
+                    "gss-code": "E47000014",
+                    "local-authority-code": "NESA"
+                },
+                {
+                    "gss-code": "E08000021",
+                    "local-authority-code": "NET"
+                },
+                {
+                    "gss-code": "E07000091",
+                    "local-authority-code": "NEW"
+                },
+                {
+                    "gss-code": "E10000020",
+                    "local-authority-code": "NFK"
+                },
+                {
+                    "gss-code": "E06000018",
+                    "local-authority-code": "NGM"
+                },
+                {
+                    "gss-code": "E07000099",
+                    "local-authority-code": "NHE"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-A"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-B"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-C"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-D"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-E"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-F"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-G"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-H"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-I"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-J"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-K"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-L"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-M"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-N"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-O"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-P"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-Q"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-R"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-S"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-T"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-U"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-V"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-W"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-X"
+                },
+                {
+                    "gss-code": "",
+                    "local-authority-code": "NIR-Y"
+                },
+                {
+                    "gss-code": "E07000139",
+                    "local-authority-code": "NKE"
+                },
+                {
+                    "gss-code": "S12000050",
+                    "local-authority-code": "NLK"
+                },
+                {
+                    "gss-code": "S12000044",
+                    "local-authority-code": "NLK"
+                },
+                {
+                    "gss-code": "E06000013",
+                    "local-authority-code": "NLN"
+                },
+                {
+                    "gss-code": "N09000010",
+                    "local-authority-code": "NMD"
+                },
+                {
+                    "gss-code": "E07000147",
+                    "local-authority-code": "NNO"
+                },
+                {
+                    "gss-code": "E06000061",
+                    "local-authority-code": "NNT"
+                },
+                {
+                    "gss-code": "E07000154",
+                    "local-authority-code": "NOR"
+                },
+                {
+                    "gss-code": "E07000148",
+                    "local-authority-code": "NOW"
+                },
+                {
+                    "gss-code": "E06000024",
+                    "local-authority-code": "NSM"
+                },
+                {
+                    "gss-code": "E47000011",
+                    "local-authority-code": "NTCA"
+                },
+                {
+                    "gss-code": "E10000021",
+                    "local-authority-code": "NTH"
+                },
+                {
+                    "gss-code": "W06000012",
+                    "local-authority-code": "NTL"
+                },
+                {
+                    "gss-code": "E10000024",
+                    "local-authority-code": "NTT"
+                },
+                {
+                    "gss-code": "E08000022",
+                    "local-authority-code": "NTY"
+                },
+                {
+                    "gss-code": "E07000219",
+                    "local-authority-code": "NUN"
+                },
+                {
+                    "gss-code": "E07000218",
+                    "local-authority-code": "NWA"
+                },
+                {
+                    "gss-code": "E07000134",
+                    "local-authority-code": "NWL"
+                },
+                {
+                    "gss-code": "E09000025",
+                    "local-authority-code": "NWM"
+                },
+                {
+                    "gss-code": "W06000022",
+                    "local-authority-code": "NWP"
+                },
+                {
+                    "gss-code": "E06000065",
+                    "local-authority-code": "NYE"
+                },
+                {
+                    "gss-code": "E10000023",
+                    "local-authority-code": "NYK"
+                },
+                {
+                    "gss-code": "E07000135",
+                    "local-authority-code": "OAD"
+                },
+                {
+                    "gss-code": "E08000004",
+                    "local-authority-code": "OLD"
+                },
+                {
+                    "gss-code": "S12000023",
+                    "local-authority-code": "ORK"
+                },
+                {
+                    "gss-code": "E10000025",
+                    "local-authority-code": "OXF"
+                },
+                {
+                    "gss-code": "E07000178",
+                    "local-authority-code": "OXO"
+                },
+                {
+                    "gss-code": "W06000009",
+                    "local-authority-code": "PEM"
+                },
+                {
+                    "gss-code": "E07000122",
+                    "local-authority-code": "PEN"
+                },
+                {
+                    "gss-code": "S12000048",
+                    "local-authority-code": "PKN"
+                },
+                {
+                    "gss-code": "S12000024",
+                    "local-authority-code": "PKN"
+                },
+                {
+                    "gss-code": "E06000026",
+                    "local-authority-code": "PLY"
+                },
+                {
+                    "gss-code": "E06000029",
+                    "local-authority-code": "POL"
+                },
+                {
+                    "gss-code": "E06000044",
+                    "local-authority-code": "POR"
+                },
+                {
+                    "gss-code": "W06000023",
+                    "local-authority-code": "POW"
+                },
+                {
+                    "gss-code": "E07000123",
+                    "local-authority-code": "PRE"
+                },
+                {
+                    "gss-code": "E06000031",
+                    "local-authority-code": "PTE"
+                },
+                {
+                    "gss-code": "E07000051",
+                    "local-authority-code": "PUR"
+                },
+                {
+                    "gss-code": "E06000003",
+                    "local-authority-code": "RCC"
+                },
+                {
+                    "gss-code": "E08000005",
+                    "local-authority-code": "RCH"
+                },
+                {
+                    "gss-code": "W06000016",
+                    "local-authority-code": "RCT"
+                },
+                {
+                    "gss-code": "E09000026",
+                    "local-authority-code": "RDB"
+                },
+                {
+                    "gss-code": "E06000038",
+                    "local-authority-code": "RDG"
+                },
+                {
+                    "gss-code": "E07000236",
+                    "local-authority-code": "RED"
+                },
+                {
+                    "gss-code": "E07000211",
+                    "local-authority-code": "REI"
+                },
+                {
+                    "gss-code": "S12000038",
+                    "local-authority-code": "RFW"
+                },
+                {
+                    "gss-code": "E07000124",
+                    "local-authority-code": "RIB"
+                },
+                {
+                    "gss-code": "E09000027",
+                    "local-authority-code": "RIC"
+                },
+                {
+                    "gss-code": "E07000166",
+                    "local-authority-code": "RIH"
+                },
+                {
+                    "gss-code": "E07000075",
+                    "local-authority-code": "ROC"
+                },
+                {
+                    "gss-code": "E07000064",
+                    "local-authority-code": "ROH"
+                },
+                {
+                    "gss-code": "E07000125",
+                    "local-authority-code": "ROS"
+                },
+                {
+                    "gss-code": "E08000018",
+                    "local-authority-code": "ROT"
+                },
+                {
+                    "gss-code": "E07000220",
+                    "local-authority-code": "RUG"
+                },
+                {
+                    "gss-code": "E07000092",
+                    "local-authority-code": "RUH"
+                },
+                {
+                    "gss-code": "E07000212",
+                    "local-authority-code": "RUN"
+                },
+                {
+                    "gss-code": "E07000176",
+                    "local-authority-code": "RUS"
+                },
+                {
+                    "gss-code": "E06000017",
+                    "local-authority-code": "RUT"
+                },
+                {
+                    "gss-code": "E07000167",
+                    "local-authority-code": "RYE"
+                },
+                {
+                    "gss-code": "E07000240",
+                    "local-authority-code": "SAL"
+                },
+                {
+                    "gss-code": "E07000100",
+                    "local-authority-code": "SAL"
+                },
+                {
+                    "gss-code": "E08000028",
+                    "local-authority-code": "SAW"
+                },
+                {
+                    "gss-code": "S12000028",
+                    "local-authority-code": "SAY"
+                },
+                {
+                    "gss-code": "E07000006",
+                    "local-authority-code": "SBU"
+                },
+                {
+                    "gss-code": "E07000012",
+                    "local-authority-code": "SCA"
+                },
+                {
+                    "gss-code": "S12000026",
+                    "local-authority-code": "SCB"
+                },
+                {
+                    "gss-code": "E07000168",
+                    "local-authority-code": "SCE"
+                },
+                {
+                    "gss-code": "E47000002",
+                    "local-authority-code": "SCR"
+                },
+                {
+                    "gss-code": "E07000039",
+                    "local-authority-code": "SDE"
+                },
+                {
+                    "gss-code": "E07000204",
+                    "local-authority-code": "SED"
+                },
+                {
+                    "gss-code": "E07000188",
+                    "local-authority-code": "SEG"
+                },
+                {
+                    "gss-code": "E07000169",
+                    "local-authority-code": "SEL"
+                },
+                {
+                    "gss-code": "E07000111",
+                    "local-authority-code": "SEV"
+                },
+                {
+                    "gss-code": "E10000029",
+                    "local-authority-code": "SFK"
+                },
+                {
+                    "gss-code": "E08000014",
+                    "local-authority-code": "SFT"
+                },
+                {
+                    "gss-code": "E06000025",
+                    "local-authority-code": "SGC"
+                },
+                {
+                    "gss-code": "E07000044",
+                    "local-authority-code": "SHA"
+                },
+                {
+                    "gss-code": "E07000112",
+                    "local-authority-code": "SHE"
+                },
+                {
+                    "gss-code": "E08000019",
+                    "local-authority-code": "SHF"
+                },
+                {
+                    "gss-code": "E08000013",
+                    "local-authority-code": "SHN"
+                },
+                {
+                    "gss-code": "E07000140",
+                    "local-authority-code": "SHO"
+                },
+                {
+                    "gss-code": "E06000051",
+                    "local-authority-code": "SHR"
+                },
+                {
+                    "gss-code": "E07000141",
+                    "local-authority-code": "SKE"
+                },
+                {
+                    "gss-code": "E08000007",
+                    "local-authority-code": "SKP"
+                },
+                {
+                    "gss-code": "E07000031",
+                    "local-authority-code": "SLA"
+                },
+                {
+                    "gss-code": "E08000006",
+                    "local-authority-code": "SLF"
+                },
+                {
+                    "gss-code": "E06000039",
+                    "local-authority-code": "SLG"
+                },
+                {
+                    "gss-code": "S12000029",
+                    "local-authority-code": "SLK"
+                },
+                {
+                    "gss-code": "E06000066",
+                    "local-authority-code": "SMT"
+                },
+                {
+                    "gss-code": "E08000024",
+                    "local-authority-code": "SND"
+                },
+                {
+                    "gss-code": "E07000149",
+                    "local-authority-code": "SNO"
+                },
+                {
+                    "gss-code": "E07000155",
+                    "local-authority-code": "SNR"
+                },
+                {
+                    "gss-code": "E08000029",
+                    "local-authority-code": "SOL"
+                },
+                {
+                    "gss-code": "E10000027",
+                    "local-authority-code": "SOM"
+                },
+                {
+                    "gss-code": "E06000033",
+                    "local-authority-code": "SOS"
+                },
+                {
+                    "gss-code": "E07000179",
+                    "local-authority-code": "SOX"
+                },
+                {
+                    "gss-code": "E07000213",
+                    "local-authority-code": "SPE"
+                },
+                {
+                    "gss-code": "E07000126",
+                    "local-authority-code": "SRI"
+                },
+                {
+                    "gss-code": "E10000030",
+                    "local-authority-code": "SRY"
+                },
+                {
+                    "gss-code": "E07000189",
+                    "local-authority-code": "SSO"
+                },
+                {
+                    "gss-code": "E07000196",
+                    "local-authority-code": "SST"
+                },
+                {
+                    "gss-code": "E07000197",
+                    "local-authority-code": "STA"
+                },
+                {
+                    "gss-code": "E06000021",
+                    "local-authority-code": "STE"
+                },
+                {
+                    "gss-code": "E07000198",
+                    "local-authority-code": "STF"
+                },
+                {
+                    "gss-code": "S12000030",
+                    "local-authority-code": "STG"
+                },
+                {
+                    "gss-code": "E06000045",
+                    "local-authority-code": "STH"
+                },
+                {
+                    "gss-code": "E09000029",
+                    "local-authority-code": "STN"
+                },
+                {
+                    "gss-code": "E07000082",
+                    "local-authority-code": "STO"
+                },
+                {
+                    "gss-code": "E07000221",
+                    "local-authority-code": "STR"
+                },
+                {
+                    "gss-code": "E10000028",
+                    "local-authority-code": "STS"
+                },
+                {
+                    "gss-code": "E06000004",
+                    "local-authority-code": "STT"
+                },
+                {
+                    "gss-code": "E07000243",
+                    "local-authority-code": "STV"
+                },
+                {
+                    "gss-code": "E07000101",
+                    "local-authority-code": "STV"
+                },
+                {
+                    "gss-code": "E08000023",
+                    "local-authority-code": "STY"
+                },
+                {
+                    "gss-code": "E07000205",
+                    "local-authority-code": "SUF"
+                },
+                {
+                    "gss-code": "E07000214",
+                    "local-authority-code": "SUR"
+                },
+                {
+                    "gss-code": "W06000011",
+                    "local-authority-code": "SWA"
+                },
+                {
+                    "gss-code": "E06000030",
+                    "local-authority-code": "SWD"
+                },
+                {
+                    "gss-code": "E09000028",
+                    "local-authority-code": "SWK"
+                },
+                {
+                    "gss-code": "E07000113",
+                    "local-authority-code": "SWL"
+                },
+                {
+                    "gss-code": "E07000246",
+                    "local-authority-code": "SWT"
+                },
+                {
+                    "gss-code": "E08000008",
+                    "local-authority-code": "TAM"
+                },
+                {
+                    "gss-code": "E07000215",
+                    "local-authority-code": "TAN"
+                },
+                {
+                    "gss-code": "E07000190",
+                    "local-authority-code": "TAU"
+                },
+                {
+                    "gss-code": "E07000199",
+                    "local-authority-code": "TAW"
+                },
+                {
+                    "gss-code": "E07000045",
+                    "local-authority-code": "TEI"
+                },
+                {
+                    "gss-code": "E07000076",
+                    "local-authority-code": "TEN"
+                },
+                {
+                    "gss-code": "E07000093",
+                    "local-authority-code": "TES"
+                },
+                {
+                    "gss-code": "E07000083",
+                    "local-authority-code": "TEW"
+                },
+                {
+                    "gss-code": "E06000020",
+                    "local-authority-code": "TFW"
+                },
+                {
+                    "gss-code": "E07000114",
+                    "local-authority-code": "THA"
+                },
+                {
+                    "gss-code": "E07000102",
+                    "local-authority-code": "THE"
+                },
+                {
+                    "gss-code": "E06000034",
+                    "local-authority-code": "THR"
+                },
+                {
+                    "gss-code": "E06000027",
+                    "local-authority-code": "TOB"
+                },
+                {
+                    "gss-code": "W06000020",
+                    "local-authority-code": "TOF"
+                },
+                {
+                    "gss-code": "E07000115",
+                    "local-authority-code": "TON"
+                },
+                {
+                    "gss-code": "E07000046",
+                    "local-authority-code": "TOR"
+                },
+                {
+                    "gss-code": "E08000009",
+                    "local-authority-code": "TRF"
+                },
+                {
+                    "gss-code": "E07000116",
+                    "local-authority-code": "TUN"
+                },
+                {
+                    "gss-code": "E47000006",
+                    "local-authority-code": "TVCA"
+                },
+                {
+                    "gss-code": "E09000030",
+                    "local-authority-code": "TWH"
+                },
+                {
+                    "gss-code": "E07000077",
+                    "local-authority-code": "UTT"
+                },
+                {
+                    "gss-code": "E07000180",
+                    "local-authority-code": "VAL"
+                },
+                {
+                    "gss-code": "W06000014",
+                    "local-authority-code": "VGL"
+                },
+                {
+                    "gss-code": "E07000216",
+                    "local-authority-code": "WAE"
+                },
+                {
+                    "gss-code": "E06000064",
+                    "local-authority-code": "WAF"
+                },
+                {
+                    "gss-code": "E10000031",
+                    "local-authority-code": "WAR"
+                },
+                {
+                    "gss-code": "E07000103",
+                    "local-authority-code": "WAT"
+                },
+                {
+                    "gss-code": "E07000206",
+                    "local-authority-code": "WAV"
+                },
+                {
+                    "gss-code": "E07000222",
+                    "local-authority-code": "WAW"
+                },
+                {
+                    "gss-code": "E06000037",
+                    "local-authority-code": "WBK"
+                },
+                {
+                    "gss-code": "E07000047",
+                    "local-authority-code": "WDE"
+                },
+                {
+                    "gss-code": "E07000052",
+                    "local-authority-code": "WDO"
+                },
+                {
+                    "gss-code": "S12000039",
+                    "local-authority-code": "WDU"
+                },
+                {
+                    "gss-code": "E07000065",
+                    "local-authority-code": "WEA"
+                },
+                {
+                    "gss-code": "E47000009",
+                    "local-authority-code": "WECA"
+                },
+                {
+                    "gss-code": "E07000156",
+                    "local-authority-code": "WEL"
+                },
+                {
+                    "gss-code": "E07000241",
+                    "local-authority-code": "WEW"
+                },
+                {
+                    "gss-code": "E07000104",
+                    "local-authority-code": "WEW"
+                },
+                {
+                    "gss-code": "E07000053",
+                    "local-authority-code": "WEY"
+                },
+                {
+                    "gss-code": "E09000031",
+                    "local-authority-code": "WFT"
+                },
+                {
+                    "gss-code": "E08000010",
+                    "local-authority-code": "WGN"
+                },
+                {
+                    "gss-code": "E06000054",
+                    "local-authority-code": "WIL"
+                },
+                {
+                    "gss-code": "E07000094",
+                    "local-authority-code": "WIN"
+                },
+                {
+                    "gss-code": "E08000036",
+                    "local-authority-code": "WKF"
+                },
+                {
+                    "gss-code": "E07000127",
+                    "local-authority-code": "WLA"
+                },
+                {
+                    "gss-code": "E07000142",
+                    "local-authority-code": "WLI"
+                },
+                {
+                    "gss-code": "E08000030",
+                    "local-authority-code": "WLL"
+                },
+                {
+                    "gss-code": "S12000040",
+                    "local-authority-code": "WLN"
+                },
+                {
+                    "gss-code": "E08000031",
+                    "local-authority-code": "WLV"
+                },
+                {
+                    "gss-code": "E47000007",
+                    "local-authority-code": "WMCA"
+                },
+                {
+                    "gss-code": "E09000032",
+                    "local-authority-code": "WND"
+                },
+                {
+                    "gss-code": "E06000040",
+                    "local-authority-code": "WNM"
+                },
+                {
+                    "gss-code": "E06000062",
+                    "local-authority-code": "WNT"
+                },
+                {
+                    "gss-code": "E07000237",
+                    "local-authority-code": "WOC"
+                },
+                {
+                    "gss-code": "E07000217",
+                    "local-authority-code": "WOI"
+                },
+                {
+                    "gss-code": "E06000041",
+                    "local-authority-code": "WOK"
+                },
+                {
+                    "gss-code": "E10000034",
+                    "local-authority-code": "WOR"
+                },
+                {
+                    "gss-code": "E07000229",
+                    "local-authority-code": "WOT"
+                },
+                {
+                    "gss-code": "E07000181",
+                    "local-authority-code": "WOX"
+                },
+                {
+                    "gss-code": "E08000015",
+                    "local-authority-code": "WRL"
+                },
+                {
+                    "gss-code": "E06000007",
+                    "local-authority-code": "WRT"
+                },
+                {
+                    "gss-code": "W06000006",
+                    "local-authority-code": "WRX"
+                },
+                {
+                    "gss-code": "E07000245",
+                    "local-authority-code": "WSK"
+                },
+                {
+                    "gss-code": "E09000033",
+                    "local-authority-code": "WSM"
+                },
+                {
+                    "gss-code": "E07000191",
+                    "local-authority-code": "WSO"
+                },
+                {
+                    "gss-code": "E10000032",
+                    "local-authority-code": "WSX"
+                },
+                {
+                    "gss-code": "E07000238",
+                    "local-authority-code": "WYC"
+                },
+                {
+                    "gss-code": "E47000003",
+                    "local-authority-code": "WYCA"
+                },
+                {
+                    "gss-code": "E07000239",
+                    "local-authority-code": "WYE"
+                },
+                {
+                    "gss-code": "E07000007",
+                    "local-authority-code": "WYO"
+                },
+                {
+                    "gss-code": "E07000128",
+                    "local-authority-code": "WYR"
+                },
+                {
+                    "gss-code": "E47000012",
+                    "local-authority-code": "YNYC"
+                },
+                {
+                    "gss-code": "E06000014",
+                    "local-authority-code": "YOR"
+                },
+                {
+                    "gss-code": "S12000027",
+                    "local-authority-code": "ZET"
+                }
+            ]
+        },
+        {
             "title": "UK Local Authorities (past/current)",
             "description": "Table of information about local authorities, and mapping between different ID schemes. Includes current and some past authorities.",
             "custom": {
-                "row_count": 470
+                "row_count": 473
             },
             "name": "uk_local_authorities_current",
             "profile": "tabular-data-resource",
@@ -85,7 +2066,16 @@
                         "type": "string",
                         "description": "The date the authority was abolished (YYYY-MM-DD). Can be blank.",
                         "constraints": {
-                            "unique": false
+                            "unique": false,
+                            "enum": [
+                                "2015-03-31",
+                                "2019-03-31",
+                                "2020-03-31",
+                                "2021-04-01",
+                                "2023-04-01",
+                                "2024-05-07",
+                                "nan"
+                            ]
                         },
                         "example": "2015-03-31"
                     },
@@ -118,7 +2108,22 @@
                         "type": "string",
                         "description": "English region, but using the nation for non-English authorities.",
                         "constraints": {
-                            "unique": false
+                            "unique": false,
+                            "enum": [
+                                "East Midlands",
+                                "East of England",
+                                "London",
+                                "North East",
+                                "North West",
+                                "Northern Ireland",
+                                "Scotland",
+                                "South East",
+                                "South West",
+                                "Wales",
+                                "West Midlands",
+                                "Yorkshire and The Humber",
+                                "nan"
+                            ]
                         },
                         "example": "East Midlands"
                     },
@@ -198,7 +2203,22 @@
                         "type": "string",
                         "description": "A list of any gss codes for an area that apply to the former boundaries of a local authority.",
                         "constraints": {
-                            "unique": false
+                            "unique": false,
+                            "enum": [
+                                "E06000048",
+                                "E07000097",
+                                "E07000100",
+                                "E07000101",
+                                "E07000104",
+                                "E08000020",
+                                "E47000005",
+                                "S12000009",
+                                "S12000015",
+                                "S12000024",
+                                "S12000044",
+                                "S12000046,S12000043",
+                                "nan"
+                            ]
                         },
                         "example": "E06000048"
                     },
@@ -207,9 +2227,14 @@
                         "type": "string",
                         "description": "Any notes on columns or values that require special interpretation.",
                         "constraints": {
-                            "unique": false
+                            "unique": false,
+                            "enum": [
+                                "Renamed from North East Mayoral Combined Authority on 2026-05-18",
+                                "iso code and internal code may differ",
+                                "nan"
+                            ]
                         },
-                        "example": "iso code and internal code may differ"
+                        "example": "Renamed from North East Mayoral Combined Authority on 2026-05-18"
                     },
                     {
                         "name": "current-authority",
@@ -267,7 +2292,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 3.0
+                        "example": "101.0"
                     },
                     {
                         "name": "pop-2020",
@@ -276,7 +2301,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 2226.0
+                        "example": "100008.0"
                     },
                     {
                         "name": "x",
@@ -285,7 +2310,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 43329.5655016295
+                        "example": "106921.9690787888"
                     },
                     {
                         "name": "y",
@@ -294,7 +2319,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 13020.5326643405
+                        "example": "100809.8963936076"
                     },
                     {
                         "name": "lat",
@@ -303,7 +2328,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 49.9369329141
+                        "example": "49.9369329141"
                     },
                     {
                         "name": "long",
@@ -312,7 +2337,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": -7.5037843639
+                        "example": "-0.008257932"
                     },
                     {
                         "name": "powers",
@@ -348,7 +2373,16 @@
                         "type": "string",
                         "description": "Where avaliable, the kind of geography this authority is in mapit.",
                         "constraints": {
-                            "unique": false
+                            "unique": false,
+                            "enum": [
+                                "COI",
+                                "CTY",
+                                "DIS",
+                                "LBO",
+                                "MTD",
+                                "UTA",
+                                "nan"
+                            ]
                         },
                         "example": "COI"
                     },
@@ -386,7 +2420,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 1.0
+                        "example": "1.0"
                     },
                     {
                         "name": "os-file",
@@ -404,7 +2438,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 7000000000000000.0
+                        "example": "7000000000000000.0"
                     },
                     {
                         "name": "snac",
@@ -422,12 +2456,12 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 3.0
+                        "example": "100.0"
                     }
                 ]
             },
             "_sheet_order": 1,
-            "hash": "b1ced1c7a633395eea6e2002726ab20b",
+            "hash": "ef5216918778578a1cb17e572e682196",
             "data": [
                 {
                     "local-authority-code": "ABC",
@@ -1282,7 +3316,7 @@
                     "local-authority-type": "UA",
                     "local-authority-type-name": "Unitary authority",
                     "county-la": "",
-                    "combined-authority": "",
+                    "combined-authority": "LCCA",
                     "alt-names": "Blackburn with Darwen,Blackburn With Darwen UA,blackburn,blackburn with darwen,blackburn with darwen borough council",
                     "former-gss-codes": "",
                     "notes": "",
@@ -2042,7 +4076,7 @@
                     "local-authority-type": "UA",
                     "local-authority-type-name": "Unitary authority",
                     "county-la": "",
-                    "combined-authority": "",
+                    "combined-authority": "LCCA",
                     "alt-names": "Blackpool,Blackpool UA,blackpool,blackpool borough council",
                     "former-gss-codes": "",
                     "notes": "",
@@ -4522,7 +6556,7 @@
                     "local-authority-type": "CTY",
                     "local-authority-type-name": "County",
                     "county-la": "",
-                    "combined-authority": "",
+                    "combined-authority": "DTCA",
                     "alt-names": "Devon,devon,devon county,devon county council",
                     "former-gss-codes": "",
                     "notes": "",
@@ -4830,6 +6864,46 @@
                     "wdtk-id": 91365.0
                 },
                 {
+                    "local-authority-code": "DTCA",
+                    "official-name": "Devon and Torbay Combined County Authority",
+                    "nice-name": "Devon and Torbay CCA",
+                    "gss-code": "E47000015",
+                    "start-date": "2025-02-05",
+                    "end-date": "",
+                    "replaced-by": "",
+                    "nation": "England",
+                    "region": "South West",
+                    "local-authority-type": "COMB",
+                    "local-authority-type-name": "Combined authority",
+                    "county-la": "",
+                    "combined-authority": "",
+                    "alt-names": "Devon and Torbay CA,Devon and Torbay Combined Authority,Devon & Torbay Combined County Authority,Devon & Torbay CA,Devon & Torbay Combined Authority",
+                    "former-gss-codes": "",
+                    "notes": "",
+                    "current-authority": true,
+                    "BS-6879": "",
+                    "ecode": "",
+                    "even-older-register-and-code": "",
+                    "gov-uk-slug": "",
+                    "area": "",
+                    "pop-2020": "",
+                    "x": "",
+                    "y": "",
+                    "lat": "",
+                    "long": "",
+                    "powers": "combined",
+                    "lower-or-unitary": false,
+                    "mapit-area-code": "",
+                    "ofcom": "",
+                    "old-ons-la-code": "",
+                    "old-register-and-code": "",
+                    "open-council-data-id": "",
+                    "os-file": "",
+                    "os": "",
+                    "snac": "",
+                    "wdtk-id": 155459.0
+                },
+                {
                     "local-authority-code": "DUD",
                     "official-name": "Dudley Metropolitan Borough Council",
                     "nice-name": "Dudley",
@@ -4882,7 +6956,7 @@
                     "local-authority-type": "UA",
                     "local-authority-type-name": "Unitary authority",
                     "county-la": "",
-                    "combined-authority": "NECA",
+                    "combined-authority": "NESA",
                     "alt-names": "County Durham,Durham,Durham UA,county durham,durham,durham county council",
                     "former-gss-codes": "",
                     "notes": "",
@@ -6442,7 +8516,7 @@
                     "local-authority-type": "MD",
                     "local-authority-type-name": "Metropolitan district",
                     "county-la": "",
-                    "combined-authority": "NECA",
+                    "combined-authority": "NESA",
                     "alt-names": "Gateshead,gateshead,gateshead district,gateshead metropolitan borough council",
                     "former-gss-codes": "E08000020",
                     "notes": "",
@@ -8642,7 +10716,7 @@
                     "local-authority-type": "CTY",
                     "local-authority-type-name": "County",
                     "county-la": "",
-                    "combined-authority": "",
+                    "combined-authority": "LCCA",
                     "alt-names": "Lancashire,lancashire,lancashire county,lancashire county council",
                     "former-gss-codes": "",
                     "notes": "",
@@ -8748,6 +10822,46 @@
                     "os": 7000000000011140.0,
                     "snac": "00AY",
                     "wdtk-id": 236.0
+                },
+                {
+                    "local-authority-code": "LCCA",
+                    "official-name": "Lancashire Combined County Authority",
+                    "nice-name": "Lancashire CCA",
+                    "gss-code": "E47000018",
+                    "start-date": "2025-02-05",
+                    "end-date": "",
+                    "replaced-by": "",
+                    "nation": "England",
+                    "region": "North West",
+                    "local-authority-type": "COMB",
+                    "local-authority-type-name": "Combined authority",
+                    "county-la": "",
+                    "combined-authority": "",
+                    "alt-names": "Lancashire CA",
+                    "former-gss-codes": "",
+                    "notes": "",
+                    "current-authority": true,
+                    "BS-6879": "",
+                    "ecode": "",
+                    "even-older-register-and-code": "",
+                    "gov-uk-slug": "",
+                    "area": "",
+                    "pop-2020": "",
+                    "x": "",
+                    "y": "",
+                    "lat": "",
+                    "long": "",
+                    "powers": "combined",
+                    "lower-or-unitary": false,
+                    "mapit-area-code": "",
+                    "ofcom": "",
+                    "old-ons-la-code": "",
+                    "old-register-and-code": "",
+                    "open-council-data-id": "",
+                    "os-file": "",
+                    "os": "",
+                    "snac": "",
+                    "wdtk-id": 158380.0
                 },
                 {
                     "local-authority-code": "LCE",
@@ -10122,7 +12236,7 @@
                     "local-authority-type": "UA",
                     "local-authority-type-name": "Unitary authority",
                     "county-la": "",
-                    "combined-authority": "NTCA",
+                    "combined-authority": "NESA",
                     "alt-names": "Northumberland,Northumberland UA,northumberland,northumberland council",
                     "former-gss-codes": "E06000048",
                     "notes": "",
@@ -10315,8 +12429,8 @@
                     "nice-name": "North East",
                     "gss-code": "E47000010",
                     "start-date": "2014-04-15",
-                    "end-date": "",
-                    "replaced-by": "",
+                    "end-date": "2024-05-07",
+                    "replaced-by": "NESA",
                     "nation": "England",
                     "region": "North East",
                     "local-authority-type": "COMB",
@@ -10326,7 +12440,7 @@
                     "alt-names": "North East CA",
                     "former-gss-codes": "E47000005",
                     "notes": "",
-                    "current-authority": true,
+                    "current-authority": false,
                     "BS-6879": "NECA",
                     "ecode": "",
                     "even-older-register-and-code": "",
@@ -10430,6 +12544,46 @@
                     "wdtk-id": 627.0
                 },
                 {
+                    "local-authority-code": "NESA",
+                    "official-name": "North East Mayoral Strategic Authority",
+                    "nice-name": "North East MSA",
+                    "gss-code": "E47000014",
+                    "start-date": "2024-05-07",
+                    "end-date": "",
+                    "replaced-by": "",
+                    "nation": "England",
+                    "region": "North East",
+                    "local-authority-type": "COMB",
+                    "local-authority-type-name": "Combined authority",
+                    "county-la": "",
+                    "combined-authority": "",
+                    "alt-names": "North East Mayoral Combined Authority,North East MCA,North East Strategic Authority",
+                    "former-gss-codes": "",
+                    "notes": "Renamed from North East Mayoral Combined Authority on 2026-05-18",
+                    "current-authority": true,
+                    "BS-6879": "",
+                    "ecode": "",
+                    "even-older-register-and-code": "",
+                    "gov-uk-slug": "",
+                    "area": "",
+                    "pop-2020": "",
+                    "x": "",
+                    "y": "",
+                    "lat": "",
+                    "long": "",
+                    "powers": "combined",
+                    "lower-or-unitary": false,
+                    "mapit-area-code": "",
+                    "ofcom": "",
+                    "old-ons-la-code": "",
+                    "old-register-and-code": "",
+                    "open-council-data-id": "",
+                    "os-file": "",
+                    "os": "",
+                    "snac": "",
+                    "wdtk-id": 52428.0
+                },
+                {
                     "local-authority-code": "NET",
                     "official-name": "Newcastle City Council",
                     "nice-name": "Newcastle upon Tyne",
@@ -10442,7 +12596,7 @@
                     "local-authority-type": "MD",
                     "local-authority-type-name": "Metropolitan district",
                     "county-la": "",
-                    "combined-authority": "NTCA",
+                    "combined-authority": "NESA",
                     "alt-names": "Newcastle upon Tyne,newcastle city council,newcastle upon tyne,newcastle upon tyne district,newcastle-upon-tyne city council",
                     "former-gss-codes": "",
                     "notes": "",
@@ -11995,8 +14149,8 @@
                     "nice-name": "North of Tyne",
                     "gss-code": "E47000011",
                     "start-date": "2018-11-02",
-                    "end-date": "",
-                    "replaced-by": "",
+                    "end-date": "2024-05-07",
+                    "replaced-by": "NESA",
                     "nation": "England",
                     "region": "North East",
                     "local-authority-type": "COMB",
@@ -12006,7 +14160,7 @@
                     "alt-names": "newcastle upon tyne, north tyneside and northumberland combined authority,Newcastle Upon Tyne, North Tyneside and Northumberland Combined Authority",
                     "former-gss-codes": "",
                     "notes": "",
-                    "current-authority": true,
+                    "current-authority": false,
                     "BS-6879": "NTCA",
                     "ecode": "",
                     "even-older-register-and-code": "",
@@ -12162,7 +14316,7 @@
                     "local-authority-type": "MD",
                     "local-authority-type-name": "Metropolitan district",
                     "county-la": "",
-                    "combined-authority": "NTCA",
+                    "combined-authority": "NESA",
                     "alt-names": "North Tyneside,north tyneside,north tyneside council,north tyneside district,north tyneside metropolitan borough council",
                     "former-gss-codes": "",
                     "notes": "",
@@ -15082,7 +17236,7 @@
                     "local-authority-type": "MD",
                     "local-authority-type-name": "Metropolitan district",
                     "county-la": "",
-                    "combined-authority": "NECA",
+                    "combined-authority": "NESA",
                     "alt-names": "Sunderland,sunderland,sunderland city council,sunderland district",
                     "former-gss-codes": "",
                     "notes": "",
@@ -16002,7 +18156,7 @@
                     "local-authority-type": "MD",
                     "local-authority-type-name": "Metropolitan district",
                     "county-la": "",
-                    "combined-authority": "NECA",
+                    "combined-authority": "NESA",
                     "alt-names": "South Tyneside,south tyneside,south tyneside council,south tyneside district",
                     "former-gss-codes": "",
                     "notes": "",
@@ -16802,7 +18956,7 @@
                     "local-authority-type": "UA",
                     "local-authority-type-name": "Unitary authority",
                     "county-la": "",
-                    "combined-authority": "",
+                    "combined-authority": "DTCA",
                     "alt-names": "Torbay,Torbay UA,torbay,torbay council",
                     "former-gss-codes": "",
                     "notes": "",
@@ -19232,1979 +21386,10 @@
             ]
         },
         {
-            "title": "GSS to local authority code lookup",
-            "description": "Dataset that maps current and past gss codes (e.g. E07000239) for an area to the ID for the council.",
-            "custom": {
-                "row_count": 484
-            },
-            "name": "lookup_gss_to_registry",
-            "profile": "tabular-data-resource",
-            "format": "json",
-            "hashing": "md5",
-            "encoding": "utf-8",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "gss-code",
-                        "type": "string",
-                        "description": "Code for the statistical geography of a council. A council may have multiple codes (past and present) as a result of boundary changes.",
-                        "constraints": {
-                            "unique": false
-                        },
-                        "example": "E06000001"
-                    },
-                    {
-                        "name": "local-authority-code",
-                        "type": "string",
-                        "description": "Fixed ID for council, not linked to boundary changes.",
-                        "constraints": {
-                            "unique": false
-                        },
-                        "example": "ABC"
-                    }
-                ]
-            },
-            "hash": "429a4bbda2a9e117a362dc739dcb27ee",
-            "data": [
-                {
-                    "gss-code": "N09000002",
-                    "local-authority-code": "ABC"
-                },
-                {
-                    "gss-code": "S12000034",
-                    "local-authority-code": "ABD"
-                },
-                {
-                    "gss-code": "S12000033",
-                    "local-authority-code": "ABE"
-                },
-                {
-                    "gss-code": "E07000223",
-                    "local-authority-code": "ADU"
-                },
-                {
-                    "gss-code": "S12000035",
-                    "local-authority-code": "AGB"
-                },
-                {
-                    "gss-code": "W06000001",
-                    "local-authority-code": "AGY"
-                },
-                {
-                    "gss-code": "E07000026",
-                    "local-authority-code": "ALL"
-                },
-                {
-                    "gss-code": "E07000032",
-                    "local-authority-code": "AMB"
-                },
-                {
-                    "gss-code": "N09000011",
-                    "local-authority-code": "AND"
-                },
-                {
-                    "gss-code": "N09000001",
-                    "local-authority-code": "ANN"
-                },
-                {
-                    "gss-code": "S12000041",
-                    "local-authority-code": "ANS"
-                },
-                {
-                    "gss-code": "E07000224",
-                    "local-authority-code": "ARU"
-                },
-                {
-                    "gss-code": "E07000105",
-                    "local-authority-code": "ASF"
-                },
-                {
-                    "gss-code": "E07000170",
-                    "local-authority-code": "ASH"
-                },
-                {
-                    "gss-code": "E07000004",
-                    "local-authority-code": "AYL"
-                },
-                {
-                    "gss-code": "E07000200",
-                    "local-authority-code": "BAB"
-                },
-                {
-                    "gss-code": "E07000171",
-                    "local-authority-code": "BAE"
-                },
-                {
-                    "gss-code": "E07000066",
-                    "local-authority-code": "BAI"
-                },
-                {
-                    "gss-code": "E07000084",
-                    "local-authority-code": "BAN"
-                },
-                {
-                    "gss-code": "E07000027",
-                    "local-authority-code": "BAR"
-                },
-                {
-                    "gss-code": "E06000022",
-                    "local-authority-code": "BAS"
-                },
-                {
-                    "gss-code": "E06000008",
-                    "local-authority-code": "BBD"
-                },
-                {
-                    "gss-code": "E06000055",
-                    "local-authority-code": "BDF"
-                },
-                {
-                    "gss-code": "E09000002",
-                    "local-authority-code": "BDG"
-                },
-                {
-                    "gss-code": "E09000005",
-                    "local-authority-code": "BEN"
-                },
-                {
-                    "gss-code": "E09000004",
-                    "local-authority-code": "BEX"
-                },
-                {
-                    "gss-code": "N09000003",
-                    "local-authority-code": "BFS"
-                },
-                {
-                    "gss-code": "W06000013",
-                    "local-authority-code": "BGE"
-                },
-                {
-                    "gss-code": "W06000019",
-                    "local-authority-code": "BGW"
-                },
-                {
-                    "gss-code": "E08000025",
-                    "local-authority-code": "BIR"
-                },
-                {
-                    "gss-code": "E10000002",
-                    "local-authority-code": "BKM"
-                },
-                {
-                    "gss-code": "E07000129",
-                    "local-authority-code": "BLA"
-                },
-                {
-                    "gss-code": "E06000028",
-                    "local-authority-code": "BMH"
-                },
-                {
-                    "gss-code": "E09000003",
-                    "local-authority-code": "BNE"
-                },
-                {
-                    "gss-code": "E06000043",
-                    "local-authority-code": "BNH"
-                },
-                {
-                    "gss-code": "E08000016",
-                    "local-authority-code": "BNS"
-                },
-                {
-                    "gss-code": "E08000001",
-                    "local-authority-code": "BOL"
-                },
-                {
-                    "gss-code": "E07000033",
-                    "local-authority-code": "BOS"
-                },
-                {
-                    "gss-code": "E07000136",
-                    "local-authority-code": "BOT"
-                },
-                {
-                    "gss-code": "E06000058",
-                    "local-authority-code": "BPC"
-                },
-                {
-                    "gss-code": "E06000009",
-                    "local-authority-code": "BPL"
-                },
-                {
-                    "gss-code": "E07000067",
-                    "local-authority-code": "BRA"
-                },
-                {
-                    "gss-code": "E06000036",
-                    "local-authority-code": "BRC"
-                },
-                {
-                    "gss-code": "E08000032",
-                    "local-authority-code": "BRD"
-                },
-                {
-                    "gss-code": "E07000143",
-                    "local-authority-code": "BRE"
-                },
-                {
-                    "gss-code": "E07000234",
-                    "local-authority-code": "BRM"
-                },
-                {
-                    "gss-code": "E07000144",
-                    "local-authority-code": "BRO"
-                },
-                {
-                    "gss-code": "E07000172",
-                    "local-authority-code": "BRT"
-                },
-                {
-                    "gss-code": "E07000068",
-                    "local-authority-code": "BRW"
-                },
-                {
-                    "gss-code": "E07000095",
-                    "local-authority-code": "BRX"
-                },
-                {
-                    "gss-code": "E09000006",
-                    "local-authority-code": "BRY"
-                },
-                {
-                    "gss-code": "E06000023",
-                    "local-authority-code": "BST"
-                },
-                {
-                    "gss-code": "E06000060",
-                    "local-authority-code": "BUC"
-                },
-                {
-                    "gss-code": "E07000117",
-                    "local-authority-code": "BUN"
-                },
-                {
-                    "gss-code": "E08000002",
-                    "local-authority-code": "BUR"
-                },
-                {
-                    "gss-code": "E07000008",
-                    "local-authority-code": "CAB"
-                },
-                {
-                    "gss-code": "E10000003",
-                    "local-authority-code": "CAM"
-                },
-                {
-                    "gss-code": "E07000192",
-                    "local-authority-code": "CAN"
-                },
-                {
-                    "gss-code": "E07000028",
-                    "local-authority-code": "CAR"
-                },
-                {
-                    "gss-code": "E07000069",
-                    "local-authority-code": "CAS"
-                },
-                {
-                    "gss-code": "E07000106",
-                    "local-authority-code": "CAT"
-                },
-                {
-                    "gss-code": "W06000018",
-                    "local-authority-code": "CAY"
-                },
-                {
-                    "gss-code": "E06000063",
-                    "local-authority-code": "CBD"
-                },
-                {
-                    "gss-code": "E06000056",
-                    "local-authority-code": "CBF"
-                },
-                {
-                    "gss-code": "N09000004",
-                    "local-authority-code": "CCG"
-                },
-                {
-                    "gss-code": "W06000008",
-                    "local-authority-code": "CGN"
-                },
-                {
-                    "gss-code": "E07000130",
-                    "local-authority-code": "CHA"
-                },
-                {
-                    "gss-code": "E07000048",
-                    "local-authority-code": "CHC"
-                },
-                {
-                    "gss-code": "E06000049",
-                    "local-authority-code": "CHE"
-                },
-                {
-                    "gss-code": "E07000225",
-                    "local-authority-code": "CHI"
-                },
-                {
-                    "gss-code": "E07000070",
-                    "local-authority-code": "CHL"
-                },
-                {
-                    "gss-code": "E07000005",
-                    "local-authority-code": "CHN"
-                },
-                {
-                    "gss-code": "E07000118",
-                    "local-authority-code": "CHO"
-                },
-                {
-                    "gss-code": "E07000177",
-                    "local-authority-code": "CHR"
-                },
-                {
-                    "gss-code": "E07000034",
-                    "local-authority-code": "CHS"
-                },
-                {
-                    "gss-code": "E07000078",
-                    "local-authority-code": "CHT"
-                },
-                {
-                    "gss-code": "E06000050",
-                    "local-authority-code": "CHW"
-                },
-                {
-                    "gss-code": "E08000033",
-                    "local-authority-code": "CLD"
-                },
-                {
-                    "gss-code": "S12000005",
-                    "local-authority-code": "CLK"
-                },
-                {
-                    "gss-code": "E10000006",
-                    "local-authority-code": "CMA"
-                },
-                {
-                    "gss-code": "E09000007",
-                    "local-authority-code": "CMD"
-                },
-                {
-                    "gss-code": "W06000010",
-                    "local-authority-code": "CMN"
-                },
-                {
-                    "gss-code": "E07000071",
-                    "local-authority-code": "COL"
-                },
-                {
-                    "gss-code": "E06000052",
-                    "local-authority-code": "CON"
-                },
-                {
-                    "gss-code": "E07000029",
-                    "local-authority-code": "COP"
-                },
-                {
-                    "gss-code": "E07000150",
-                    "local-authority-code": "COR"
-                },
-                {
-                    "gss-code": "E07000079",
-                    "local-authority-code": "COT"
-                },
-                {
-                    "gss-code": "E08000026",
-                    "local-authority-code": "COV"
-                },
-                {
-                    "gss-code": "E47000008",
-                    "local-authority-code": "CPCA"
-                },
-                {
-                    "gss-code": "E07000163",
-                    "local-authority-code": "CRA"
-                },
-                {
-                    "gss-code": "W06000015",
-                    "local-authority-code": "CRF"
-                },
-                {
-                    "gss-code": "E07000226",
-                    "local-authority-code": "CRW"
-                },
-                {
-                    "gss-code": "E09000008",
-                    "local-authority-code": "CRY"
-                },
-                {
-                    "gss-code": "W06000003",
-                    "local-authority-code": "CWY"
-                },
-                {
-                    "gss-code": "E07000096",
-                    "local-authority-code": "DAC"
-                },
-                {
-                    "gss-code": "E06000005",
-                    "local-authority-code": "DAL"
-                },
-                {
-                    "gss-code": "E07000107",
-                    "local-authority-code": "DAR"
-                },
-                {
-                    "gss-code": "E07000151",
-                    "local-authority-code": "DAV"
-                },
-                {
-                    "gss-code": "E10000007",
-                    "local-authority-code": "DBY"
-                },
-                {
-                    "gss-code": "E07000035",
-                    "local-authority-code": "DEB"
-                },
-                {
-                    "gss-code": "W06000004",
-                    "local-authority-code": "DEN"
-                },
-                {
-                    "gss-code": "E06000015",
-                    "local-authority-code": "DER"
-                },
-                {
-                    "gss-code": "E10000008",
-                    "local-authority-code": "DEV"
-                },
-                {
-                    "gss-code": "S12000006",
-                    "local-authority-code": "DGY"
-                },
-                {
-                    "gss-code": "E08000017",
-                    "local-authority-code": "DNC"
-                },
-                {
-                    "gss-code": "S12000042",
-                    "local-authority-code": "DND"
-                },
-                {
-                    "gss-code": "E10000009",
-                    "local-authority-code": "DOR"
-                },
-                {
-                    "gss-code": "E07000108",
-                    "local-authority-code": "DOV"
-                },
-                {
-                    "gss-code": "N09000005",
-                    "local-authority-code": "DRS"
-                },
-                {
-                    "gss-code": "E06000059",
-                    "local-authority-code": "DST"
-                },
-                {
-                    "gss-code": "E08000027",
-                    "local-authority-code": "DUD"
-                },
-                {
-                    "gss-code": "E06000047",
-                    "local-authority-code": "DUR"
-                },
-                {
-                    "gss-code": "E09000009",
-                    "local-authority-code": "EAL"
-                },
-                {
-                    "gss-code": "E07000061",
-                    "local-authority-code": "EAS"
-                },
-                {
-                    "gss-code": "E07000086",
-                    "local-authority-code": "EAT"
-                },
-                {
-                    "gss-code": "S12000008",
-                    "local-authority-code": "EAY"
-                },
-                {
-                    "gss-code": "E07000009",
-                    "local-authority-code": "ECA"
-                },
-                {
-                    "gss-code": "E07000040",
-                    "local-authority-code": "EDE"
-                },
-                {
-                    "gss-code": "S12000036",
-                    "local-authority-code": "EDH"
-                },
-                {
-                    "gss-code": "E07000030",
-                    "local-authority-code": "EDN"
-                },
-                {
-                    "gss-code": "E07000049",
-                    "local-authority-code": "EDO"
-                },
-                {
-                    "gss-code": "S12000045",
-                    "local-authority-code": "EDU"
-                },
-                {
-                    "gss-code": "S12000009",
-                    "local-authority-code": "EDU"
-                },
-                {
-                    "gss-code": "E07000085",
-                    "local-authority-code": "EHA"
-                },
-                {
-                    "gss-code": "E07000242",
-                    "local-authority-code": "EHE"
-                },
-                {
-                    "gss-code": "E07000097",
-                    "local-authority-code": "EHE"
-                },
-                {
-                    "gss-code": "E07000137",
-                    "local-authority-code": "ELI"
-                },
-                {
-                    "gss-code": "E07000207",
-                    "local-authority-code": "ELM"
-                },
-                {
-                    "gss-code": "S12000010",
-                    "local-authority-code": "ELN"
-                },
-                {
-                    "gss-code": "S12000013",
-                    "local-authority-code": "ELS"
-                },
-                {
-                    "gss-code": "E47000013",
-                    "local-authority-code": "EMCA"
-                },
-                {
-                    "gss-code": "E09000010",
-                    "local-authority-code": "ENF"
-                },
-                {
-                    "gss-code": "E07000152",
-                    "local-authority-code": "ENO"
-                },
-                {
-                    "gss-code": "E07000072",
-                    "local-authority-code": "EPP"
-                },
-                {
-                    "gss-code": "E07000208",
-                    "local-authority-code": "EPS"
-                },
-                {
-                    "gss-code": "E07000036",
-                    "local-authority-code": "ERE"
-                },
-                {
-                    "gss-code": "S12000011",
-                    "local-authority-code": "ERW"
-                },
-                {
-                    "gss-code": "E06000011",
-                    "local-authority-code": "ERY"
-                },
-                {
-                    "gss-code": "E07000244",
-                    "local-authority-code": "ESK"
-                },
-                {
-                    "gss-code": "E10000012",
-                    "local-authority-code": "ESS"
-                },
-                {
-                    "gss-code": "E07000193",
-                    "local-authority-code": "EST"
-                },
-                {
-                    "gss-code": "E10000011",
-                    "local-authority-code": "ESX"
-                },
-                {
-                    "gss-code": "E07000041",
-                    "local-authority-code": "EXE"
-                },
-                {
-                    "gss-code": "S12000014",
-                    "local-authority-code": "FAL"
-                },
-                {
-                    "gss-code": "E07000087",
-                    "local-authority-code": "FAR"
-                },
-                {
-                    "gss-code": "E07000010",
-                    "local-authority-code": "FEN"
-                },
-                {
-                    "gss-code": "S12000047",
-                    "local-authority-code": "FIF"
-                },
-                {
-                    "gss-code": "S12000015",
-                    "local-authority-code": "FIF"
-                },
-                {
-                    "gss-code": "W06000005",
-                    "local-authority-code": "FLN"
-                },
-                {
-                    "gss-code": "N09000006",
-                    "local-authority-code": "FMO"
-                },
-                {
-                    "gss-code": "E07000080",
-                    "local-authority-code": "FOE"
-                },
-                {
-                    "gss-code": "E07000201",
-                    "local-authority-code": "FOR"
-                },
-                {
-                    "gss-code": "E07000119",
-                    "local-authority-code": "FYL"
-                },
-                {
-                    "gss-code": "E08000037",
-                    "local-authority-code": "GAT"
-                },
-                {
-                    "gss-code": "E08000020",
-                    "local-authority-code": "GAT"
-                },
-                {
-                    "gss-code": "E07000173",
-                    "local-authority-code": "GED"
-                },
-                {
-                    "gss-code": "E61000001",
-                    "local-authority-code": "GLA"
-                },
-                {
-                    "gss-code": "E47000017",
-                    "local-authority-code": "GLCA"
-                },
-                {
-                    "gss-code": "S12000049",
-                    "local-authority-code": "GLG"
-                },
-                {
-                    "gss-code": "S12000046",
-                    "local-authority-code": "GLG"
-                },
-                {
-                    "gss-code": "S12000043",
-                    "local-authority-code": "GLG"
-                },
-                {
-                    "gss-code": "E07000081",
-                    "local-authority-code": "GLO"
-                },
-                {
-                    "gss-code": "E10000013",
-                    "local-authority-code": "GLS"
-                },
-                {
-                    "gss-code": "E47000001",
-                    "local-authority-code": "GMCA"
-                },
-                {
-                    "gss-code": "E07000088",
-                    "local-authority-code": "GOS"
-                },
-                {
-                    "gss-code": "E07000109",
-                    "local-authority-code": "GRA"
-                },
-                {
-                    "gss-code": "E09000011",
-                    "local-authority-code": "GRE"
-                },
-                {
-                    "gss-code": "E07000209",
-                    "local-authority-code": "GRT"
-                },
-                {
-                    "gss-code": "E07000145",
-                    "local-authority-code": "GRY"
-                },
-                {
-                    "gss-code": "W06000002",
-                    "local-authority-code": "GWN"
-                },
-                {
-                    "gss-code": "E07000090",
-                    "local-authority-code": "HAA"
-                },
-                {
-                    "gss-code": "E07000164",
-                    "local-authority-code": "HAE"
-                },
-                {
-                    "gss-code": "E07000165",
-                    "local-authority-code": "HAG"
-                },
-                {
-                    "gss-code": "E06000006",
-                    "local-authority-code": "HAL"
-                },
-                {
-                    "gss-code": "E10000014",
-                    "local-authority-code": "HAM"
-                },
-                {
-                    "gss-code": "E07000131",
-                    "local-authority-code": "HAO"
-                },
-                {
-                    "gss-code": "E07000073",
-                    "local-authority-code": "HAR"
-                },
-                {
-                    "gss-code": "E07000062",
-                    "local-authority-code": "HAS"
-                },
-                {
-                    "gss-code": "E07000089",
-                    "local-authority-code": "HAT"
-                },
-                {
-                    "gss-code": "E09000016",
-                    "local-authority-code": "HAV"
-                },
-                {
-                    "gss-code": "E09000012",
-                    "local-authority-code": "HCK"
-                },
-                {
-                    "gss-code": "E06000019",
-                    "local-authority-code": "HEF"
-                },
-                {
-                    "gss-code": "E07000098",
-                    "local-authority-code": "HER"
-                },
-                {
-                    "gss-code": "E07000037",
-                    "local-authority-code": "HIG"
-                },
-                {
-                    "gss-code": "E09000017",
-                    "local-authority-code": "HIL"
-                },
-                {
-                    "gss-code": "E07000132",
-                    "local-authority-code": "HIN"
-                },
-                {
-                    "gss-code": "S12000017",
-                    "local-authority-code": "HLD"
-                },
-                {
-                    "gss-code": "E09000013",
-                    "local-authority-code": "HMF"
-                },
-                {
-                    "gss-code": "E09000018",
-                    "local-authority-code": "HNS"
-                },
-                {
-                    "gss-code": "E07000227",
-                    "local-authority-code": "HOR"
-                },
-                {
-                    "gss-code": "E06000001",
-                    "local-authority-code": "HPL"
-                },
-                {
-                    "gss-code": "E10000015",
-                    "local-authority-code": "HRT"
-                },
-                {
-                    "gss-code": "E09000015",
-                    "local-authority-code": "HRW"
-                },
-                {
-                    "gss-code": "E09000014",
-                    "local-authority-code": "HRY"
-                },
-                {
-                    "gss-code": "E07000011",
-                    "local-authority-code": "HUN"
-                },
-                {
-                    "gss-code": "E47000016",
-                    "local-authority-code": "HYCA"
-                },
-                {
-                    "gss-code": "E07000120",
-                    "local-authority-code": "HYN"
-                },
-                {
-                    "gss-code": "E06000053",
-                    "local-authority-code": "IOS"
-                },
-                {
-                    "gss-code": "E06000046",
-                    "local-authority-code": "IOW"
-                },
-                {
-                    "gss-code": "E07000202",
-                    "local-authority-code": "IPS"
-                },
-                {
-                    "gss-code": "E09000019",
-                    "local-authority-code": "ISL"
-                },
-                {
-                    "gss-code": "S12000018",
-                    "local-authority-code": "IVC"
-                },
-                {
-                    "gss-code": "E09000020",
-                    "local-authority-code": "KEC"
-                },
-                {
-                    "gss-code": "E10000016",
-                    "local-authority-code": "KEN"
-                },
-                {
-                    "gss-code": "E07000153",
-                    "local-authority-code": "KET"
-                },
-                {
-                    "gss-code": "E06000010",
-                    "local-authority-code": "KHL"
-                },
-                {
-                    "gss-code": "E07000146",
-                    "local-authority-code": "KIN"
-                },
-                {
-                    "gss-code": "E08000034",
-                    "local-authority-code": "KIR"
-                },
-                {
-                    "gss-code": "E09000021",
-                    "local-authority-code": "KTT"
-                },
-                {
-                    "gss-code": "E08000011",
-                    "local-authority-code": "KWL"
-                },
-                {
-                    "gss-code": "E07000121",
-                    "local-authority-code": "LAC"
-                },
-                {
-                    "gss-code": "E10000017",
-                    "local-authority-code": "LAN"
-                },
-                {
-                    "gss-code": "N09000007",
-                    "local-authority-code": "LBC"
-                },
-                {
-                    "gss-code": "E09000022",
-                    "local-authority-code": "LBH"
-                },
-                {
-                    "gss-code": "E06000016",
-                    "local-authority-code": "LCE"
-                },
-                {
-                    "gss-code": "E47000004",
-                    "local-authority-code": "LCR"
-                },
-                {
-                    "gss-code": "E08000035",
-                    "local-authority-code": "LDS"
-                },
-                {
-                    "gss-code": "E10000018",
-                    "local-authority-code": "LEC"
-                },
-                {
-                    "gss-code": "E07000063",
-                    "local-authority-code": "LEE"
-                },
-                {
-                    "gss-code": "E09000023",
-                    "local-authority-code": "LEW"
-                },
-                {
-                    "gss-code": "E07000138",
-                    "local-authority-code": "LIC"
-                },
-                {
-                    "gss-code": "E07000194",
-                    "local-authority-code": "LIF"
-                },
-                {
-                    "gss-code": "E10000019",
-                    "local-authority-code": "LIN"
-                },
-                {
-                    "gss-code": "E08000012",
-                    "local-authority-code": "LIV"
-                },
-                {
-                    "gss-code": "E09000001",
-                    "local-authority-code": "LND"
-                },
-                {
-                    "gss-code": "E06000032",
-                    "local-authority-code": "LUT"
-                },
-                {
-                    "gss-code": "E07000110",
-                    "local-authority-code": "MAI"
-                },
-                {
-                    "gss-code": "E07000074",
-                    "local-authority-code": "MAL"
-                },
-                {
-                    "gss-code": "E08000003",
-                    "local-authority-code": "MAN"
-                },
-                {
-                    "gss-code": "E07000174",
-                    "local-authority-code": "MAS"
-                },
-                {
-                    "gss-code": "E07000235",
-                    "local-authority-code": "MAV"
-                },
-                {
-                    "gss-code": "E06000002",
-                    "local-authority-code": "MDB"
-                },
-                {
-                    "gss-code": "E07000042",
-                    "local-authority-code": "MDE"
-                },
-                {
-                    "gss-code": "E06000035",
-                    "local-authority-code": "MDW"
-                },
-                {
-                    "gss-code": "N09000008",
-                    "local-authority-code": "MEA"
-                },
-                {
-                    "gss-code": "E07000133",
-                    "local-authority-code": "MEL"
-                },
-                {
-                    "gss-code": "E07000187",
-                    "local-authority-code": "MEN"
-                },
-                {
-                    "gss-code": "E06000042",
-                    "local-authority-code": "MIK"
-                },
-                {
-                    "gss-code": "S12000019",
-                    "local-authority-code": "MLN"
-                },
-                {
-                    "gss-code": "E07000210",
-                    "local-authority-code": "MOL"
-                },
-                {
-                    "gss-code": "W06000021",
-                    "local-authority-code": "MON"
-                },
-                {
-                    "gss-code": "E09000024",
-                    "local-authority-code": "MRT"
-                },
-                {
-                    "gss-code": "S12000020",
-                    "local-authority-code": "MRY"
-                },
-                {
-                    "gss-code": "E07000228",
-                    "local-authority-code": "MSS"
-                },
-                {
-                    "gss-code": "E07000203",
-                    "local-authority-code": "MSU"
-                },
-                {
-                    "gss-code": "W06000024",
-                    "local-authority-code": "MTY"
-                },
-                {
-                    "gss-code": "N09000009",
-                    "local-authority-code": "MUL"
-                },
-                {
-                    "gss-code": "S12000021",
-                    "local-authority-code": "NAY"
-                },
-                {
-                    "gss-code": "E06000057",
-                    "local-authority-code": "NBL"
-                },
-                {
-                    "gss-code": "E06000048",
-                    "local-authority-code": "NBL"
-                },
-                {
-                    "gss-code": "E07000043",
-                    "local-authority-code": "NDE"
-                },
-                {
-                    "gss-code": "E07000050",
-                    "local-authority-code": "NDO"
-                },
-                {
-                    "gss-code": "E07000175",
-                    "local-authority-code": "NEA"
-                },
-                {
-                    "gss-code": "E07000195",
-                    "local-authority-code": "NEC"
-                },
-                {
-                    "gss-code": "E47000010",
-                    "local-authority-code": "NECA"
-                },
-                {
-                    "gss-code": "E47000005",
-                    "local-authority-code": "NECA"
-                },
-                {
-                    "gss-code": "E07000038",
-                    "local-authority-code": "NED"
-                },
-                {
-                    "gss-code": "E06000012",
-                    "local-authority-code": "NEL"
-                },
-                {
-                    "gss-code": "E08000021",
-                    "local-authority-code": "NET"
-                },
-                {
-                    "gss-code": "E07000091",
-                    "local-authority-code": "NEW"
-                },
-                {
-                    "gss-code": "E10000020",
-                    "local-authority-code": "NFK"
-                },
-                {
-                    "gss-code": "E06000018",
-                    "local-authority-code": "NGM"
-                },
-                {
-                    "gss-code": "E07000099",
-                    "local-authority-code": "NHE"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-A"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-B"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-C"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-D"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-E"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-F"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-G"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-H"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-I"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-J"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-K"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-L"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-M"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-N"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-O"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-P"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-Q"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-R"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-S"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-T"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-U"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-V"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-W"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-X"
-                },
-                {
-                    "gss-code": "",
-                    "local-authority-code": "NIR-Y"
-                },
-                {
-                    "gss-code": "E07000139",
-                    "local-authority-code": "NKE"
-                },
-                {
-                    "gss-code": "S12000050",
-                    "local-authority-code": "NLK"
-                },
-                {
-                    "gss-code": "S12000044",
-                    "local-authority-code": "NLK"
-                },
-                {
-                    "gss-code": "E06000013",
-                    "local-authority-code": "NLN"
-                },
-                {
-                    "gss-code": "N09000010",
-                    "local-authority-code": "NMD"
-                },
-                {
-                    "gss-code": "E07000147",
-                    "local-authority-code": "NNO"
-                },
-                {
-                    "gss-code": "E06000061",
-                    "local-authority-code": "NNT"
-                },
-                {
-                    "gss-code": "E07000154",
-                    "local-authority-code": "NOR"
-                },
-                {
-                    "gss-code": "E07000148",
-                    "local-authority-code": "NOW"
-                },
-                {
-                    "gss-code": "E06000024",
-                    "local-authority-code": "NSM"
-                },
-                {
-                    "gss-code": "E47000011",
-                    "local-authority-code": "NTCA"
-                },
-                {
-                    "gss-code": "E10000021",
-                    "local-authority-code": "NTH"
-                },
-                {
-                    "gss-code": "W06000012",
-                    "local-authority-code": "NTL"
-                },
-                {
-                    "gss-code": "E10000024",
-                    "local-authority-code": "NTT"
-                },
-                {
-                    "gss-code": "E08000022",
-                    "local-authority-code": "NTY"
-                },
-                {
-                    "gss-code": "E07000219",
-                    "local-authority-code": "NUN"
-                },
-                {
-                    "gss-code": "E07000218",
-                    "local-authority-code": "NWA"
-                },
-                {
-                    "gss-code": "E07000134",
-                    "local-authority-code": "NWL"
-                },
-                {
-                    "gss-code": "E09000025",
-                    "local-authority-code": "NWM"
-                },
-                {
-                    "gss-code": "W06000022",
-                    "local-authority-code": "NWP"
-                },
-                {
-                    "gss-code": "E06000065",
-                    "local-authority-code": "NYE"
-                },
-                {
-                    "gss-code": "E10000023",
-                    "local-authority-code": "NYK"
-                },
-                {
-                    "gss-code": "E07000135",
-                    "local-authority-code": "OAD"
-                },
-                {
-                    "gss-code": "E08000004",
-                    "local-authority-code": "OLD"
-                },
-                {
-                    "gss-code": "S12000023",
-                    "local-authority-code": "ORK"
-                },
-                {
-                    "gss-code": "E10000025",
-                    "local-authority-code": "OXF"
-                },
-                {
-                    "gss-code": "E07000178",
-                    "local-authority-code": "OXO"
-                },
-                {
-                    "gss-code": "W06000009",
-                    "local-authority-code": "PEM"
-                },
-                {
-                    "gss-code": "E07000122",
-                    "local-authority-code": "PEN"
-                },
-                {
-                    "gss-code": "S12000048",
-                    "local-authority-code": "PKN"
-                },
-                {
-                    "gss-code": "S12000024",
-                    "local-authority-code": "PKN"
-                },
-                {
-                    "gss-code": "E06000026",
-                    "local-authority-code": "PLY"
-                },
-                {
-                    "gss-code": "E06000029",
-                    "local-authority-code": "POL"
-                },
-                {
-                    "gss-code": "E06000044",
-                    "local-authority-code": "POR"
-                },
-                {
-                    "gss-code": "W06000023",
-                    "local-authority-code": "POW"
-                },
-                {
-                    "gss-code": "E07000123",
-                    "local-authority-code": "PRE"
-                },
-                {
-                    "gss-code": "E06000031",
-                    "local-authority-code": "PTE"
-                },
-                {
-                    "gss-code": "E07000051",
-                    "local-authority-code": "PUR"
-                },
-                {
-                    "gss-code": "E06000003",
-                    "local-authority-code": "RCC"
-                },
-                {
-                    "gss-code": "E08000005",
-                    "local-authority-code": "RCH"
-                },
-                {
-                    "gss-code": "W06000016",
-                    "local-authority-code": "RCT"
-                },
-                {
-                    "gss-code": "E09000026",
-                    "local-authority-code": "RDB"
-                },
-                {
-                    "gss-code": "E06000038",
-                    "local-authority-code": "RDG"
-                },
-                {
-                    "gss-code": "E07000236",
-                    "local-authority-code": "RED"
-                },
-                {
-                    "gss-code": "E07000211",
-                    "local-authority-code": "REI"
-                },
-                {
-                    "gss-code": "S12000038",
-                    "local-authority-code": "RFW"
-                },
-                {
-                    "gss-code": "E07000124",
-                    "local-authority-code": "RIB"
-                },
-                {
-                    "gss-code": "E09000027",
-                    "local-authority-code": "RIC"
-                },
-                {
-                    "gss-code": "E07000166",
-                    "local-authority-code": "RIH"
-                },
-                {
-                    "gss-code": "E07000075",
-                    "local-authority-code": "ROC"
-                },
-                {
-                    "gss-code": "E07000064",
-                    "local-authority-code": "ROH"
-                },
-                {
-                    "gss-code": "E07000125",
-                    "local-authority-code": "ROS"
-                },
-                {
-                    "gss-code": "E08000018",
-                    "local-authority-code": "ROT"
-                },
-                {
-                    "gss-code": "E07000220",
-                    "local-authority-code": "RUG"
-                },
-                {
-                    "gss-code": "E07000092",
-                    "local-authority-code": "RUH"
-                },
-                {
-                    "gss-code": "E07000212",
-                    "local-authority-code": "RUN"
-                },
-                {
-                    "gss-code": "E07000176",
-                    "local-authority-code": "RUS"
-                },
-                {
-                    "gss-code": "E06000017",
-                    "local-authority-code": "RUT"
-                },
-                {
-                    "gss-code": "E07000167",
-                    "local-authority-code": "RYE"
-                },
-                {
-                    "gss-code": "E07000240",
-                    "local-authority-code": "SAL"
-                },
-                {
-                    "gss-code": "E07000100",
-                    "local-authority-code": "SAL"
-                },
-                {
-                    "gss-code": "E08000028",
-                    "local-authority-code": "SAW"
-                },
-                {
-                    "gss-code": "S12000028",
-                    "local-authority-code": "SAY"
-                },
-                {
-                    "gss-code": "E07000006",
-                    "local-authority-code": "SBU"
-                },
-                {
-                    "gss-code": "E07000012",
-                    "local-authority-code": "SCA"
-                },
-                {
-                    "gss-code": "S12000026",
-                    "local-authority-code": "SCB"
-                },
-                {
-                    "gss-code": "E07000168",
-                    "local-authority-code": "SCE"
-                },
-                {
-                    "gss-code": "E47000002",
-                    "local-authority-code": "SCR"
-                },
-                {
-                    "gss-code": "E07000039",
-                    "local-authority-code": "SDE"
-                },
-                {
-                    "gss-code": "E07000204",
-                    "local-authority-code": "SED"
-                },
-                {
-                    "gss-code": "E07000188",
-                    "local-authority-code": "SEG"
-                },
-                {
-                    "gss-code": "E07000169",
-                    "local-authority-code": "SEL"
-                },
-                {
-                    "gss-code": "E07000111",
-                    "local-authority-code": "SEV"
-                },
-                {
-                    "gss-code": "E10000029",
-                    "local-authority-code": "SFK"
-                },
-                {
-                    "gss-code": "E08000014",
-                    "local-authority-code": "SFT"
-                },
-                {
-                    "gss-code": "E06000025",
-                    "local-authority-code": "SGC"
-                },
-                {
-                    "gss-code": "E07000044",
-                    "local-authority-code": "SHA"
-                },
-                {
-                    "gss-code": "E07000112",
-                    "local-authority-code": "SHE"
-                },
-                {
-                    "gss-code": "E08000019",
-                    "local-authority-code": "SHF"
-                },
-                {
-                    "gss-code": "E08000013",
-                    "local-authority-code": "SHN"
-                },
-                {
-                    "gss-code": "E07000140",
-                    "local-authority-code": "SHO"
-                },
-                {
-                    "gss-code": "E06000051",
-                    "local-authority-code": "SHR"
-                },
-                {
-                    "gss-code": "E07000141",
-                    "local-authority-code": "SKE"
-                },
-                {
-                    "gss-code": "E08000007",
-                    "local-authority-code": "SKP"
-                },
-                {
-                    "gss-code": "E07000031",
-                    "local-authority-code": "SLA"
-                },
-                {
-                    "gss-code": "E08000006",
-                    "local-authority-code": "SLF"
-                },
-                {
-                    "gss-code": "E06000039",
-                    "local-authority-code": "SLG"
-                },
-                {
-                    "gss-code": "S12000029",
-                    "local-authority-code": "SLK"
-                },
-                {
-                    "gss-code": "E06000066",
-                    "local-authority-code": "SMT"
-                },
-                {
-                    "gss-code": "E08000024",
-                    "local-authority-code": "SND"
-                },
-                {
-                    "gss-code": "E07000149",
-                    "local-authority-code": "SNO"
-                },
-                {
-                    "gss-code": "E07000155",
-                    "local-authority-code": "SNR"
-                },
-                {
-                    "gss-code": "E08000029",
-                    "local-authority-code": "SOL"
-                },
-                {
-                    "gss-code": "E10000027",
-                    "local-authority-code": "SOM"
-                },
-                {
-                    "gss-code": "E06000033",
-                    "local-authority-code": "SOS"
-                },
-                {
-                    "gss-code": "E07000179",
-                    "local-authority-code": "SOX"
-                },
-                {
-                    "gss-code": "E07000213",
-                    "local-authority-code": "SPE"
-                },
-                {
-                    "gss-code": "E07000126",
-                    "local-authority-code": "SRI"
-                },
-                {
-                    "gss-code": "E10000030",
-                    "local-authority-code": "SRY"
-                },
-                {
-                    "gss-code": "E07000189",
-                    "local-authority-code": "SSO"
-                },
-                {
-                    "gss-code": "E07000196",
-                    "local-authority-code": "SST"
-                },
-                {
-                    "gss-code": "E07000197",
-                    "local-authority-code": "STA"
-                },
-                {
-                    "gss-code": "E06000021",
-                    "local-authority-code": "STE"
-                },
-                {
-                    "gss-code": "E07000198",
-                    "local-authority-code": "STF"
-                },
-                {
-                    "gss-code": "S12000030",
-                    "local-authority-code": "STG"
-                },
-                {
-                    "gss-code": "E06000045",
-                    "local-authority-code": "STH"
-                },
-                {
-                    "gss-code": "E09000029",
-                    "local-authority-code": "STN"
-                },
-                {
-                    "gss-code": "E07000082",
-                    "local-authority-code": "STO"
-                },
-                {
-                    "gss-code": "E07000221",
-                    "local-authority-code": "STR"
-                },
-                {
-                    "gss-code": "E10000028",
-                    "local-authority-code": "STS"
-                },
-                {
-                    "gss-code": "E06000004",
-                    "local-authority-code": "STT"
-                },
-                {
-                    "gss-code": "E07000243",
-                    "local-authority-code": "STV"
-                },
-                {
-                    "gss-code": "E07000101",
-                    "local-authority-code": "STV"
-                },
-                {
-                    "gss-code": "E08000023",
-                    "local-authority-code": "STY"
-                },
-                {
-                    "gss-code": "E07000205",
-                    "local-authority-code": "SUF"
-                },
-                {
-                    "gss-code": "E07000214",
-                    "local-authority-code": "SUR"
-                },
-                {
-                    "gss-code": "W06000011",
-                    "local-authority-code": "SWA"
-                },
-                {
-                    "gss-code": "E06000030",
-                    "local-authority-code": "SWD"
-                },
-                {
-                    "gss-code": "E09000028",
-                    "local-authority-code": "SWK"
-                },
-                {
-                    "gss-code": "E07000113",
-                    "local-authority-code": "SWL"
-                },
-                {
-                    "gss-code": "E07000246",
-                    "local-authority-code": "SWT"
-                },
-                {
-                    "gss-code": "E08000008",
-                    "local-authority-code": "TAM"
-                },
-                {
-                    "gss-code": "E07000215",
-                    "local-authority-code": "TAN"
-                },
-                {
-                    "gss-code": "E07000190",
-                    "local-authority-code": "TAU"
-                },
-                {
-                    "gss-code": "E07000199",
-                    "local-authority-code": "TAW"
-                },
-                {
-                    "gss-code": "E07000045",
-                    "local-authority-code": "TEI"
-                },
-                {
-                    "gss-code": "E07000076",
-                    "local-authority-code": "TEN"
-                },
-                {
-                    "gss-code": "E07000093",
-                    "local-authority-code": "TES"
-                },
-                {
-                    "gss-code": "E07000083",
-                    "local-authority-code": "TEW"
-                },
-                {
-                    "gss-code": "E06000020",
-                    "local-authority-code": "TFW"
-                },
-                {
-                    "gss-code": "E07000114",
-                    "local-authority-code": "THA"
-                },
-                {
-                    "gss-code": "E07000102",
-                    "local-authority-code": "THE"
-                },
-                {
-                    "gss-code": "E06000034",
-                    "local-authority-code": "THR"
-                },
-                {
-                    "gss-code": "E06000027",
-                    "local-authority-code": "TOB"
-                },
-                {
-                    "gss-code": "W06000020",
-                    "local-authority-code": "TOF"
-                },
-                {
-                    "gss-code": "E07000115",
-                    "local-authority-code": "TON"
-                },
-                {
-                    "gss-code": "E07000046",
-                    "local-authority-code": "TOR"
-                },
-                {
-                    "gss-code": "E08000009",
-                    "local-authority-code": "TRF"
-                },
-                {
-                    "gss-code": "E07000116",
-                    "local-authority-code": "TUN"
-                },
-                {
-                    "gss-code": "E47000006",
-                    "local-authority-code": "TVCA"
-                },
-                {
-                    "gss-code": "E09000030",
-                    "local-authority-code": "TWH"
-                },
-                {
-                    "gss-code": "E07000077",
-                    "local-authority-code": "UTT"
-                },
-                {
-                    "gss-code": "E07000180",
-                    "local-authority-code": "VAL"
-                },
-                {
-                    "gss-code": "W06000014",
-                    "local-authority-code": "VGL"
-                },
-                {
-                    "gss-code": "E07000216",
-                    "local-authority-code": "WAE"
-                },
-                {
-                    "gss-code": "E06000064",
-                    "local-authority-code": "WAF"
-                },
-                {
-                    "gss-code": "E10000031",
-                    "local-authority-code": "WAR"
-                },
-                {
-                    "gss-code": "E07000103",
-                    "local-authority-code": "WAT"
-                },
-                {
-                    "gss-code": "E07000206",
-                    "local-authority-code": "WAV"
-                },
-                {
-                    "gss-code": "E07000222",
-                    "local-authority-code": "WAW"
-                },
-                {
-                    "gss-code": "E06000037",
-                    "local-authority-code": "WBK"
-                },
-                {
-                    "gss-code": "E07000047",
-                    "local-authority-code": "WDE"
-                },
-                {
-                    "gss-code": "E07000052",
-                    "local-authority-code": "WDO"
-                },
-                {
-                    "gss-code": "S12000039",
-                    "local-authority-code": "WDU"
-                },
-                {
-                    "gss-code": "E07000065",
-                    "local-authority-code": "WEA"
-                },
-                {
-                    "gss-code": "E47000009",
-                    "local-authority-code": "WECA"
-                },
-                {
-                    "gss-code": "E07000156",
-                    "local-authority-code": "WEL"
-                },
-                {
-                    "gss-code": "E07000241",
-                    "local-authority-code": "WEW"
-                },
-                {
-                    "gss-code": "E07000104",
-                    "local-authority-code": "WEW"
-                },
-                {
-                    "gss-code": "E07000053",
-                    "local-authority-code": "WEY"
-                },
-                {
-                    "gss-code": "E09000031",
-                    "local-authority-code": "WFT"
-                },
-                {
-                    "gss-code": "E08000010",
-                    "local-authority-code": "WGN"
-                },
-                {
-                    "gss-code": "E06000054",
-                    "local-authority-code": "WIL"
-                },
-                {
-                    "gss-code": "E07000094",
-                    "local-authority-code": "WIN"
-                },
-                {
-                    "gss-code": "E08000036",
-                    "local-authority-code": "WKF"
-                },
-                {
-                    "gss-code": "E07000127",
-                    "local-authority-code": "WLA"
-                },
-                {
-                    "gss-code": "E07000142",
-                    "local-authority-code": "WLI"
-                },
-                {
-                    "gss-code": "E08000030",
-                    "local-authority-code": "WLL"
-                },
-                {
-                    "gss-code": "S12000040",
-                    "local-authority-code": "WLN"
-                },
-                {
-                    "gss-code": "E08000031",
-                    "local-authority-code": "WLV"
-                },
-                {
-                    "gss-code": "E47000007",
-                    "local-authority-code": "WMCA"
-                },
-                {
-                    "gss-code": "E09000032",
-                    "local-authority-code": "WND"
-                },
-                {
-                    "gss-code": "E06000040",
-                    "local-authority-code": "WNM"
-                },
-                {
-                    "gss-code": "E06000062",
-                    "local-authority-code": "WNT"
-                },
-                {
-                    "gss-code": "E07000237",
-                    "local-authority-code": "WOC"
-                },
-                {
-                    "gss-code": "E07000217",
-                    "local-authority-code": "WOI"
-                },
-                {
-                    "gss-code": "E06000041",
-                    "local-authority-code": "WOK"
-                },
-                {
-                    "gss-code": "E10000034",
-                    "local-authority-code": "WOR"
-                },
-                {
-                    "gss-code": "E07000229",
-                    "local-authority-code": "WOT"
-                },
-                {
-                    "gss-code": "E07000181",
-                    "local-authority-code": "WOX"
-                },
-                {
-                    "gss-code": "E08000015",
-                    "local-authority-code": "WRL"
-                },
-                {
-                    "gss-code": "E06000007",
-                    "local-authority-code": "WRT"
-                },
-                {
-                    "gss-code": "W06000006",
-                    "local-authority-code": "WRX"
-                },
-                {
-                    "gss-code": "E07000245",
-                    "local-authority-code": "WSK"
-                },
-                {
-                    "gss-code": "E09000033",
-                    "local-authority-code": "WSM"
-                },
-                {
-                    "gss-code": "E07000191",
-                    "local-authority-code": "WSO"
-                },
-                {
-                    "gss-code": "E10000032",
-                    "local-authority-code": "WSX"
-                },
-                {
-                    "gss-code": "E07000238",
-                    "local-authority-code": "WYC"
-                },
-                {
-                    "gss-code": "E47000003",
-                    "local-authority-code": "WYCA"
-                },
-                {
-                    "gss-code": "E07000239",
-                    "local-authority-code": "WYE"
-                },
-                {
-                    "gss-code": "E07000007",
-                    "local-authority-code": "WYO"
-                },
-                {
-                    "gss-code": "E07000128",
-                    "local-authority-code": "WYR"
-                },
-                {
-                    "gss-code": "E47000012",
-                    "local-authority-code": "YNYC"
-                },
-                {
-                    "gss-code": "E06000014",
-                    "local-authority-code": "YOR"
-                },
-                {
-                    "gss-code": "S12000027",
-                    "local-authority-code": "ZET"
-                }
-            ]
-        },
-        {
             "title": "Name to local authority code lookup",
             "description": "Dataset that maps variations on a name to the the ID for the council.",
             "custom": {
-                "row_count": 1775
+                "row_count": 1786
             },
             "name": "lookup_name_to_registry",
             "profile": "tabular-data-resource",
@@ -21233,7 +21418,7 @@
                     }
                 ]
             },
-            "hash": "9a68d3e30b10e2749799f49a14535a94",
+            "hash": "145ce7d3c62abd1e18311294d77e8d7e",
             "data": [
                 {
                     "la-name": "Armagh City, Banbridge and Craigavon Borough Council",
@@ -22956,6 +23141,30 @@
                     "local-authority-code": "DST"
                 },
                 {
+                    "la-name": "Devon and Torbay Combined County Authority",
+                    "local-authority-code": "DTCA"
+                },
+                {
+                    "la-name": "Devon and Torbay CA",
+                    "local-authority-code": "DTCA"
+                },
+                {
+                    "la-name": "Devon and Torbay Combined Authority",
+                    "local-authority-code": "DTCA"
+                },
+                {
+                    "la-name": "Devon & Torbay Combined County Authority",
+                    "local-authority-code": "DTCA"
+                },
+                {
+                    "la-name": "Devon & Torbay CA",
+                    "local-authority-code": "DTCA"
+                },
+                {
+                    "la-name": "Devon & Torbay Combined Authority",
+                    "local-authority-code": "DTCA"
+                },
+                {
                     "la-name": "Dudley Metropolitan Borough Council",
                     "local-authority-code": "DUD"
                 },
@@ -24524,6 +24733,14 @@
                     "local-authority-code": "LBH"
                 },
                 {
+                    "la-name": "Lancashire Combined County Authority",
+                    "local-authority-code": "LCCA"
+                },
+                {
+                    "la-name": "Lancashire CA",
+                    "local-authority-code": "LCCA"
+                },
+                {
                     "la-name": "Leicester City Council",
                     "local-authority-code": "LCE"
                 },
@@ -25178,6 +25395,22 @@
                 {
                     "la-name": "north east lincolnshire council",
                     "local-authority-code": "NEL"
+                },
+                {
+                    "la-name": "North East Mayoral Strategic Authority",
+                    "local-authority-code": "NESA"
+                },
+                {
+                    "la-name": "North East Mayoral Combined Authority",
+                    "local-authority-code": "NESA"
+                },
+                {
+                    "la-name": "North East MCA",
+                    "local-authority-code": "NESA"
+                },
+                {
+                    "la-name": "North East Strategic Authority",
+                    "local-authority-code": "NESA"
                 },
                 {
                     "la-name": "Newcastle City Council",

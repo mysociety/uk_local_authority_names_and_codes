@@ -2,7 +2,7 @@
     "name": "uk_la_past_current",
     "title": "UK Local Authorities (past and current)",
     "description": "A dataset that includes current and some past local authorities",
-    "version": "1.6.1",
+    "version": "1.7.0",
     "keywords": [
         "UK Local data",
         "UK"
@@ -22,7 +22,6 @@
         }
     ],
     "custom": {
-        "dataset_order": 1,
         "build": "uk_local_authority_names_and_codes.build:create_all_files",
         "tests": [
             "test_basic_requirements",
@@ -30,26 +29,17 @@
             "test_values",
             "test_current"
         ],
-        "download_options": {
-            "gate": "default",
-            "survey": "default",
-            "header_text": "default"
-        },
+        "dataset_order": 1,
         "composite": {
             "xlsx": {
                 "include": "all",
                 "exclude": [
                     "lookup_lsoa_to_registry"
                 ],
-                "render": true,
                 "modify": {
                     "alt-names": "split-to-array",
                     "former-gss-codes": "split-to-array"
-                }
-            },
-            "sqlite": {
-                "include": "all",
-                "exclude": "none",
+                },
                 "render": true
             },
             "json": {
@@ -58,7 +48,17 @@
                     "lookup_lsoa_to_registry"
                 ],
                 "render": true
+            },
+            "sqlite": {
+                "include": "all",
+                "exclude": "none",
+                "render": true
             }
+        },
+        "download_options": {
+            "gate": "default",
+            "survey": "default",
+            "header_text": "default"
         },
         "change_log": {
             "0.1.0": "Initial commit of new data",
@@ -79,22 +79,105 @@
             "1.5.0": "Change in data for resource(s): lookup_name_to_registry",
             "1.5.1": "Minor change in data for resource(s): uk_local_authorities_current,lookup_gss_to_registry",
             "1.6.0": "Change in data for resource(s): uk_local_authorities_current,lookup_gss_to_registry,lookup_name_to_registry",
-            "1.6.1": "Minor change in data for resource(s): uk_local_authorities_current"
+            "1.6.1": "Minor change in data for resource(s): uk_local_authorities_current",
+            "1.7.0": "Change in data for resource(s): lookup_gss_to_registry,uk_local_authorities_current,lookup_name_to_registry"
         },
         "datasette": {
             "about": "Info & Downloads",
-            "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_6_1"
+            "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_7_0"
         }
     },
     "resources": [
         {
+            "title": "GSS to local authority code lookup",
+            "description": "Dataset that maps current and past gss codes (e.g. E07000239) for an area to the ID for the council.",
+            "custom": {
+                "row_count": 486,
+                "datasette": {
+                    "about": "Info & Downloads",
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_7_0#lookup_gss_to_registry"
+                }
+            },
+            "path": "lookup_gss_to_registry.csv",
+            "name": "lookup_gss_to_registry",
+            "profile": "tabular-data-resource",
+            "scheme": "file",
+            "format": "csv",
+            "hashing": "md5",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "gss-code",
+                        "type": "string",
+                        "description": "Code for the statistical geography of a council. A council may have multiple codes (past and present) as a result of boundary changes.",
+                        "constraints": {
+                            "unique": false
+                        },
+                        "example": "E06000001"
+                    },
+                    {
+                        "name": "local-authority-code",
+                        "type": "string",
+                        "description": "Fixed ID for council, not linked to boundary changes.",
+                        "constraints": {
+                            "unique": false
+                        },
+                        "example": "ABC"
+                    }
+                ]
+            },
+            "hash": "a10ecbb431baf76f75fbdc8601d56256"
+        },
+        {
+            "title": "LSOA to local authority code lookup",
+            "description": "Dataset that maps LSOA the ID for the council.",
+            "custom": {
+                "row_count": 42619,
+                "datasette": {
+                    "about": "Info & Downloads",
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_7_0#lookup_lsoa_to_registry"
+                }
+            },
+            "path": "lookup_lsoa_to_registry.csv",
+            "name": "lookup_lsoa_to_registry",
+            "profile": "tabular-data-resource",
+            "scheme": "file",
+            "format": "csv",
+            "hashing": "md5",
+            "encoding": "utf-8",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "lsoa",
+                        "type": "string",
+                        "description": "Small Area - Lower Super Outputer Area (England and Wales), DataZone (Scotland), Super Output Area (NI)",
+                        "constraints": {
+                            "unique": true
+                        },
+                        "example": "95AA01S1"
+                    },
+                    {
+                        "name": "local-authority-code",
+                        "type": "string",
+                        "description": "Fixed ID for council, not linked to boundary changes.",
+                        "constraints": {
+                            "unique": false
+                        },
+                        "example": "ABC"
+                    }
+                ]
+            },
+            "hash": "a63221c4082a24958b1e2d9a560031b3"
+        },
+        {
             "title": "UK Local Authorities (past/current)",
             "description": "Table of information about local authorities, and mapping between different ID schemes. Includes current and some past authorities.",
             "custom": {
-                "row_count": 470,
+                "row_count": 473,
                 "datasette": {
                     "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_6_1#uk_local_authorities_current"
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_7_0#uk_local_authorities_current"
                 }
             },
             "path": "uk_local_authorities_current.csv",
@@ -156,7 +239,16 @@
                         "type": "string",
                         "description": "The date the authority was abolished (YYYY-MM-DD). Can be blank.",
                         "constraints": {
-                            "unique": false
+                            "unique": false,
+                            "enum": [
+                                "2015-03-31",
+                                "2019-03-31",
+                                "2020-03-31",
+                                "2021-04-01",
+                                "2023-04-01",
+                                "2024-05-07",
+                                "nan"
+                            ]
                         },
                         "example": "2015-03-31"
                     },
@@ -189,7 +281,22 @@
                         "type": "string",
                         "description": "English region, but using the nation for non-English authorities.",
                         "constraints": {
-                            "unique": false
+                            "unique": false,
+                            "enum": [
+                                "East Midlands",
+                                "East of England",
+                                "London",
+                                "North East",
+                                "North West",
+                                "Northern Ireland",
+                                "Scotland",
+                                "South East",
+                                "South West",
+                                "Wales",
+                                "West Midlands",
+                                "Yorkshire and The Humber",
+                                "nan"
+                            ]
                         },
                         "example": "East Midlands"
                     },
@@ -269,7 +376,22 @@
                         "type": "string",
                         "description": "A list of any gss codes for an area that apply to the former boundaries of a local authority.",
                         "constraints": {
-                            "unique": false
+                            "unique": false,
+                            "enum": [
+                                "E06000048",
+                                "E07000097",
+                                "E07000100",
+                                "E07000101",
+                                "E07000104",
+                                "E08000020",
+                                "E47000005",
+                                "S12000009",
+                                "S12000015",
+                                "S12000024",
+                                "S12000044",
+                                "S12000046,S12000043",
+                                "nan"
+                            ]
                         },
                         "example": "E06000048"
                     },
@@ -278,9 +400,14 @@
                         "type": "string",
                         "description": "Any notes on columns or values that require special interpretation.",
                         "constraints": {
-                            "unique": false
+                            "unique": false,
+                            "enum": [
+                                "Renamed from North East Mayoral Combined Authority on 2026-05-18",
+                                "iso code and internal code may differ",
+                                "nan"
+                            ]
                         },
-                        "example": "iso code and internal code may differ"
+                        "example": "Renamed from North East Mayoral Combined Authority on 2026-05-18"
                     },
                     {
                         "name": "current-authority",
@@ -338,7 +465,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 3.0
+                        "example": "101.0"
                     },
                     {
                         "name": "pop-2020",
@@ -347,7 +474,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 2226.0
+                        "example": "100008.0"
                     },
                     {
                         "name": "x",
@@ -356,7 +483,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 43329.5655016295
+                        "example": "106921.9690787888"
                     },
                     {
                         "name": "y",
@@ -365,7 +492,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 13020.5326643405
+                        "example": "100809.8963936076"
                     },
                     {
                         "name": "lat",
@@ -374,7 +501,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 49.9369329141
+                        "example": "49.9369329141"
                     },
                     {
                         "name": "long",
@@ -383,7 +510,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": -7.5037843639
+                        "example": "-0.008257932"
                     },
                     {
                         "name": "powers",
@@ -419,7 +546,16 @@
                         "type": "string",
                         "description": "Where avaliable, the kind of geography this authority is in mapit.",
                         "constraints": {
-                            "unique": false
+                            "unique": false,
+                            "enum": [
+                                "COI",
+                                "CTY",
+                                "DIS",
+                                "LBO",
+                                "MTD",
+                                "UTA",
+                                "nan"
+                            ]
                         },
                         "example": "COI"
                     },
@@ -457,7 +593,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 1.0
+                        "example": "1.0"
                     },
                     {
                         "name": "os-file",
@@ -475,7 +611,7 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 7000000000000000.0
+                        "example": "7000000000000000.0"
                     },
                     {
                         "name": "snac",
@@ -493,103 +629,21 @@
                         "constraints": {
                             "unique": false
                         },
-                        "example": 3.0
+                        "example": "100.0"
                     }
                 ]
             },
             "_sheet_order": 1,
-            "hash": "b1ced1c7a633395eea6e2002726ab20b"
-        },
-        {
-            "title": "GSS to local authority code lookup",
-            "description": "Dataset that maps current and past gss codes (e.g. E07000239) for an area to the ID for the council.",
-            "custom": {
-                "row_count": 484,
-                "datasette": {
-                    "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_6_1#lookup_gss_to_registry"
-                }
-            },
-            "path": "lookup_gss_to_registry.csv",
-            "name": "lookup_gss_to_registry",
-            "profile": "tabular-data-resource",
-            "scheme": "file",
-            "format": "csv",
-            "hashing": "md5",
-            "encoding": "utf-8",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "gss-code",
-                        "type": "string",
-                        "description": "Code for the statistical geography of a council. A council may have multiple codes (past and present) as a result of boundary changes.",
-                        "constraints": {
-                            "unique": false
-                        },
-                        "example": "E06000001"
-                    },
-                    {
-                        "name": "local-authority-code",
-                        "type": "string",
-                        "description": "Fixed ID for council, not linked to boundary changes.",
-                        "constraints": {
-                            "unique": false
-                        },
-                        "example": "ABC"
-                    }
-                ]
-            },
-            "hash": "429a4bbda2a9e117a362dc739dcb27ee"
-        },
-        {
-            "title": "LSOA to local authority code lookup",
-            "description": "Dataset that maps LSOA the ID for the council.",
-            "custom": {
-                "row_count": 42620,
-                "datasette": {
-                    "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_6_1#lookup_lsoa_to_registry"
-                }
-            },
-            "path": "lookup_lsoa_to_registry.csv",
-            "name": "lookup_lsoa_to_registry",
-            "profile": "tabular-data-resource",
-            "scheme": "file",
-            "format": "csv",
-            "hashing": "md5",
-            "encoding": "utf-8",
-            "schema": {
-                "fields": [
-                    {
-                        "name": "lsoa",
-                        "type": "string",
-                        "description": "Small Area - Lower Super Outputer Area (England and Wales), DataZone (Scotland), Super Output Area (NI)",
-                        "constraints": {
-                            "unique": true
-                        },
-                        "example": "95AA01S1"
-                    },
-                    {
-                        "name": "local-authority-code",
-                        "type": "string",
-                        "description": "Fixed ID for council, not linked to boundary changes.",
-                        "constraints": {
-                            "unique": false
-                        },
-                        "example": "ABC"
-                    }
-                ]
-            },
-            "hash": "a63221c4082a24958b1e2d9a560031b3"
+            "hash": "ef5216918778578a1cb17e572e682196"
         },
         {
             "title": "Name to local authority code lookup",
             "description": "Dataset that maps variations on a name to the the ID for the council.",
             "custom": {
-                "row_count": 1775,
+                "row_count": 1786,
                 "datasette": {
                     "about": "Info & Downloads",
-                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_6_1#lookup_name_to_registry"
+                    "about_url": "https://pages.mysociety.org/uk_local_authority_names_and_codes/datasets/uk_la_past_current/1_7_0#lookup_name_to_registry"
                 }
             },
             "path": "lookup_name_to_registry.csv",
@@ -621,7 +675,7 @@
                     }
                 ]
             },
-            "hash": "9a68d3e30b10e2749799f49a14535a94"
+            "hash": "145ce7d3c62abd1e18311294d77e8d7e"
         }
     ]
 }

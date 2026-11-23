@@ -429,6 +429,12 @@ Dorset Council,DST
 Dorset Council,DST
 Dorset,DST
 dorset,DST
+Devon and Torbay Combined County Authority,DTCA
+Devon and Torbay CA,DTCA
+Devon and Torbay Combined Authority,DTCA
+Devon & Torbay Combined County Authority,DTCA
+Devon & Torbay CA,DTCA
+Devon & Torbay Combined Authority,DTCA
 Dudley Metropolitan Borough Council,DUD
 Dudley,DUD
 dudley,DUD
@@ -821,6 +827,8 @@ Lambeth,LBH
 lambeth,LBH
 lambeth london boro,LBH
 london borough of lambeth,LBH
+Lancashire Combined County Authority,LCCA
+Lancashire CA,LCCA
 Leicester City Council,LCE
 Leicester,LCE
 Leicester City UA,LCE
@@ -985,6 +993,10 @@ North East Lincolnshire,NEL
 North East Lincolnshire UA,NEL
 north east lincolnshire,NEL
 north east lincolnshire council,NEL
+North East Mayoral Strategic Authority,NESA
+North East Mayoral Combined Authority,NESA
+North East MCA,NESA
+North East Strategic Authority,NESA
 Newcastle City Council,NET
 Newcastle upon Tyne,NET
 newcastle city council,NET

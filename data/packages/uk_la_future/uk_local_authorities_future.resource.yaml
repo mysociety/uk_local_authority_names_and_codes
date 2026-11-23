@@ -3,7 +3,7 @@ description: Table of information about local authorities, and mapping between
   different ID schemes. Includes current, some past, and some future 
   authorities.
 custom:
-  row_count: 470
+  row_count: 473
 path: uk_local_authorities_future.csv
 name: uk_local_authorities_future
 profile: tabular-data-resource
@@ -52,6 +52,14 @@ schema:
       blank.
     constraints:
       unique: false
+      enum:
+      - '2015-03-31'
+      - '2019-03-31'
+      - '2020-03-31'
+      - '2021-04-01'
+      - '2023-04-01'
+      - '2024-05-07'
+      - nan
     example: '2015-03-31'
   - name: replaced-by
     type: string
@@ -78,6 +86,20 @@ schema:
       authorities.
     constraints:
       unique: false
+      enum:
+      - East Midlands
+      - East of England
+      - London
+      - North East
+      - North West
+      - Northern Ireland
+      - Scotland
+      - South East
+      - South West
+      - Wales
+      - West Midlands
+      - Yorkshire and The Humber
+      - nan
     example: East Midlands
   - name: local-authority-type
     type: string
@@ -143,6 +165,20 @@ schema:
       boundaries of a local authority.
     constraints:
       unique: false
+      enum:
+      - E06000048
+      - E07000097
+      - E07000100
+      - E07000101
+      - E07000104
+      - E08000020
+      - E47000005
+      - S12000009
+      - S12000015
+      - S12000024
+      - S12000044
+      - S12000046,S12000043
+      - nan
     example: E06000048
   - name: notes
     type: string
@@ -150,7 +186,11 @@ schema:
       interpretation.
     constraints:
       unique: false
-    example: iso code and internal code may differ
+      enum:
+      - Renamed from North East Mayoral Combined Authority on 2026-05-18
+      - iso code and internal code may differ
+      - nan
+    example: Renamed from North East Mayoral Combined Authority on 2026-05-18
   - name: current-authority
     type: boolean
     description: a boolean saying if the authority is currently a legal 
@@ -193,38 +233,38 @@ schema:
     description: The area of the boundaries of a local authority, in km squared.
     constraints:
       unique: false
-    example: 3.0
+    example: '101.0'
   - name: pop-2020
     type: number
     description: The estimated number of people living in the local authority in
       2020.
     constraints:
       unique: false
-    example: 2226.0
+    example: '100008.0'
   - name: x
     type: number
     description: X coordinate for the center of the local authority.
     constraints:
       unique: false
-    example: 43329.5655016295
+    example: '106921.96907878877'
   - name: y
     type: number
     description: Y coordinate for the center of the local authority.
     constraints:
       unique: false
-    example: 13020.532664340468
+    example: '100809.89639360756'
   - name: lat
     type: number
     description: Latitude of the center of the local authority
     constraints:
       unique: false
-    example: 49.93693291412038
+    example: '49.93693291412038'
   - name: long
     type: number
     description: Longitude of the center of the local authority
     constraints:
       unique: false
-    example: -7.503784363910277
+    example: '-0.0082579319757085'
   - name: powers
     type: string
     description: A grouping of local authority type based on the actual powers 
@@ -254,6 +294,14 @@ schema:
       mapit.
     constraints:
       unique: false
+      enum:
+      - COI
+      - CTY
+      - DIS
+      - LBO
+      - MTD
+      - UTA
+      - nan
     example: COI
   - name: ofcom
     type: string
@@ -279,7 +327,7 @@ schema:
     description: The id used for the council on opencouncildata.co.uk/
     constraints:
       unique: false
-    example: 1.0
+    example: '1.0'
   - name: os-file
     type: string
     description: Form of name used in some ordnance survey datasets.
@@ -291,7 +339,7 @@ schema:
     description: Numeric ID assigned by ordnance survey
     constraints:
       unique: false
-    example: 7000000000000000.0
+    example: '7000000000000000.0'
   - name: snac
     type: string
     description: Old ONS Standard Names and Codes code
@@ -303,6 +351,6 @@ schema:
     description: ID of authority in WhatDoTheyKnow
     constraints:
       unique: false
-    example: 3.0
+    example: '100.0'
 _sheet_order: 1
-hash: a3406df06b408d183564dbab599a59de
+hash: 7e25104525e0aaae3209cd1bb9a6b423
