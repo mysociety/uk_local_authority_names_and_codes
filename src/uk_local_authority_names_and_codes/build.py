@@ -275,6 +275,8 @@ def blue_print(text: str) -> None:
 def create_future_only():
     blue_print("Creating future only file")
     create_overall_file(dest=future_package)
+    blue_print("Creating name lookup - future")
+    create_name_lookup(future=True)
 
 
 def create_all_files():
@@ -284,8 +286,6 @@ def create_all_files():
     create_without_future()
     blue_print("Creating name lookup")
     create_name_lookup()
-    blue_print("Creating name lookup - future")
-    create_name_lookup(future=True)
     blue_print("Creating gss lookup")
     create_gss_lookup()
     blue_print("Creating legacy compatible files")
